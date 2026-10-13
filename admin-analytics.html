@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Dashboard | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="cp-dashboard-page">
+    <div class="cp-dashboard-layout" id="cp-dashboard-layout">
+        <!--- Dashboard Sidebar --->
+        <aside class="cp-dashboard-sidebar" id="cp-dashboard-sidebar" aria-label="Dashboard navigation">
+            <div class="cp-dashboard-sidebar-top">
+                <a href="index.html" class="cp-dashboard-brand">
+                    <span class="cp-dashboard-brand-icon"><i class="bi bi-code-slash"></i></span>
+                    <span class="cp-dashboard-brand-text">CREATIVE<span>.</span>PORTFOLIO</span>
+                </a>
+                <div class="cp-dashboard-sidebar-user">
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-sidebar">
+                        <img src="assets/images/profile-1.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                    <div class="cp-dashboard-sidebar-user-info">
+                        <strong data-user-name>Welcome back</strong>
+                        <span data-user-email>Loading email...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cp-dashboard-sidebar-label">WORKSPACE</div>
+            <nav class="cp-dashboard-nav">
+                <a href="admin-dashboard.html" class="cp-dashboard-nav-link" data-page="overview">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-grid-1x2"></i></span><span>Overview</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-analytics.html" class="cp-dashboard-nav-link" data-page="analytics">
+                    <span class="cp-dashboard-nav-icon"><i
+                            class="bi bi-graph-up-arrow"></i></span><span>Analytics</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-profile.html" class="cp-dashboard-nav-link" data-page="profile">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-person"></i></span><span>Profile</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-settings.html" class="cp-dashboard-nav-link" data-page="settings">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-sliders"></i></span><span>Settings</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="login.html" class="cp-dashboard-nav-link cp-dashboard-logout" id="cp-dashboard-logout">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-box-arrow-right"></i></span><span>Logout</span>
+                </a>
+            </nav>
+            <div class="cp-dashboard-sidebar-bottom">
+                <span class="cp-dashboard-status-dot"></span><span>Workspace active</span>
+                <span class="cp-dashboard-sidebar-version">v1.0</span>
+            </div>
+        </aside>
+        <!--- Dashboard Mobile Backdrop --->
+        <button type="button" class="cp-dashboard-backdrop" id="cp-dashboard-backdrop" aria-label="Close navigation"
+            tabindex="-1"></button>
+        <!--- Dashboard Main Area --->
+        <div class="cp-dashboard-main">
+            <!--- Dashboard Topbar --->
+            <header class="cp-dashboard-topbar">
+                <div class="cp-dashboard-topbar-left">
+                    <button type="button" class="cp-dashboard-menu-toggle" id="cp-dashboard-menu-toggle"
+                        aria-label="Open navigation" aria-controls="cp-dashboard-sidebar" aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="cp-dashboard-page-heading">
+                        <span class="cp-dashboard-page-eyebrow" data-dashboard-eyebrow>YOUR WORKSPACE</span>
+                        <h1 data-dashboard-title>Overview</h1>
+                    </div>
+                </div>
+                <div class="cp-dashboard-topbar-right">
+                    <div class="cp-dashboard-topbar-user">
+                        <span class="cp-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong data-user-email>Loading email...</strong>
+                    </div>
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-topbar">
+                        <img src="assets/images/profile-1.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Page Content --->
+
+            <!--- Admin Analytics Content --->
+            <main class="cp-dashboard-content cp-admin-analytics-content">
+                <!--- Analytics Welcome --->
+                <section class="cp-admin-analytics-heading">
+                    <div>
+                        <span class="cp-admin-analytics-kicker"><i class="bi bi-activity"></i> PERFORMANCE CENTER</span>
+                        <h2>Analytics Overview</h2>
+                        <p>Understand your website performance, traffic patterns, and audience engagement.</p>
+                    </div>
+                    <div class="cp-admin-analytics-heading-actions">
+                        <span class="cp-admin-analytics-live"><span></span> Demo data</span>
+                        <button type="button" class="cp-admin-analytics-export" id="cp-admin-analytics-export">
+                            <i class="bi bi-download"></i> Export report
+                        </button>
+                    </div>
+                </section>
+                <!--- Analytics Filters --->
+                <section class="cp-admin-analytics-toolbar" aria-label="Analytics filters">
+                    <div class="cp-admin-analytics-toolbar-label">
+                        <i class="bi bi-calendar3"></i>
+                        <span>Reporting period</span>
+                    </div>
+                    <div class="cp-admin-analytics-filter-controls">
+                        <div class="cp-admin-analytics-range" role="group" aria-label="Select reporting period">
+                            <button type="button" class="cp-admin-analytics-range-btn" data-analytics-range="7"
+                                aria-pressed="false">7 days</button>
+                            <button type="button" class="cp-admin-analytics-range-btn is-active"
+                                data-analytics-range="30" aria-pressed="true">30 days</button>
+                            <button type="button" class="cp-admin-analytics-range-btn" data-analytics-range="90"
+                                aria-pressed="false">90 days</button>
+                        </div>
+                        <button type="button" class="cp-admin-analytics-refresh" id="cp-admin-analytics-refresh"
+                            aria-label="Refresh analytics">
+                            <i class="bi bi-arrow-clockwise"></i>
+                        </button>
+                    </div>
+                </section>
+                <!--- Analytics KPI Cards --->
+                <section class="cp-admin-analytics-kpis" aria-label="Website performance metrics">
+                    <article class="cp-admin-analytics-kpi">
+                        <div class="cp-admin-analytics-kpi-top">
+                            <span class="cp-admin-analytics-kpi-icon cp-admin-analytics-icon-lime"><i
+                                    class="bi bi-people"></i></span>
+                            <span class="cp-admin-analytics-kpi-change"><i class="bi bi-arrow-up-right"></i> <span
+                                    data-analytics-change="visitors">12.8%</span></span>
+                        </div>
+                        <span class="cp-admin-analytics-kpi-label">Total visitors</span>
+                        <strong class="cp-admin-analytics-kpi-value" id="cp-admin-analytics-visitors">24,680</strong>
+                        <span class="cp-admin-analytics-kpi-note">Unique website visitors</span>
+                        <div class="cp-admin-analytics-sparkline cp-admin-analytics-sparkline-lime" aria-hidden="true">
+                            <span style="height:28%"></span><span style="height:44%"></span><span
+                                style="height:36%"></span><span style="height:58%"></span><span
+                                style="height:49%"></span><span style="height:72%"></span><span
+                                style="height:62%"></span><span style="height:88%"></span><span
+                                style="height:76%"></span><span style="height:100%"></span>
+                        </div>
+                    </article>
+                    <article class="cp-admin-analytics-kpi">
+                        <div class="cp-admin-analytics-kpi-top">
+                            <span class="cp-admin-analytics-kpi-icon cp-admin-analytics-icon-violet"><i
+                                    class="bi bi-eye"></i></span>
+                            <span class="cp-admin-analytics-kpi-change"><i class="bi bi-arrow-up-right"></i> <span
+                                    data-analytics-change="views">18.4%</span></span>
+                        </div>
+                        <span class="cp-admin-analytics-kpi-label">Page views</span>
+                        <strong class="cp-admin-analytics-kpi-value" id="cp-admin-analytics-views">68,420</strong>
+                        <span class="cp-admin-analytics-kpi-note">Total pages viewed</span>
+                        <div class="cp-admin-analytics-sparkline cp-admin-analytics-sparkline-violet"
+                            aria-hidden="true">
+                            <span style="height:38%"></span><span style="height:30%"></span><span
+                                style="height:52%"></span><span style="height:43%"></span><span
+                                style="height:68%"></span><span style="height:56%"></span><span
+                                style="height:81%"></span><span style="height:70%"></span><span
+                                style="height:90%"></span><span style="height:100%"></span>
+                        </div>
+                    </article>
+                    <article class="cp-admin-analytics-kpi">
+                        <div class="cp-admin-analytics-kpi-top">
+                            <span class="cp-admin-analytics-kpi-icon cp-admin-analytics-icon-blue"><i
+                                    class="bi bi-bullseye"></i></span>
+                            <span class="cp-admin-analytics-kpi-change"><i class="bi bi-arrow-up-right"></i> <span
+                                    data-analytics-change="conversion">2.1%</span></span>
+                        </div>
+                        <span class="cp-admin-analytics-kpi-label">Conversion rate</span>
+                        <strong class="cp-admin-analytics-kpi-value" id="cp-admin-analytics-conversion">4.86%</strong>
+                        <span class="cp-admin-analytics-kpi-note">Visitors who took action</span>
+                        <div class="cp-admin-analytics-sparkline cp-admin-analytics-sparkline-blue" aria-hidden="true">
+                            <span style="height:32%"></span><span style="height:46%"></span><span
+                                style="height:40%"></span><span style="height:63%"></span><span
+                                style="height:55%"></span><span style="height:76%"></span><span
+                                style="height:67%"></span><span style="height:84%"></span><span
+                                style="height:80%"></span><span style="height:100%"></span>
+                        </div>
+                    </article>
+                    <article class="cp-admin-analytics-kpi">
+                        <div class="cp-admin-analytics-kpi-top">
+                            <span class="cp-admin-analytics-kpi-icon cp-admin-analytics-icon-orange"><i
+                                    class="bi bi-clock-history"></i></span>
+                            <span class="cp-admin-analytics-kpi-change"><i class="bi bi-arrow-up-right"></i> <span
+                                    data-analytics-change="duration">8.6%</span></span>
+                        </div>
+                        <span class="cp-admin-analytics-kpi-label">Avg. session duration</span>
+                        <strong class="cp-admin-analytics-kpi-value" id="cp-admin-analytics-duration">3m 42s</strong>
+                        <span class="cp-admin-analytics-kpi-note">Time spent per session</span>
+                        <div class="cp-admin-analytics-sparkline cp-admin-analytics-sparkline-orange"
+                            aria-hidden="true">
+                            <span style="height:24%"></span><span style="height:41%"></span><span
+                                style="height:34%"></span><span style="height:55%"></span><span
+                                style="height:47%"></span><span style="height:66%"></span><span
+                                style="height:60%"></span><span style="height:82%"></span><span
+                                style="height:73%"></span><span style="height:100%"></span>
+                        </div>
+                    </article>
+                </section>
+                <!--- Traffic Analytics Chart --->
+                <section class="cp-admin-analytics-main-grid">
+                    <article class="cp-admin-analytics-panel cp-admin-analytics-traffic-panel">
+                        <div class="cp-admin-analytics-panel-heading">
+                            <div>
+                                <span class="cp-admin-analytics-panel-kicker">AUDIENCE GROWTH</span>
+                                <h3>Traffic overview</h3>
+                                <p>Visitor activity over your selected period.</p>
+                            </div>
+                            <span class="cp-admin-analytics-chart-legend"><span></span> Visitors</span>
+                        </div>
+                        <div class="cp-admin-analytics-chart-summary">
+                            <div><strong id="cp-admin-analytics-chart-total">24,680</strong><span>Total visitors</span>
+                            </div>
+                            <span class="cp-admin-analytics-summary-badge"><i class="bi bi-graph-up-arrow"></i> <span
+                                    id="cp-admin-analytics-chart-growth">+12.8%</span></span>
+                        </div>
+                        <div class="cp-admin-analytics-chart-wrap">
+                            <div class="cp-admin-analytics-y-axis" aria-hidden="true">
+                                <span>3k</span><span>2k</span><span>1k</span><span>0</span></div>
+                            <div class="cp-admin-analytics-chart-area">
+                                <div class="cp-admin-analytics-chart-grid" aria-hidden="true">
+                                    <span></span><span></span><span></span><span></span></div>
+                                <svg id="cp-admin-analytics-traffic-chart" class="cp-admin-analytics-traffic-chart"
+                                    viewBox="0 0 700 220" preserveAspectRatio="none" role="img"
+                                    aria-label="Illustrative visitor traffic trend chart">
+                                    <defs>
+                                        <linearGradient id="cp-admin-analytics-chart-gradient" x1="0" y1="0" x2="0"
+                                            y2="1">
+                                            <stop offset="0%" stop-color="#b6ff4a" stop-opacity=".26" />
+                                            <stop offset="100%" stop-color="#b6ff4a" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path id="cp-admin-analytics-chart-area-path"
+                                        d="M0 170 L70 145 L140 157 L210 112 L280 126 L350 91 L420 105 L490 62 L560 79 L630 36 L700 48 L700 220 L0 220 Z"
+                                        fill="url(#cp-admin-analytics-chart-gradient)" />
+                                    <path id="cp-admin-analytics-chart-line"
+                                        d="M0 170 L70 145 L140 157 L210 112 L280 126 L350 91 L420 105 L490 62 L560 79 L630 36 L700 48"
+                                        fill="none" stroke="#b6ff4a" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <g id="cp-admin-analytics-chart-points" fill="#b6ff4a" stroke="#11151d"
+                                        stroke-width="3"></g>
+                                </svg>
+                                <div class="cp-admin-analytics-x-axis" id="cp-admin-analytics-x-axis"><span>Day
+                                        1</span><span>Day 5</span><span>Day 10</span><span>Day 15</span><span>Day
+                                        20</span><span>Day 25</span><span>Day 30</span></div>
+                            </div>
+                        </div>
+                        <p class="cp-admin-analytics-chart-footnote"><i class="bi bi-info-circle"></i> Illustrative
+                            chart values. Connect a tracking source for real traffic data.</p>
+                    </article>
+                    <!--- Traffic Sources --->
+                    <article class="cp-admin-analytics-panel cp-admin-analytics-sources-panel">
+                        <div class="cp-admin-analytics-panel-heading">
+                            <div>
+                                <span class="cp-admin-analytics-panel-kicker">ACQUISITION</span>
+                                <h3>Traffic sources</h3>
+                                <p>Where your visitors come from.</p>
+                            </div>
+                            <span class="cp-admin-analytics-heading-icon"><i class="bi bi-diagram-3"></i></span>
+                        </div>
+                        <div class="cp-admin-analytics-donut-wrap">
+                            <div class="cp-admin-analytics-donut" id="cp-admin-analytics-source-donut" role="img"
+                                aria-label="Traffic sources: search 42 percent, direct 28 percent, social 18 percent, referral 12 percent">
+                                <div class="cp-admin-analytics-donut-center"><strong
+                                        id="cp-admin-analytics-source-total">24.6k</strong><span>Visitors</span></div>
+                            </div>
+                        </div>
+                        <div class="cp-admin-analytics-source-list">
+                            <div class="cp-admin-analytics-source-row"><span class="cp-admin-analytics-source-name"><i
+                                        class="cp-admin-analytics-source-dot cp-admin-analytics-source-search"></i>
+                                    Organic search</span><strong>42%</strong><span>10,366</span></div>
+                            <div class="cp-admin-analytics-source-row"><span class="cp-admin-analytics-source-name"><i
+                                        class="cp-admin-analytics-source-dot cp-admin-analytics-source-direct"></i>
+                                    Direct</span><strong>28%</strong><span>6,910</span></div>
+                            <div class="cp-admin-analytics-source-row"><span class="cp-admin-analytics-source-name"><i
+                                        class="cp-admin-analytics-source-dot cp-admin-analytics-source-social"></i>
+                                    Social media</span><strong>18%</strong><span>4,442</span></div>
+                            <div class="cp-admin-analytics-source-row"><span class="cp-admin-analytics-source-name"><i
+                                        class="cp-admin-analytics-source-dot cp-admin-analytics-source-referral"></i>
+                                    Referral</span><strong>12%</strong><span>2,962</span></div>
+                        </div>
+                    </article>
+                </section>
+                <!--- Popular Pages and Devices --->
+                <section class="cp-admin-analytics-secondary-grid">
+                    <article class="cp-admin-analytics-panel cp-admin-analytics-pages-panel">
+                        <div class="cp-admin-analytics-panel-heading">
+                            <div>
+                                <span class="cp-admin-analytics-panel-kicker">CONTENT PERFORMANCE</span>
+                                <h3>Top performing pages</h3>
+                                <p>Pages receiving the most views.</p>
+                            </div>
+                            <a href="404.html" class="cp-admin-analytics-text-link">Overview <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="cp-admin-analytics-pages-table-wrap">
+                            <table class="cp-admin-analytics-pages-table">
+                                <thead>
+                                    <tr>
+                                        <th>Page</th>
+                                        <th>Views</th>
+                                        <th>Share</th>
+                                        <th>Performance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="cp-admin-analytics-page-icon"><i
+                                                    class="bi bi-house"></i></span><span
+                                                class="cp-admin-analytics-page-title"><strong>Home</strong><small>/index.html</small></span>
+                                        </td>
+                                        <td>18,240</td>
+                                        <td>26.7%</td>
+                                        <td><span class="cp-admin-analytics-progress"><span
+                                                    style="width:88%"></span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cp-admin-analytics-page-icon"><i
+                                                    class="bi bi-person"></i></span><span
+                                                class="cp-admin-analytics-page-title"><strong>About</strong><small>/about.html</small></span>
+                                        </td>
+                                        <td>12,860</td>
+                                        <td>18.8%</td>
+                                        <td><span class="cp-admin-analytics-progress"><span
+                                                    style="width:70%"></span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cp-admin-analytics-page-icon"><i
+                                                    class="bi bi-grid"></i></span><span
+                                                class="cp-admin-analytics-page-title"><strong>Portfolio</strong><small>/portfolio.html</small></span>
+                                        </td>
+                                        <td>10,540</td>
+                                        <td>15.4%</td>
+                                        <td><span class="cp-admin-analytics-progress"><span
+                                                    style="width:58%"></span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cp-admin-analytics-page-icon"><i
+                                                    class="bi bi-briefcase"></i></span><span
+                                                class="cp-admin-analytics-page-title"><strong>Services</strong><small>/services.html</small></span>
+                                        </td>
+                                        <td>8,720</td>
+                                        <td>12.7%</td>
+                                        <td><span class="cp-admin-analytics-progress"><span
+                                                    style="width:46%"></span></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="cp-admin-analytics-page-icon"><i
+                                                    class="bi bi-envelope"></i></span><span
+                                                class="cp-admin-analytics-page-title"><strong>Contact</strong><small>/contact.html</small></span>
+                                        </td>
+                                        <td>6,480</td>
+                                        <td>9.5%</td>
+                                        <td><span class="cp-admin-analytics-progress"><span
+                                                    style="width:35%"></span></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="cp-admin-analytics-table-note"><i class="bi bi-info-circle"></i> Page views shown are
+                            sample values.</p>
+                    </article>
+                    <!--- Device Breakdown --->
+                    <article class="cp-admin-analytics-panel cp-admin-analytics-devices-panel">
+                        <div class="cp-admin-analytics-panel-heading">
+                            <div>
+                                <span class="cp-admin-analytics-panel-kicker">AUDIENCE DEVICES</span>
+                                <h3>Device breakdown</h3>
+                                <p>How visitors browse your website.</p>
+                            </div>
+                            <span class="cp-admin-analytics-heading-icon"><i class="bi bi-display"></i></span>
+                        </div>
+                        <div class="cp-admin-analytics-device-total"><strong>24,680</strong><span>Total sessions</span>
+                        </div>
+                        <div class="cp-admin-analytics-device-list">
+                            <div class="cp-admin-analytics-device-item">
+                                <div class="cp-admin-analytics-device-info"><span><i class="bi bi-laptop"></i>
+                                        Desktop</span><strong>52%</strong></div>
+                                <div class="cp-admin-analytics-device-track"><span
+                                        class="cp-admin-analytics-device-desktop" style="width:52%"></span></div>
+                                <small>12,834 sessions</small>
+                            </div>
+                            <div class="cp-admin-analytics-device-item">
+                                <div class="cp-admin-analytics-device-info"><span><i class="bi bi-phone"></i>
+                                        Mobile</span><strong>38%</strong></div>
+                                <div class="cp-admin-analytics-device-track"><span
+                                        class="cp-admin-analytics-device-mobile" style="width:38%"></span></div>
+                                <small>9,378 sessions</small>
+                            </div>
+                            <div class="cp-admin-analytics-device-item">
+                                <div class="cp-admin-analytics-device-info"><span><i class="bi bi-tablet"></i>
+                                        Tablet</span><strong>10%</strong></div>
+                                <div class="cp-admin-analytics-device-track"><span
+                                        class="cp-admin-analytics-device-tablet" style="width:10%"></span></div>
+                                <small>2,468 sessions</small>
+                            </div>
+                        </div>
+                        <div class="cp-admin-analytics-device-insight"><i
+                                class="bi bi-lightbulb"></i><span><strong>Responsive experience</strong> Keep the mobile
+                                browsing experience fast and easy to navigate.</span></div>
+                    </article>
+                </section>
+                <!--- Analytics Activity and Insights --->
+                <section class="cp-admin-analytics-bottom-grid">
+                    <article class="cp-admin-analytics-panel cp-admin-analytics-activity-panel">
+                        <div class="cp-admin-analytics-panel-heading">
+                            <div>
+                                <span class="cp-admin-analytics-panel-kicker">LIVE FEED PREVIEW</span>
+                                <h3>Recent activity</h3>
+                                <p>Example events from your website.</p>
+                            </div>
+                            <span class="cp-admin-analytics-activity-status"><span></span> Sample feed</span>
+                        </div>
+                        <div class="cp-admin-analytics-activity-list">
+                            <div class="cp-admin-analytics-activity-item"><span
+                                    class="cp-admin-analytics-activity-icon cp-admin-analytics-activity-lime"><i
+                                        class="bi bi-eye"></i></span>
+                                <div><strong>Page viewed</strong>
+                                    <p>A visitor opened the portfolio page.</p><small>2 minutes ago · Demo event</small>
+                                </div>
+                            </div>
+                            <div class="cp-admin-analytics-activity-item"><span
+                                    class="cp-admin-analytics-activity-icon cp-admin-analytics-activity-violet"><i
+                                        class="bi bi-search"></i></span>
+                                <div><strong>Organic search visit</strong>
+                                    <p>A visitor arrived from a search engine.</p><small>8 minutes ago · Demo
+                                        event</small>
+                                </div>
+                            </div>
+                            <div class="cp-admin-analytics-activity-item"><span
+                                    class="cp-admin-analytics-activity-icon cp-admin-analytics-activity-blue"><i
+                                        class="bi bi-envelope"></i></span>
+                                <div><strong>Contact page visited</strong>
+                                    <p>A visitor explored your contact information.</p><small>15 minutes ago · Demo
+                                        event</small>
+                                </div>
+                            </div>
+                            <div class="cp-admin-analytics-activity-item"><span
+                                    class="cp-admin-analytics-activity-icon cp-admin-analytics-activity-orange"><i
+                                        class="bi bi-phone"></i></span>
+                                <div><strong>Mobile session</strong>
+                                    <p>A visitor browsed on a mobile device.</p><small>23 minutes ago · Demo
+                                        event</small>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <!--- Analytics Insights --->
+                    <article class="cp-admin-analytics-insight-card">
+                        <div class="cp-admin-analytics-insight-orb cp-admin-analytics-insight-orb-one"></div>
+                        <div class="cp-admin-analytics-insight-orb cp-admin-analytics-insight-orb-two"></div>
+                        <span class="cp-admin-analytics-insight-icon"><i class="bi bi-stars"></i></span>
+                        <span class="cp-admin-analytics-panel-kicker">GROWTH OPPORTUNITY</span>
+                        <h3>Turn more visits into meaningful connections.</h3>
+                        <p>Use real traffic and conversion data to identify which pages attract visitors and which pages
+                            encourage enquiries.</p>
+                        <div class="cp-admin-analytics-insight-points"><span><i class="bi bi-check2-circle"></i> Review
+                                high-traffic pages</span><span><i class="bi bi-check2-circle"></i> Improve contact calls
+                                to action</span><span><i class="bi bi-check2-circle"></i> Test mobile usability</span>
+                        </div>
+                        <a href="404.html" class="cp-admin-analytics-insight-link">Back to overview <i
+                                class="bi bi-arrow-right"></i></a>
+                    </article>
+                </section>
+                <!--- Analytics Footer --->
+                <footer class="cp-admin-analytics-footer">
+                    <span>© <span id="cp-admin-analytics-year"></span> Creative Portfolio</span>
+                    <span><i class="bi bi-shield-check"></i> Analytics dashboard · Demo data</span>
+                </footer>
+            </main>
+            <!--- Admin Analytics Content End --->
+
+
+        </div>
+    </div>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-analytics.js"></script>
+</body>
+
+</html>

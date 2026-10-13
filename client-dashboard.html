@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Dashboard | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="cp-dashboard-page">
+    <div class="cp-dashboard-layout" id="cp-dashboard-layout">
+        <!--- Dashboard Sidebar --->
+        <aside class="cp-dashboard-sidebar" id="cp-dashboard-sidebar" aria-label="Dashboard navigation">
+            <div class="cp-dashboard-sidebar-top">
+                <a href="index.html" class="cp-dashboard-brand">
+                    <span class="cp-dashboard-brand-icon"><i class="bi bi-code-slash"></i></span>
+                    <span class="cp-dashboard-brand-text">CREATIVE<span>.</span>PORTFOLIO</span>
+                </a>
+                <div class="cp-dashboard-sidebar-user">
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-sidebar">
+                        <img src="assets/images/profile-2.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                    <div class="cp-dashboard-sidebar-user-info">
+                        <strong data-user-name>Welcome back</strong>
+                        <span data-user-email>Loading email...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cp-dashboard-sidebar-label">WORKSPACE</div>
+            <nav class="cp-dashboard-nav">
+                <a href="client-dashboard.html" class="cp-dashboard-nav-link" data-page="overview">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-grid-1x2"></i></span><span>Overview</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-analytics.html" class="cp-dashboard-nav-link" data-page="analytics">
+                    <span class="cp-dashboard-nav-icon"><i
+                            class="bi bi-graph-up-arrow"></i></span><span>Analytics</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-profile.html" class="cp-dashboard-nav-link" data-page="profile">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-person"></i></span><span>Profile</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-settings.html" class="cp-dashboard-nav-link" data-page="settings">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-sliders"></i></span><span>Settings</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="login.html" class="cp-dashboard-nav-link cp-dashboard-logout" id="cp-dashboard-logout">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-box-arrow-right"></i></span><span>Logout</span>
+                </a>
+            </nav>
+            <div class="cp-dashboard-sidebar-bottom">
+                <span class="cp-dashboard-status-dot"></span><span>Workspace active</span>
+                <span class="cp-dashboard-sidebar-version">v1.0</span>
+            </div>
+        </aside>
+        <!--- Dashboard Mobile Backdrop --->
+        <button type="button" class="cp-dashboard-backdrop" id="cp-dashboard-backdrop" aria-label="Close navigation"
+            tabindex="-1"></button>
+        <!--- Dashboard Main Area --->
+        <div class="cp-dashboard-main">
+            <!--- Dashboard Topbar --->
+            <header class="cp-dashboard-topbar">
+                <div class="cp-dashboard-topbar-left">
+                    <button type="button" class="cp-dashboard-menu-toggle" id="cp-dashboard-menu-toggle"
+                        aria-label="Open navigation" aria-controls="cp-dashboard-sidebar" aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="cp-dashboard-page-heading">
+                        <span class="cp-dashboard-page-eyebrow" data-dashboard-eyebrow>YOUR WORKSPACE</span>
+                        <h1 data-dashboard-title>Overview</h1>
+                    </div>
+                </div>
+                <div class="cp-dashboard-topbar-right">
+                    <div class="cp-dashboard-topbar-user">
+                        <span class="cp-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong data-user-email>Loading email...</strong>
+                    </div>
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-topbar">
+                        <img src="assets/images/profile-2.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Page Content --->
+
+            <!--- Client Overview Content --->
+            <main class="cp-dashboard-content cp-client-overview">
+                <!--- Welcome Section --->
+                <section class="cp-client-overview-welcome">
+                    <div class="cp-client-overview-welcome-content">
+                        <span class="cp-client-overview-eyebrow"><i class="bi bi-stars"></i> YOUR CREATIVE SPACE</span>
+                        <h2>Let's make something <span>remarkable.</span></h2>
+                        <p>Track your projects, follow your progress, and stay connected with your creative journey.</p>
+                        <div class="cp-client-overview-welcome-actions">
+                            <a href="404.html"
+                                class="cp-client-overview-btn cp-client-overview-btn-primary">View analytics <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                            <a href="404.html"
+                                class="cp-client-overview-btn cp-client-overview-btn-outline">Manage profile <i
+                                    class="bi bi-person-gear"></i></a>
+                        </div>
+                    </div>
+                    <div class="cp-client-overview-welcome-art" aria-hidden="true">
+                        <div class="cp-client-overview-art-orbit cp-client-overview-art-orbit-one"></div>
+                        <div class="cp-client-overview-art-orbit cp-client-overview-art-orbit-two"></div>
+                        <div class="cp-client-overview-art-core"><i class="bi bi-code-slash"></i></div>
+                        <span class="cp-client-overview-art-chip cp-client-overview-art-chip-one"><i
+                                class="bi bi-lightning-charge-fill"></i> Create</span>
+                        <span class="cp-client-overview-art-chip cp-client-overview-art-chip-two"><i
+                                class="bi bi-check2-circle"></i> Progress</span>
+                    </div>
+                    <div class="cp-client-overview-welcome-glow"></div>
+                </section>
+                <!--- Overview Heading --->
+                <section class="cp-client-overview-section-heading">
+                    <div>
+                        <span class="cp-client-overview-section-label">YOUR WORKSPACE</span>
+                        <h2>Project overview</h2>
+                        <p>Here's what's happening with your projects.</p>
+                    </div>
+                    <div class="cp-client-overview-date"><i class="bi bi-calendar3"></i><span
+                            id="cp-client-overview-date">Loading date...</span></div>
+                </section>
+                <!--- Project Statistics --->
+                <section class="cp-client-overview-stats" aria-label="Project statistics">
+                    <article class="cp-client-overview-stat-card">
+                        <div class="cp-client-overview-stat-top"><span
+                                class="cp-client-overview-stat-icon cp-client-overview-icon-lime"><i
+                                    class="bi bi-kanban"></i></span><span class="cp-client-overview-stat-tag">All
+                                time</span></div>
+                        <span class="cp-client-overview-stat-label">Total projects</span>
+                        <div class="cp-client-overview-stat-bottom"><strong data-client-stat="total">04</strong><span
+                                class="cp-client-overview-stat-note">Projects assigned</span></div>
+                    </article>
+                    <article class="cp-client-overview-stat-card">
+                        <div class="cp-client-overview-stat-top"><span
+                                class="cp-client-overview-stat-icon cp-client-overview-icon-violet"><i
+                                    class="bi bi-arrow-repeat"></i></span><span class="cp-client-overview-stat-tag">In
+                                progress</span></div>
+                        <span class="cp-client-overview-stat-label">Active projects</span>
+                        <div class="cp-client-overview-stat-bottom"><strong data-client-stat="active">02</strong><span
+                                class="cp-client-overview-stat-note">Currently underway</span></div>
+                    </article>
+                    <article class="cp-client-overview-stat-card">
+                        <div class="cp-client-overview-stat-top"><span
+                                class="cp-client-overview-stat-icon cp-client-overview-icon-blue"><i
+                                    class="bi bi-check2-circle"></i></span><span
+                                class="cp-client-overview-stat-tag">Delivered</span></div>
+                        <span class="cp-client-overview-stat-label">Completed projects</span>
+                        <div class="cp-client-overview-stat-bottom"><strong
+                                data-client-stat="completed">01</strong><span
+                                class="cp-client-overview-stat-note">Successfully completed</span></div>
+                    </article>
+                    <article class="cp-client-overview-stat-card">
+                        <div class="cp-client-overview-stat-top"><span
+                                class="cp-client-overview-stat-icon cp-client-overview-icon-orange"><i
+                                    class="bi bi-hourglass-split"></i></span><span
+                                class="cp-client-overview-stat-tag">Coming up</span></div>
+                        <span class="cp-client-overview-stat-label">Pending review</span>
+                        <div class="cp-client-overview-stat-bottom"><strong data-client-stat="review">01</strong><span
+                                class="cp-client-overview-stat-note">Awaiting your feedback</span></div>
+                    </article>
+                </section>
+                <!--- Main Overview Grid --->
+                <section class="cp-client-overview-main-grid">
+                    <!--- Active Projects --->
+                    <div class="cp-client-overview-panel cp-client-overview-projects-panel">
+                        <div class="cp-client-overview-panel-heading">
+                            <div><span class="cp-client-overview-section-label">YOUR WORK</span>
+                                <h3>Active projects</h3>
+                            </div>
+                            <a href="404.html" class="cp-client-overview-text-link">View analytics <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                        <div class="cp-client-overview-project-list" id="cp-client-overview-project-list">
+                            <article class="cp-client-overview-project" data-project-status="progress">
+                                <div class="cp-client-overview-project-symbol cp-client-overview-project-symbol-lime"><i
+                                        class="bi bi-window-stack"></i></div>
+                                <div class="cp-client-overview-project-content">
+                                    <div class="cp-client-overview-project-title-row">
+                                        <h4>Portfolio Website</h4><span
+                                            class="cp-client-overview-status cp-client-overview-status-progress">In
+                                            progress</span>
+                                    </div>
+                                    <p>Responsive website design and development</p>
+                                    <div class="cp-client-overview-progress-meta"><span>Project
+                                            progress</span><strong>75%</strong></div>
+                                    <div class="cp-client-overview-progress-track"><span style="width:75%"></span></div>
+                                    <div class="cp-client-overview-project-footer"><span><i
+                                                class="bi bi-calendar-event"></i> Due Oct 24, 2026</span><span>Updated
+                                            recently</span></div>
+                                </div>
+                            </article>
+                            <article class="cp-client-overview-project" data-project-status="progress">
+                                <div class="cp-client-overview-project-symbol cp-client-overview-project-symbol-violet">
+                                    <i class="bi bi-phone"></i></div>
+                                <div class="cp-client-overview-project-content">
+                                    <div class="cp-client-overview-project-title-row">
+                                        <h4>Mobile App UI</h4><span
+                                            class="cp-client-overview-status cp-client-overview-status-progress">In
+                                            progress</span>
+                                    </div>
+                                    <p>Mobile interface design and prototype</p>
+                                    <div class="cp-client-overview-progress-meta"><span>Project
+                                            progress</span><strong>45%</strong></div>
+                                    <div class="cp-client-overview-progress-track cp-client-overview-progress-violet">
+                                        <span style="width:45%"></span></div>
+                                    <div class="cp-client-overview-project-footer"><span><i
+                                                class="bi bi-calendar-event"></i> Due Nov 02, 2026</span><span>Design
+                                            phase</span></div>
+                                </div>
+                            </article>
+                            <article class="cp-client-overview-project" data-project-status="review">
+                                <div class="cp-client-overview-project-symbol cp-client-overview-project-symbol-orange">
+                                    <i class="bi bi-palette2"></i></div>
+                                <div class="cp-client-overview-project-content">
+                                    <div class="cp-client-overview-project-title-row">
+                                        <h4>Brand Identity</h4><span
+                                            class="cp-client-overview-status cp-client-overview-status-review">In
+                                            review</span>
+                                    </div>
+                                    <p>Visual identity, colors, and brand assets</p>
+                                    <div class="cp-client-overview-progress-meta"><span>Project
+                                            progress</span><strong>90%</strong></div>
+                                    <div class="cp-client-overview-progress-track cp-client-overview-progress-orange">
+                                        <span style="width:90%"></span></div>
+                                    <div class="cp-client-overview-project-footer"><span><i
+                                                class="bi bi-calendar-event"></i> Review required</span><span>Action
+                                            needed</span></div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="cp-client-overview-empty" id="cp-client-overview-empty" hidden><i
+                                class="bi bi-folder2-open"></i>
+                            <h4>No projects found</h4>
+                            <p>There are no projects matching this filter.</p>
+                        </div>
+                    </div>
+                    <!--- Project Status Panel --->
+                    <aside class="cp-client-overview-side-column">
+                        <div class="cp-client-overview-panel cp-client-overview-status-panel">
+                            <div class="cp-client-overview-panel-heading">
+                                <div><span class="cp-client-overview-section-label">AT A GLANCE</span>
+                                    <h3>Project status</h3>
+                                </div><i class="bi bi-pie-chart cp-client-overview-heading-icon"></i>
+                            </div>
+                            <div class="cp-client-overview-status-chart-wrap">
+                                <div class="cp-client-overview-status-chart" id="cp-client-overview-status-chart">
+                                    <div class="cp-client-overview-status-chart-center"><strong
+                                            id="cp-client-overview-chart-total">04</strong><span>Projects</span></div>
+                                </div>
+                            </div>
+                            <div class="cp-client-overview-status-legend">
+                                <div><span
+                                        class="cp-client-overview-legend-dot cp-client-overview-dot-progress"></span><span>In
+                                        progress</span><strong id="cp-client-overview-legend-progress">02</strong></div>
+                                <div><span
+                                        class="cp-client-overview-legend-dot cp-client-overview-dot-complete"></span><span>Completed</span><strong
+                                        id="cp-client-overview-legend-complete">01</strong></div>
+                                <div><span
+                                        class="cp-client-overview-legend-dot cp-client-overview-dot-review"></span><span>In
+                                        review</span><strong id="cp-client-overview-legend-review">01</strong></div>
+                            </div>
+                        </div>
+                        <!--- Upcoming Milestones --->
+                        <div class="cp-client-overview-panel cp-client-overview-milestones-panel">
+                            <div class="cp-client-overview-panel-heading">
+                                <div><span class="cp-client-overview-section-label">STAY ON TRACK</span>
+                                    <h3>Next milestones</h3>
+                                </div><i class="bi bi-flag cp-client-overview-heading-icon"></i>
+                            </div>
+                            <div class="cp-client-overview-milestone-list">
+                                <div class="cp-client-overview-milestone"><span
+                                        class="cp-client-overview-milestone-marker cp-client-overview-milestone-lime"></span>
+                                    <div><strong>Homepage approval</strong><span>Portfolio Website</span></div><time
+                                        datetime="2026-10-18">Oct 18</time>
+                                </div>
+                                <div class="cp-client-overview-milestone"><span
+                                        class="cp-client-overview-milestone-marker cp-client-overview-milestone-violet"></span>
+                                    <div><strong>Prototype review</strong><span>Mobile App UI</span></div><time
+                                        datetime="2026-10-23">Oct 23</time>
+                                </div>
+                                <div class="cp-client-overview-milestone"><span
+                                        class="cp-client-overview-milestone-marker cp-client-overview-milestone-orange"></span>
+                                    <div><strong>Final asset approval</strong><span>Brand Identity</span></div><time
+                                        datetime="2026-10-16">Oct 16</time>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+                <!--- Activity And Quick Actions --->
+                <section class="cp-client-overview-bottom-grid">
+                    <div class="cp-client-overview-panel cp-client-overview-activity-panel">
+                        <div class="cp-client-overview-panel-heading">
+                            <div><span class="cp-client-overview-section-label">LATEST UPDATES</span>
+                                <h3>Recent activity</h3>
+                            </div><span class="cp-client-overview-live-label"><span></span> Activity feed</span>
+                        </div>
+                        <div class="cp-client-overview-activity-list">
+                            <article class="cp-client-overview-activity"><span
+                                    class="cp-client-overview-activity-icon cp-client-overview-activity-lime"><i
+                                        class="bi bi-check2-square"></i></span>
+                                <div><strong>Homepage layout updated</strong>
+                                    <p>Your portfolio website layout has been revised.</p><span>Portfolio Website</span>
+                                </div><time datetime="2026-10-12">Oct 12</time>
+                            </article>
+                            <article class="cp-client-overview-activity"><span
+                                    class="cp-client-overview-activity-icon cp-client-overview-activity-violet"><i
+                                        class="bi bi-chat-left-text"></i></span>
+                                <div><strong>Feedback requested</strong>
+                                    <p>Please review the latest brand identity concepts.</p><span>Brand Identity</span>
+                                </div><time datetime="2026-10-11">Oct 11</time>
+                            </article>
+                            <article class="cp-client-overview-activity"><span
+                                    class="cp-client-overview-activity-icon cp-client-overview-activity-blue"><i
+                                        class="bi bi-file-earmark-check"></i></span>
+                                <div><strong>Prototype milestone reached</strong>
+                                    <p>The mobile app prototype is ready for review.</p><span>Mobile App UI</span>
+                                </div><time datetime="2026-10-10">Oct 10</time>
+                            </article>
+                        </div>
+                    </div>
+                    <!--- Quick Actions --->
+                    <div class="cp-client-overview-panel cp-client-overview-actions-panel">
+                        <div class="cp-client-overview-panel-heading">
+                            <div><span class="cp-client-overview-section-label">SHORTCUTS</span>
+                                <h3>Quick actions</h3>
+                            </div><i class="bi bi-lightning-charge cp-client-overview-heading-icon"></i>
+                        </div>
+                        <a href="client-analytics.html" class="cp-client-overview-action"><span
+                                class="cp-client-overview-action-icon"><i
+                                    class="bi bi-graph-up-arrow"></i></span><span><strong>View
+                                    analytics</strong><small>Explore your project insights</small></span><i
+                                class="bi bi-arrow-up-right cp-client-overview-action-arrow"></i></a>
+                        <a href="client-profile.html" class="cp-client-overview-action"><span
+                                class="cp-client-overview-action-icon"><i
+                                    class="bi bi-person-gear"></i></span><span><strong>Update
+                                    profile</strong><small>Manage your personal details</small></span><i
+                                class="bi bi-arrow-up-right cp-client-overview-action-arrow"></i></a>
+                        <a href="client-settings.html" class="cp-client-overview-action"><span
+                                class="cp-client-overview-action-icon"><i
+                                    class="bi bi-sliders"></i></span><span><strong>Preferences</strong><small>Customize
+                                    your workspace</small></span><i
+                                class="bi bi-arrow-up-right cp-client-overview-action-arrow"></i></a>
+                        <div class="cp-client-overview-help"><span class="cp-client-overview-help-icon"><i
+                                    class="bi bi-chat-square-dots"></i></span>
+                            <div><strong>Need assistance?</strong>
+                                <p>Have a question about your project?</p><a href="404.html">Get help <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--- Client Overview Footer --->
+                <footer class="cp-client-overview-footer"><span>© <span id="cp-client-overview-year"></span> Creative
+                        Portfolio. All rights reserved.</span><span><i class="bi bi-shield-check"></i> Your workspace,
+                        your progress.</span></footer>
+            </main>
+
+        </div>
+    </div>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-overview.js"></script>
+</body>
+
+</html>

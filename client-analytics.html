@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Dashboard | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="cp-dashboard-page">
+    <div class="cp-dashboard-layout" id="cp-dashboard-layout">
+        <!--- Dashboard Sidebar --->
+        <aside class="cp-dashboard-sidebar" id="cp-dashboard-sidebar" aria-label="Dashboard navigation">
+            <div class="cp-dashboard-sidebar-top">
+                <a href="index.html" class="cp-dashboard-brand">
+                    <span class="cp-dashboard-brand-icon"><i class="bi bi-code-slash"></i></span>
+                    <span class="cp-dashboard-brand-text">CREATIVE<span>.</span>PORTFOLIO</span>
+                </a>
+                <div class="cp-dashboard-sidebar-user">
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-sidebar">
+                        <img src="assets/images/profile-2.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                    <div class="cp-dashboard-sidebar-user-info">
+                        <strong data-user-name>Welcome back</strong>
+                        <span data-user-email>Loading email...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cp-dashboard-sidebar-label">WORKSPACE</div>
+            <nav class="cp-dashboard-nav">
+                <a href="client-dashboard.html" class="cp-dashboard-nav-link" data-page="overview">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-grid-1x2"></i></span><span>Overview</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-analytics.html" class="cp-dashboard-nav-link" data-page="analytics">
+                    <span class="cp-dashboard-nav-icon"><i
+                            class="bi bi-graph-up-arrow"></i></span><span>Analytics</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-profile.html" class="cp-dashboard-nav-link" data-page="profile">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-person"></i></span><span>Profile</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-settings.html" class="cp-dashboard-nav-link" data-page="settings">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-sliders"></i></span><span>Settings</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="login.html" class="cp-dashboard-nav-link cp-dashboard-logout" id="cp-dashboard-logout">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-box-arrow-right"></i></span><span>Logout</span>
+                </a>
+            </nav>
+            <div class="cp-dashboard-sidebar-bottom">
+                <span class="cp-dashboard-status-dot"></span><span>Workspace active</span>
+                <span class="cp-dashboard-sidebar-version">v1.0</span>
+            </div>
+        </aside>
+        <!--- Dashboard Mobile Backdrop --->
+        <button type="button" class="cp-dashboard-backdrop" id="cp-dashboard-backdrop" aria-label="Close navigation"
+            tabindex="-1"></button>
+        <!--- Dashboard Main Area --->
+        <div class="cp-dashboard-main">
+            <!--- Dashboard Topbar --->
+            <header class="cp-dashboard-topbar">
+                <div class="cp-dashboard-topbar-left">
+                    <button type="button" class="cp-dashboard-menu-toggle" id="cp-dashboard-menu-toggle"
+                        aria-label="Open navigation" aria-controls="cp-dashboard-sidebar" aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="cp-dashboard-page-heading">
+                        <span class="cp-dashboard-page-eyebrow" data-dashboard-eyebrow>YOUR WORKSPACE</span>
+                        <h1 data-dashboard-title>Overview</h1>
+                    </div>
+                </div>
+                <div class="cp-dashboard-topbar-right">
+                    <div class="cp-dashboard-topbar-user">
+                        <span class="cp-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong data-user-email>Loading email...</strong>
+                    </div>
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-topbar">
+                        <img src="assets/images/profile-2.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Page Content --->
+
+            <!--- Client Analytics Content --->
+            <main class="cp-dashboard-content cp-client-analytics">
+                <!--- Analytics Welcome --->
+                <section class="cp-client-analytics-hero">
+                    <div class="cp-client-analytics-hero-copy">
+                        <span class="cp-client-analytics-eyebrow"><i class="bi bi-activity"></i> PERFORMANCE
+                            CENTER</span>
+                        <h2>Your progress, <span>in focus.</span></h2>
+                        <p>Understand your project performance, follow milestones, and see how your creative work is
+                            progressing.</p>
+                    </div>
+                    <div class="cp-client-analytics-hero-icon" aria-hidden="true">
+                        <div class="cp-client-analytics-hero-ring"></div>
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                </section>
+                <!--- Analytics Heading And Controls --->
+                <section class="cp-client-analytics-heading">
+                    <div>
+                        <span class="cp-client-analytics-section-label">YOUR WORKSPACE</span>
+                        <h2>Analytics overview</h2>
+                        <p>Insights into your projects and delivery progress.</p>
+                    </div>
+                    <div class="cp-client-analytics-controls">
+                        <label class="cp-client-analytics-range-label" for="cp-client-analytics-range">Reporting
+                            period</label>
+                        <select id="cp-client-analytics-range" class="cp-client-analytics-range-select">
+                            <option value="7">Last 7 days</option>
+                            <option value="30" selected>Last 30 days</option>
+                            <option value="90">Last 90 days</option>
+                        </select>
+                        <button type="button" class="cp-client-analytics-export" id="cp-client-analytics-export"><i
+                                class="bi bi-download"></i><span>Export CSV</span></button>
+                    </div>
+                </section>
+                <!--- Analytics Summary Cards --->
+                <section class="cp-client-analytics-metrics" aria-label="Analytics summary">
+                    <article class="cp-client-analytics-metric">
+                        <div class="cp-client-analytics-metric-top"><span
+                                class="cp-client-analytics-metric-icon cp-client-analytics-lime"><i
+                                    class="bi bi-kanban"></i></span><span class="cp-client-analytics-metric-caption">All
+                                projects</span></div>
+                        <span class="cp-client-analytics-metric-label">Total projects</span>
+                        <div class="cp-client-analytics-metric-value"><strong
+                                data-analytics-metric="total">04</strong><span
+                                class="cp-client-analytics-metric-sub">Assigned to you</span></div>
+                    </article>
+                    <article class="cp-client-analytics-metric">
+                        <div class="cp-client-analytics-metric-top"><span
+                                class="cp-client-analytics-metric-icon cp-client-analytics-violet"><i
+                                    class="bi bi-speedometer2"></i></span><span
+                                class="cp-client-analytics-metric-caption">Overall</span></div>
+                        <span class="cp-client-analytics-metric-label">Average progress</span>
+                        <div class="cp-client-analytics-metric-value"><strong
+                                data-analytics-metric="progress">68%</strong><span
+                                class="cp-client-analytics-metric-sub">Across all projects</span></div>
+                        <div class="cp-client-analytics-mini-track"><span style="width:68%"></span></div>
+                    </article>
+                    <article class="cp-client-analytics-metric">
+                        <div class="cp-client-analytics-metric-top"><span
+                                class="cp-client-analytics-metric-icon cp-client-analytics-blue"><i
+                                    class="bi bi-check2-circle"></i></span><span
+                                class="cp-client-analytics-metric-caption">Delivered</span></div>
+                        <span class="cp-client-analytics-metric-label">Completed projects</span>
+                        <div class="cp-client-analytics-metric-value"><strong
+                                data-analytics-metric="completed">01</strong><span
+                                class="cp-client-analytics-metric-sub">Successfully delivered</span></div>
+                    </article>
+                    <article class="cp-client-analytics-metric">
+                        <div class="cp-client-analytics-metric-top"><span
+                                class="cp-client-analytics-metric-icon cp-client-analytics-orange"><i
+                                    class="bi bi-flag"></i></span><span
+                                class="cp-client-analytics-metric-caption">Upcoming</span></div>
+                        <span class="cp-client-analytics-metric-label">Milestones remaining</span>
+                        <div class="cp-client-analytics-metric-value"><strong
+                                data-analytics-metric="milestones">03</strong><span
+                                class="cp-client-analytics-metric-sub">Next milestones</span></div>
+                    </article>
+                </section>
+                <!--- Analytics Charts Grid --->
+                <section class="cp-client-analytics-chart-grid">
+                    <!--- Project Progress Chart --->
+                    <article class="cp-client-analytics-panel cp-client-analytics-progress-panel">
+                        <div class="cp-client-analytics-panel-heading">
+                            <div><span class="cp-client-analytics-section-label">PROJECT ACTIVITY</span>
+                                <h3>Progress over time</h3>
+                                <p>Illustrative progress trend for your active work.</p>
+                            </div>
+                            <span class="cp-client-analytics-chart-badge"><span></span> Progress trend</span>
+                        </div>
+                        <div class="cp-client-analytics-chart-summary"><strong
+                                id="cp-client-analytics-chart-summary-value">68%</strong><span>Overall completion</span>
+                        </div>
+                        <div class="cp-client-analytics-line-chart-wrap">
+                            <svg class="cp-client-analytics-line-chart" id="cp-client-analytics-line-chart"
+                                viewBox="0 0 700 245" role="img" aria-label="Illustrative project progress chart">
+                                <defs>
+                                    <linearGradient id="cp-client-analytics-area-gradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#b6ff4a" stop-opacity=".24" />
+                                        <stop offset="100%" stop-color="#b6ff4a" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <g class="cp-client-analytics-grid-lines">
+                                    <line x1="45" y1="25" x2="680" y2="25" />
+                                    <line x1="45" y1="70" x2="680" y2="70" />
+                                    <line x1="45" y1="115" x2="680" y2="115" />
+                                    <line x1="45" y1="160" x2="680" y2="160" />
+                                    <line x1="45" y1="205" x2="680" y2="205" />
+                                </g>
+                                <g class="cp-client-analytics-y-labels">
+                                    <text x="7" y="29">100%</text><text x="17" y="74">75%</text><text x="17"
+                                        y="119">50%</text><text x="17" y="164">25%</text><text x="25" y="209">0%</text>
+                                </g>
+                                <path id="cp-client-analytics-chart-area" class="cp-client-analytics-chart-area"
+                                    d="M45 170 L150 150 L255 130 L360 108 L465 85 L570 65 L680 48 L680 205 L45 205 Z" />
+                                <path id="cp-client-analytics-chart-line" class="cp-client-analytics-chart-line"
+                                    d="M45 170 L150 150 L255 130 L360 108 L465 85 L570 65 L680 48" />
+                                <g id="cp-client-analytics-chart-points" class="cp-client-analytics-chart-points">
+                                    <circle cx="45" cy="170" r="4" />
+                                    <circle cx="150" cy="150" r="4" />
+                                    <circle cx="255" cy="130" r="4" />
+                                    <circle cx="360" cy="108" r="4" />
+                                    <circle cx="465" cy="85" r="4" />
+                                    <circle cx="570" cy="65" r="4" />
+                                    <circle cx="680" cy="48" r="4" />
+                                </g>
+                                <g id="cp-client-analytics-x-labels" class="cp-client-analytics-x-labels">
+                                    <text x="45" y="231">Week 1</text><text x="150" y="231">Week 2</text><text x="255"
+                                        y="231">Week 3</text><text x="360" y="231">Week 4</text><text x="465"
+                                        y="231">Week 5</text><text x="570" y="231">Week 6</text><text x="680"
+                                        y="231">Week 7</text>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="cp-client-analytics-chart-footnote"><i class="bi bi-info-circle"></i> Trend points
+                            are illustrative and are not live project history.</div>
+                    </article>
+                    <!--- Project Status Breakdown --->
+                    <article class="cp-client-analytics-panel cp-client-analytics-breakdown-panel">
+                        <div class="cp-client-analytics-panel-heading">
+                            <div><span class="cp-client-analytics-section-label">WORK DISTRIBUTION</span>
+                                <h3>Project status</h3>
+                                <p>Current project distribution.</p>
+                            </div><i class="bi bi-pie-chart cp-client-analytics-panel-icon"></i>
+                        </div>
+                        <div class="cp-client-analytics-donut-wrap">
+                            <div class="cp-client-analytics-donut" id="cp-client-analytics-donut" role="img"
+                                aria-label="Project status breakdown">
+                                <div class="cp-client-analytics-donut-center"><strong
+                                        id="cp-client-analytics-donut-total">04</strong><span>Projects</span></div>
+                            </div>
+                        </div>
+                        <div class="cp-client-analytics-legend">
+                            <div><span class="cp-client-analytics-legend-label"><i
+                                        class="cp-client-analytics-dot cp-client-analytics-dot-progress"></i>In
+                                    progress</span><strong id="cp-client-analytics-count-progress">02</strong></div>
+                            <div><span class="cp-client-analytics-legend-label"><i
+                                        class="cp-client-analytics-dot cp-client-analytics-dot-completed"></i>Completed</span><strong
+                                    id="cp-client-analytics-count-completed">01</strong></div>
+                            <div><span class="cp-client-analytics-legend-label"><i
+                                        class="cp-client-analytics-dot cp-client-analytics-dot-review"></i>In
+                                    review</span><strong id="cp-client-analytics-count-review">01</strong></div>
+                        </div>
+                    </article>
+                </section>
+                <!--- Project Performance Table --->
+                <section class="cp-client-analytics-panel cp-client-analytics-projects-panel">
+                    <div class="cp-client-analytics-panel-heading cp-client-analytics-table-heading">
+                        <div><span class="cp-client-analytics-section-label">INDIVIDUAL PERFORMANCE</span>
+                            <h3>Project performance</h3>
+                            <p>Review completion levels and upcoming delivery dates.</p>
+                        </div>
+                        <span class="cp-client-analytics-table-count"><i class="bi bi-folder2-open"></i> <span
+                                id="cp-client-analytics-project-count">4 projects</span></span>
+                    </div>
+                    <div class="cp-client-analytics-table-wrap">
+                        <table class="cp-client-analytics-table">
+                            <thead>
+                                <tr>
+                                    <th>Project</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                    <th>Deadline</th>
+                                    <th>Priority</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cp-client-analytics-project-rows">
+                                <tr data-project-status="progress">
+                                    <td><span class="cp-client-analytics-project-name"><span
+                                                class="cp-client-analytics-project-icon cp-client-analytics-project-lime"><i
+                                                    class="bi bi-window-stack"></i></span><span><strong>Portfolio
+                                                    Website</strong><small>Website development</small></span></span>
+                                    </td>
+                                    <td><span class="cp-client-analytics-status cp-client-analytics-status-progress">In
+                                            progress</span></td>
+                                    <td>
+                                        <div class="cp-client-analytics-table-progress">
+                                            <div><span style="width:75%"></span></div><strong>75%</strong>
+                                        </div>
+                                    </td>
+                                    <td><span class="cp-client-analytics-deadline">Oct 24, 2026</span></td>
+                                    <td><span
+                                            class="cp-client-analytics-priority cp-client-analytics-priority-high">High</span>
+                                    </td>
+                                </tr>
+                                <tr data-project-status="progress">
+                                    <td><span class="cp-client-analytics-project-name"><span
+                                                class="cp-client-analytics-project-icon cp-client-analytics-project-violet"><i
+                                                    class="bi bi-phone"></i></span><span><strong>Mobile App
+                                                    UI</strong><small>Product design</small></span></span></td>
+                                    <td><span class="cp-client-analytics-status cp-client-analytics-status-progress">In
+                                            progress</span></td>
+                                    <td>
+                                        <div class="cp-client-analytics-table-progress">
+                                            <div><span class="cp-client-analytics-bar-violet" style="width:45%"></span>
+                                            </div><strong>45%</strong>
+                                        </div>
+                                    </td>
+                                    <td><span class="cp-client-analytics-deadline">Nov 02, 2026</span></td>
+                                    <td><span
+                                            class="cp-client-analytics-priority cp-client-analytics-priority-medium">Medium</span>
+                                    </td>
+                                </tr>
+                                <tr data-project-status="review">
+                                    <td><span class="cp-client-analytics-project-name"><span
+                                                class="cp-client-analytics-project-icon cp-client-analytics-project-orange"><i
+                                                    class="bi bi-palette2"></i></span><span><strong>Brand
+                                                    Identity</strong><small>Branding and design</small></span></span>
+                                    </td>
+                                    <td><span class="cp-client-analytics-status cp-client-analytics-status-review">In
+                                            review</span></td>
+                                    <td>
+                                        <div class="cp-client-analytics-table-progress">
+                                            <div><span class="cp-client-analytics-bar-orange" style="width:90%"></span>
+                                            </div><strong>90%</strong>
+                                        </div>
+                                    </td>
+                                    <td><span class="cp-client-analytics-deadline">Oct 16, 2026</span></td>
+                                    <td><span
+                                            class="cp-client-analytics-priority cp-client-analytics-priority-high">High</span>
+                                    </td>
+                                </tr>
+                                <tr data-project-status="completed">
+                                    <td><span class="cp-client-analytics-project-name"><span
+                                                class="cp-client-analytics-project-icon cp-client-analytics-project-blue"><i
+                                                    class="bi bi-window"></i></span><span><strong>Landing
+                                                    Page</strong><small>Website design</small></span></span></td>
+                                    <td><span
+                                            class="cp-client-analytics-status cp-client-analytics-status-completed">Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="cp-client-analytics-table-progress">
+                                            <div><span class="cp-client-analytics-bar-blue" style="width:100%"></span>
+                                            </div><strong>100%</strong>
+                                        </div>
+                                    </td>
+                                    <td><span class="cp-client-analytics-deadline">Oct 08, 2026</span></td>
+                                    <td><span
+                                            class="cp-client-analytics-priority cp-client-analytics-priority-low">Low</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cp-client-analytics-empty" id="cp-client-analytics-empty" hidden><i
+                            class="bi bi-folder2-open"></i><strong>No project data</strong><span>Project performance
+                            data will appear here when available.</span></div>
+                </section>
+                <!--- Milestone Tracking And Insights --->
+                <section class="cp-client-analytics-bottom-grid">
+                    <article class="cp-client-analytics-panel cp-client-analytics-milestone-panel">
+                        <div class="cp-client-analytics-panel-heading">
+                            <div><span class="cp-client-analytics-section-label">DELIVERY TIMELINE</span>
+                                <h3>Upcoming milestones</h3>
+                                <p>Keep an eye on your next project checkpoints.</p>
+                            </div><i class="bi bi-calendar2-check cp-client-analytics-panel-icon"></i>
+                        </div>
+                        <div class="cp-client-analytics-milestone-list">
+                            <div class="cp-client-analytics-milestone"><span
+                                    class="cp-client-analytics-milestone-marker cp-client-analytics-marker-orange"></span>
+                                <div><strong>Brand assets approval</strong><span>Brand Identity</span></div><time
+                                    datetime="2026-10-16">Oct 16</time>
+                            </div>
+                            <div class="cp-client-analytics-milestone"><span
+                                    class="cp-client-analytics-milestone-marker cp-client-analytics-marker-lime"></span>
+                                <div><strong>Homepage approval</strong><span>Portfolio Website</span></div><time
+                                    datetime="2026-10-18">Oct 18</time>
+                            </div>
+                            <div class="cp-client-analytics-milestone"><span
+                                    class="cp-client-analytics-milestone-marker cp-client-analytics-marker-violet"></span>
+                                <div><strong>Prototype review</strong><span>Mobile App UI</span></div><time
+                                    datetime="2026-10-23">Oct 23</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cp-client-analytics-panel cp-client-analytics-insights-panel">
+                        <div class="cp-client-analytics-panel-heading">
+                            <div><span class="cp-client-analytics-section-label">AT A GLANCE</span>
+                                <h3>Project insights</h3>
+                                <p>A quick summary of your current workload.</p>
+                            </div><i class="bi bi-lightbulb cp-client-analytics-panel-icon"></i>
+                        </div>
+                        <div class="cp-client-analytics-insight"><span
+                                class="cp-client-analytics-insight-icon cp-client-analytics-insight-lime"><i
+                                    class="bi bi-graph-up-arrow"></i></span>
+                            <div><strong>Strongest progress</strong>
+                                <p>Brand Identity is nearing completion at 90%.</p>
+                            </div>
+                        </div>
+                        <div class="cp-client-analytics-insight"><span
+                                class="cp-client-analytics-insight-icon cp-client-analytics-insight-orange"><i
+                                    class="bi bi-chat-square-text"></i></span>
+                            <div><strong>Feedback needed</strong>
+                                <p>Review the pending Brand Identity deliverables.</p>
+                            </div>
+                        </div>
+                        <div class="cp-client-analytics-insight"><span
+                                class="cp-client-analytics-insight-icon cp-client-analytics-insight-violet"><i
+                                    class="bi bi-calendar-event"></i></span>
+                            <div><strong>Next deadline</strong>
+                                <p>Brand Identity review is scheduled for Oct 16.</p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <!--- Analytics Footer --->
+                <footer class="cp-client-analytics-footer"><span>© <span id="cp-client-analytics-year"></span> Creative
+                        Portfolio. All rights reserved.</span><span><i class="bi bi-shield-check"></i> Your workspace,
+                        your insights.</span></footer>
+            </main>
+
+        </div>
+    </div>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-analytics.js"></script>
+</body>
+
+</html>

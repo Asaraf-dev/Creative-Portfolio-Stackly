@@ -1,0 +1,544 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Creative Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Creative Portfolio Loader --->
+    <div class="cp-ldr" id="cp-ldr" aria-label="Loading Creative Portfolio" role="status">
+        <!--- Loader Background Effects --->
+        <div class="cp-ldr-grid"></div>
+        <div class="cp-ldr-glow cp-ldr-glow-one"></div>
+        <div class="cp-ldr-glow cp-ldr-glow-two"></div>
+        <div class="cp-ldr-particles" id="cp-ldr-particles"></div>
+        <!--- Loader Main Content --->
+        <div class="cp-ldr-content">
+            <div class="cp-ldr-emblem">
+                <div class="cp-ldr-orbit cp-ldr-orbit-one"></div>
+                <div class="cp-ldr-orbit cp-ldr-orbit-two"></div>
+                <div class="cp-ldr-orbit cp-ldr-orbit-three"></div>
+                <div class="cp-ldr-core"><span class="cp-ldr-core-inner"></span></div>
+                <span class="cp-ldr-satellite cp-ldr-satellite-one"></span>
+                <span class="cp-ldr-satellite cp-ldr-satellite-two"></span>
+            </div>
+            <!--- Loader Brand --->
+            <div class="cp-ldr-brand">CREATIVE<span>.</span>PORTFOLIO</div>
+            <div class="cp-ldr-caption"><span class="cp-ldr-caption-line"></span><span id="cp-ldr-message">Crafting
+                    something extraordinary</span><span class="cp-ldr-caption-line"></span></div>
+            <!--- Loader Bottom Details --->
+            <div class="cp-ldr-bottom"><span>DESIGN</span><span
+                    class="cp-ldr-bottom-dot"></span><span>DEVELOP</span><span
+                    class="cp-ldr-bottom-dot"></span><span>CREATE</span></div>
+        </div>
+        <!--- Loader Corner Details --->
+        <span class="cp-ldr-corner cp-ldr-corner-tl"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-tr"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-bl"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-br"></span>
+    </div>
+    <!--- Creative Portfolio Loader End --->
+
+    <!--- Navbar Component --->
+    <div id="cp-navbar-placeholder"></div>
+
+    <main>
+
+        <!--- All Hero Section Start --->
+        <section class="cp-sub-hero" id="cp-sub-hero" data-page="portfolio" data-eyebrow="A SELECTION OF MY WORK"
+            data-title="Ideas brought" data-highlight="to life."
+            data-description="Explore selected projects combining thoughtful design, responsive development, and creative problem-solving."
+            data-primary-text="View Projects" data-primary-link="404.html" data-secondary-text="Start a Project"
+            data-secondary-link="404.html" data-breadcrumb="Portfolio">
+            <div class="cp-sub-hero-bg-grid"></div>
+            <div class="cp-sub-hero-glow cp-sub-hero-glow-one"></div>
+            <div class="cp-sub-hero-glow cp-sub-hero-glow-two"></div>
+            <div class="container cp-sub-hero-container">
+                <div class="row align-items-center cp-sub-hero-row">
+                    <div class="col-lg-7">
+                        <div class="cp-sub-hero-content">
+                            <nav class="cp-sub-hero-breadcrumb" aria-label="Breadcrumb">
+                                <a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span
+                                    class="cp-sub-hero-breadcrumb-current">Portfolio</span>
+                            </nav>
+                            <span class="cp-sub-hero-eyebrow"><span class="cp-sub-hero-eyebrow-line"></span><span
+                                    class="cp-sub-hero-eyebrow-text">A SELECTION OF MY WORK</span></span>
+                            <h1><span class="cp-sub-hero-title-main">Ideas brought</span><span
+                                    class="cp-sub-hero-title-highlight"> to life.<span
+                                        class="cp-sub-hero-title-dot">.</span></span></h1>
+                            <p class="cp-sub-hero-description">Explore selected projects combining thoughtful design,
+                                responsive development, and creative problem-solving.</p>
+                            <div class="cp-sub-hero-actions">
+                                <a href="404.html" class="cp-sub-hero-btn cp-sub-hero-btn-primary"><span>Explore
+                                        My Work</span><i class="bi bi-arrow-up-right"></i></a>
+                                <a href="404.html" class="cp-sub-hero-btn cp-sub-hero-btn-secondary"><span>Let's
+                                        Connect</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                            <div class="cp-sub-hero-bottom-meta">
+                                <span><i class="bi bi-code-slash"></i> DESIGN. DEVELOP. CREATE.</span>
+                                <span class="cp-sub-hero-meta-divider"></span>
+                                <span>CRAFTED WITH PURPOSE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="cp-sub-hero-art" aria-hidden="true">
+                            <div class="cp-sub-hero-art-grid"></div>
+                            <div class="cp-sub-hero-ring cp-sub-hero-ring-one"></div>
+                            <div class="cp-sub-hero-ring cp-sub-hero-ring-two"></div>
+                            <div class="cp-sub-hero-ring cp-sub-hero-ring-three"></div>
+                            <div class="cp-sub-hero-orb">
+                                <div class="cp-sub-hero-orb-core"></div>
+                                <div class="cp-sub-hero-orb-shine"></div>
+                            </div>
+                            <div class="cp-sub-hero-art-cross cp-sub-hero-cross-one">+</div>
+                            <div class="cp-sub-hero-art-cross cp-sub-hero-cross-two">+</div>
+                            <div class="cp-sub-hero-art-dot cp-sub-hero-dot-one"></div>
+                            <div class="cp-sub-hero-art-dot cp-sub-hero-dot-two"></div>
+                            <div class="cp-sub-hero-float cp-sub-hero-float-code"><i
+                                    class="bi bi-braces"></i><span>CREATIVE
+                                    CODE</span><b>01</b></div>
+                            <div class="cp-sub-hero-float cp-sub-hero-float-design"><i
+                                    class="bi bi-bezier2"></i><span>VISUAL THINKING</span><b>02</b></div>
+                            <div class="cp-sub-hero-art-caption"><span>FIG. 001</span><span>IDEAS INTO REALITY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="cp-sub-hero-scroll"><span class="cp-sub-hero-scroll-mouse"><span></span></span><span>SCROLL TO
+                        EXPLORE</span><i class="bi bi-arrow-down"></i></a>
+            </div>
+        </section>
+        <!--- All Hero Section End --->
+
+        <!--- All Projects Gallery Section Start --->
+        <section class="cp-port-gallery-section" id="cp-port-gallery">
+            <div class="container">
+                <div class="cp-port-gallery-header">
+                    <div class="cp-port-gallery-eyebrow"><span></span> THE WORK SPEAKS</div>
+                    <div class="cp-port-gallery-heading-row">
+                        <div>
+                            <h2 class="cp-port-gallery-title">All projects.<br><span>One creative journey.</span></h2>
+                            <p class="cp-port-gallery-intro">Explore the websites, digital experiences, and ideas I've
+                                brought to life through code and creativity.</p>
+                        </div>
+                        <div class="cp-port-gallery-total"><span class="cp-port-gallery-total-number"
+                                id="cp-port-gallery-total">06</span><span>PROJECTS<br>TO EXPLORE</span></div>
+                    </div>
+                </div>
+                <div class="cp-port-gallery-toolbar">
+                    <div class="cp-port-gallery-search-wrap">
+                        <i class="bi bi-search"></i>
+                        <input type="search" id="cp-port-gallery-search" class="cp-port-gallery-search"
+                            placeholder="Search projects, technologies..." aria-label="Search projects">
+                        <kbd>SEARCH</kbd>
+                    </div>
+                    <div class="cp-port-gallery-sort-wrap">
+                        <label for="cp-port-gallery-sort">SORT BY</label>
+                        <select id="cp-port-gallery-sort" class="cp-port-gallery-sort">
+                            <option value="featured">Featured</option>
+                            <option value="newest">Newest first</option>
+                            <option value="oldest">Oldest first</option>
+                            <option value="az">Name A–Z</option>
+                            <option value="za">Name Z–A</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="cp-port-gallery-filter-area">
+                    <div class="cp-port-gallery-filter-heading"><span>CATEGORIES</span><span
+                            class="cp-port-gallery-filter-line"></span><span id="cp-port-gallery-filter-count">04
+                            FILTERS</span></div>
+                    <div class="cp-port-gallery-categories" id="cp-port-gallery-categories" role="group"
+                        aria-label="Filter projects by category">
+                        <button type="button" class="cp-port-gallery-category active" data-category="all"
+                            aria-pressed="true">All Projects <span>06</span></button>
+                        <button type="button" class="cp-port-gallery-category" data-category="web"
+                            aria-pressed="false">Web Development <span>03</span></button>
+                        <button type="button" class="cp-port-gallery-category" data-category="wordpress"
+                            aria-pressed="false">WordPress <span>01</span></button>
+                        <button type="button" class="cp-port-gallery-category" data-category="application"
+                            aria-pressed="false">Applications <span>01</span></button>
+                        <button type="button" class="cp-port-gallery-category" data-category="ui"
+                            aria-pressed="false">UI / Design <span>01</span></button>
+                    </div>
+                    <div class="cp-port-gallery-active-filters">
+                        <span class="cp-port-gallery-results-label">SHOWING <strong
+                                id="cp-port-gallery-showing">06</strong> OF <strong
+                                id="cp-port-gallery-total-results">06</strong> PROJECTS</span>
+                        <button type="button" id="cp-port-gallery-clear" class="cp-port-gallery-clear" hidden>Clear
+                            filters <i class="bi bi-x-lg"></i></button>
+                    </div>
+                </div>
+                <div class="cp-port-gallery-grid" id="cp-port-gallery-grid">
+                    <article class="cp-port-gallery-card" data-title="SaaS and AI Platform" data-category="web"
+                        data-date="2026-09-15" data-featured="1" data-tech="html css javascript bootstrap ai dashboard">
+                        <a class="cp-port-gallery-image-link" aria-label="View SaaS and AI Platform project">
+                            <img class="cp-port-gallery-image" src="assets/images/Featured-Projects-01.webp"
+                                alt="Analytics dashboard displayed on a screen" loading="lazy">
+                            <span class="cp-port-gallery-image-overlay"></span><span
+                                class="cp-port-gallery-project-type">WEB DEVELOPMENT</span>
+                        </a>
+                        <div class="cp-port-gallery-card-body">
+                            <div class="cp-port-gallery-card-meta"><span>01 / FEATURED PROJECT</span><span
+                                    class="cp-port-gallery-card-status"><i></i> FRONTEND</span></div>
+                            <h3><a href="404.html">SaaS & AI Platform</a></h3>
+                            <p>A modern digital platform concept featuring a clean dashboard, responsive layouts, and an
+                                AI-inspired visual identity.</p>
+                            <div class="cp-port-gallery-tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                            </div>
+                            <div class="cp-port-gallery-card-footer"><span>WEB EXPERIENCE</span><a href="404.html"
+                                    aria-label="Explore SaaS and AI Platform"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cp-port-gallery-card" data-title="Business Solutions Website" data-category="web"
+                        data-date="2026-08-20" data-featured="2"
+                        data-tech="html css javascript bootstrap business corporate">
+                        <a class="cp-port-gallery-image-link" aria-label="View Business Solutions Website project">
+                            <img class="cp-port-gallery-image" src="assets/images/Featured-Projects-02.webp"
+                                alt="Contemporary business office interior" loading="lazy">
+                            <span class="cp-port-gallery-image-overlay"></span><span
+                                class="cp-port-gallery-project-type">WEB DEVELOPMENT</span>
+                        </a>
+                        <div class="cp-port-gallery-card-body">
+                            <div class="cp-port-gallery-card-meta"><span>02 / BUSINESS</span><span
+                                    class="cp-port-gallery-card-status"><i></i> RESPONSIVE</span></div>
+                            <h3><a href="404.html">Business Solutions Website</a></h3>
+                            <p>A professional business website concept built to communicate services, build trust, and
+                                guide visitors towards enquiries.</p>
+                            <div class="cp-port-gallery-tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                            </div>
+                            <div class="cp-port-gallery-card-footer"><span>CORPORATE WEBSITE</span><a href="404.html"
+                                    aria-label="Explore Business Solutions Website"><i
+                                        class="bi bi-arrow-up-right"></i></a></div>
+                        </div>
+                    </article>
+                    <article class="cp-port-gallery-card" data-title="Creative Digital Experience" data-category="ui"
+                        data-date="2026-07-12" data-featured="3" data-tech="ui design html css javascript prototype">
+                        <a class="cp-port-gallery-image-link" aria-label="View Creative Digital Experience project">
+                            <img class="cp-port-gallery-image" src="assets/images/Featured-Projects-03.webp"
+                                alt="Creative visual design work and colorful layouts" loading="lazy">
+                            <span class="cp-port-gallery-image-overlay"></span><span
+                                class="cp-port-gallery-project-type">UI / DESIGN</span>
+                        </a>
+                        <div class="cp-port-gallery-card-body">
+                            <div class="cp-port-gallery-card-meta"><span>03 / CREATIVE</span><span
+                                    class="cp-port-gallery-card-status"><i></i> VISUAL DESIGN</span></div>
+                            <h3><a href="404.html">Creative Digital Experience</a></h3>
+                            <p>A design-led web concept exploring visual hierarchy, distinctive typography, engaging
+                                layouts, and interaction details.</p>
+                            <div class="cp-port-gallery-tech"><span>UI
+                                    Design</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="cp-port-gallery-card-footer"><span>DIGITAL DESIGN</span><a href="404.html"
+                                    aria-label="Explore Creative Digital Experience"><i
+                                        class="bi bi-arrow-up-right"></i></a></div>
+                        </div>
+                    </article>
+                    <article class="cp-port-gallery-card" data-title="Stackly Real Estate" data-category="wordpress"
+                        data-date="2026-06-18" data-featured="4"
+                        data-tech="wordpress elementor real estate cms responsive">
+                        <a class="cp-port-gallery-image-link" aria-label="View Stackly Real Estate project">
+                            <img class="cp-port-gallery-image" src="assets/images/Featured-Projects-04.webp"
+                                alt="Modern residential property interior" loading="lazy">
+                            <span class="cp-port-gallery-image-overlay"></span><span
+                                class="cp-port-gallery-project-type">WORDPRESS</span>
+                        </a>
+                        <div class="cp-port-gallery-card-body">
+                            <div class="cp-port-gallery-card-meta"><span>04 / CMS PROJECT</span><span
+                                    class="cp-port-gallery-card-status"><i></i> WEBSITE</span></div>
+                            <h3><a href="404.html">Stackly Real Estate</a></h3>
+                            <p>A property website concept focused on presenting real estate listings with an organised
+                                layout and responsive experience.</p>
+                            <div class="cp-port-gallery-tech">
+                                <span>WordPress</span><span>Elementor</span><span>CSS</span>
+                            </div>
+                            <div class="cp-port-gallery-card-footer"><span>CMS DEVELOPMENT</span><a href="404.html"
+                                    aria-label="Explore Stackly Real Estate"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cp-port-gallery-card" data-title="Daily Expense Tracker" data-category="application"
+                        data-date="2026-05-22" data-featured="5"
+                        data-tech="application javascript html css budget expense tracker">
+                        <a class="cp-port-gallery-image-link" aria-label="View Daily Expense Tracker project">
+                            <img class="cp-port-gallery-image" src="assets/images/Featured-Projects-05.webp"
+                                alt="Personal budgeting and financial planning documents" loading="lazy">
+                            <span class="cp-port-gallery-image-overlay"></span><span
+                                class="cp-port-gallery-project-type">APPLICATION</span>
+                        </a>
+                        <div class="cp-port-gallery-card-body">
+                            <div class="cp-port-gallery-card-meta"><span>05 / APP CONCEPT</span><span
+                                    class="cp-port-gallery-card-status"><i></i> PRODUCT IDEA</span></div>
+                            <h3><a href="404.html">Daily Expense Tracker</a></h3>
+                            <p>A personal finance app concept for tracking daily spending, managing a budget, and
+                                understanding spending habits.</p>
+                            <div class="cp-port-gallery-tech">
+                                <span>JavaScript</span><span>HTML</span><span>CSS</span><span>Budgeting</span>
+                            </div>
+                            <div class="cp-port-gallery-card-footer"><span>APPLICATION CONCEPT</span><a href="404.html"
+                                    aria-label="Explore Daily Expense Tracker"><i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="cp-port-gallery-card" data-title="CyberShield Security Platform" data-category="web"
+                        data-date="2026-04-10" data-featured="6"
+                        data-tech="html css javascript bootstrap cybersecurity saas">
+                        <a class="cp-port-gallery-image-link" aria-label="View CyberShield Security Platform project">
+                            <img class="cp-port-gallery-image" src="assets/images/Featured-Projects-06.webp"
+                                alt="Abstract cybersecurity technology visual" loading="lazy">
+                            <span class="cp-port-gallery-image-overlay"></span><span
+                                class="cp-port-gallery-project-type">WEB DEVELOPMENT</span>
+                        </a>
+                        <div class="cp-port-gallery-card-body">
+                            <div class="cp-port-gallery-card-meta"><span>06 / TECHNOLOGY</span><span
+                                    class="cp-port-gallery-card-status"><i></i> SAAS CONCEPT</span></div>
+                            <h3><a href="404.html">CyberShield Security Platform</a></h3>
+                            <p>A cybersecurity website concept with a technology-focused visual identity, structured
+                                content, and responsive components.</p>
+                            <div class="cp-port-gallery-tech">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                            </div>
+                            <div class="cp-port-gallery-card-footer"><span>SAAS WEBSITE</span><a href="404.html"
+                                    aria-label="Explore CyberShield Security Platform"><i
+                                        class="bi bi-arrow-up-right"></i></a></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="cp-port-gallery-empty" id="cp-port-gallery-empty" hidden>
+                    <div class="cp-port-gallery-empty-icon"><i class="bi bi-search"></i></div>
+                    <h3>No projects found</h3>
+                    <p>Try another search term or reset the filters to explore all projects.</p>
+                    <button type="button" id="cp-port-gallery-empty-reset">Reset all filters <i
+                            class="bi bi-arrow-counterclockwise"></i></button>
+                </div>
+                <div class="cp-port-gallery-bottom"><span><i class="bi bi-grid-3x3-gap"></i> BUILT WITH CURIOSITY. MADE
+                        WITH PURPOSE.</span><a href="404.html">Have a project in mind? <i
+                            class="bi bi-arrow-up-right"></i></a></div>
+            </div>
+        </section>
+        <!--- All Projects Gallery Section End --->
+
+        <!--- Technologies Used Section Start --->
+        <section class="cp-port-tech-section" id="cp-port-tech">
+            <div class="container">
+                <div class="cp-port-tech-header">
+                    <div class="cp-port-tech-eyebrow"><span></span> THE TOOLS BEHIND THE WORK</div>
+                    <div class="cp-port-tech-heading-row">
+                        <div>
+                            <h2 class="cp-port-tech-title">Built with the right<br><span>tools & technologies.</span>
+                            </h2>
+                            <p class="cp-port-tech-intro">Every project starts with an idea. These are some of the
+                                technologies I use to turn those ideas into working digital experiences.</p>
+                        </div>
+                        <div class="cp-port-tech-counter"><span class="cp-port-tech-counter-number"
+                                id="cp-port-tech-count">12</span><span>TECHNOLOGIES<br>TO EXPLORE</span></div>
+                    </div>
+                </div>
+                <div class="cp-port-tech-toolbar">
+                    <div class="cp-port-tech-filter-label"><i class="bi bi-sliders"></i> EXPLORE BY CATEGORY</div>
+                    <div class="cp-port-tech-filters" role="group" aria-label="Filter technologies">
+                        <button type="button" class="cp-port-tech-filter active" data-tech-filter="all"
+                            aria-pressed="true">All <span>12</span></button>
+                        <button type="button" class="cp-port-tech-filter" data-tech-filter="frontend"
+                            aria-pressed="false">Frontend <span>04</span></button>
+                        <button type="button" class="cp-port-tech-filter" data-tech-filter="programming"
+                            aria-pressed="false">Programming <span>03</span></button>
+                        <button type="button" class="cp-port-tech-filter" data-tech-filter="cms"
+                            aria-pressed="false">CMS <span>01</span></button>
+                        <button type="button" class="cp-port-tech-filter" data-tech-filter="tools"
+                            aria-pressed="false">Tools & Database <span>04</span></button>
+                    </div>
+                </div>
+                <div class="cp-port-tech-grid" id="cp-port-tech-grid">
+                    <article class="cp-port-tech-card" data-tech-category="frontend" data-tech-name="HTML5"
+                        data-tech-projects="web development">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">01 / MARKUP</span><span
+                                class="cp-port-tech-symbol cp-port-tech-html"><i class="bi bi-filetype-html"></i></span>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Building accessible, structured foundations for modern websites.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">FRONTEND</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="frontend" data-tech-name="CSS3"
+                        data-tech-projects="web design">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">02 / STYLING</span><span
+                                class="cp-port-tech-symbol cp-port-tech-css"><i class="bi bi-filetype-css"></i></span>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Creating polished layouts, responsive interfaces, and visual effects.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">FRONTEND</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="frontend" data-tech-name="JavaScript"
+                        data-tech-projects="interactive web applications">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">03 / INTERACTION</span><span
+                                class="cp-port-tech-symbol cp-port-tech-js"><i class="bi bi-filetype-js"></i></span>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Adding interactive behavior, dynamic content, and useful functionality.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">FRONTEND</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="frontend" data-tech-name="Bootstrap 5"
+                        data-tech-projects="responsive web design">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">04 / FRAMEWORK</span><span
+                                class="cp-port-tech-symbol cp-port-tech-bootstrap"><i
+                                    class="bi bi-bootstrap"></i></span></div>
+                        <h3>Bootstrap 5</h3>
+                        <p>Building responsive interfaces efficiently with a flexible grid and components.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">FRONTEND</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="programming" data-tech-name="Java"
+                        data-tech-projects="programming android">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">05 / LANGUAGE</span><span
+                                class="cp-port-tech-symbol cp-port-tech-java"><i class="bi bi-cup-hot"></i></span></div>
+                        <h3>Java</h3>
+                        <p>Working with object-oriented programming and application logic.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">PROGRAMMING</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="programming" data-tech-name="Python"
+                        data-tech-projects="programming automation">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">06 / LANGUAGE</span><span
+                                class="cp-port-tech-symbol cp-port-tech-python"><i class="bi bi-braces"></i></span>
+                        </div>
+                        <h3>Python</h3>
+                        <p>Exploring programming, automation, and practical software solutions.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">PROGRAMMING</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="programming" data-tech-name="C and C++"
+                        data-tech-projects="programming fundamentals">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">07 / LANGUAGES</span><span
+                                class="cp-port-tech-symbol cp-port-tech-cpp"><i class="bi bi-code-square"></i></span>
+                        </div>
+                        <h3>C / C++</h3>
+                        <p>Strengthening programming fundamentals, logic, and problem-solving.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">PROGRAMMING</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="cms" data-tech-name="WordPress"
+                        data-tech-projects="cms websites">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">08 / CMS</span><span
+                                class="cp-port-tech-symbol cp-port-tech-wordpress"><i
+                                    class="bi bi-wordpress"></i></span></div>
+                        <h3>WordPress</h3>
+                        <p>Creating and managing content-driven websites and custom page layouts.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">CMS</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="tools" data-tech-name="Git"
+                        data-tech-projects="version control development">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">09 / VERSION
+                                CONTROL</span><span class="cp-port-tech-symbol cp-port-tech-git"><i
+                                    class="bi bi-git"></i></span></div>
+                        <h3>Git</h3>
+                        <p>Tracking code changes and keeping development work organised.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">DEVELOPMENT
+                                TOOL</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="tools" data-tech-name="MySQL"
+                        data-tech-projects="database applications">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">10 / DATABASE</span><span
+                                class="cp-port-tech-symbol cp-port-tech-mysql"><i class="bi bi-database"></i></span>
+                        </div>
+                        <h3>MySQL</h3>
+                        <p>Working with relational data and structured database concepts.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">DATABASE</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="tools" data-tech-name="VS Code"
+                        data-tech-projects="development editor">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">11 / EDITOR</span><span
+                                class="cp-port-tech-symbol cp-port-tech-vscode"><i class="bi bi-code-slash"></i></span>
+                        </div>
+                        <h3>VS Code</h3>
+                        <p>Writing, organising, and debugging code in my everyday workflow.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">DEVELOPMENT
+                                TOOL</span></div>
+                    </article>
+                    <article class="cp-port-tech-card" data-tech-category="tools" data-tech-name="Android Studio"
+                        data-tech-projects="android mobile application">
+                        <div class="cp-port-tech-card-top"><span class="cp-port-tech-index">12 / IDE</span><span
+                                class="cp-port-tech-symbol cp-port-tech-android"><i class="bi bi-android2"></i></span>
+                        </div>
+                        <h3>Android Studio</h3>
+                        <p>Developing and testing Android applications in an integrated environment.</p>
+                        <div class="cp-port-tech-card-bottom"><span class="cp-port-tech-type">DEVELOPMENT
+                                TOOL</span></div>
+                    </article>
+                </div>
+                <div class="cp-port-tech-empty" id="cp-port-tech-empty" hidden><i class="bi bi-layers"></i>
+                    <h3>No technologies in this category</h3>
+                    <p>Choose another category to explore the toolkit.</p><button type="button"
+                        id="cp-port-tech-reset">Show all technologies <i
+                            class="bi bi-arrow-counterclockwise"></i></button>
+                </div>
+                <div class="cp-port-tech-footer">
+                    <div class="cp-port-tech-footer-mark"><i class="bi bi-infinity"></i></div>
+                    <div class="cp-port-tech-footer-copy"><span>MY DEVELOPMENT MINDSET</span>
+                        <p>Tools evolve. Curiosity stays. <strong>I'm always learning what's next.</strong></p>
+                    </div><a href="404.html" class="cp-port-tech-cta">Have an idea? Let's talk <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--- Technologies Used Section End --->
+
+
+    </main>
+
+    <!--- Footer Component --->
+    <div id="cp-footer-placeholder"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/portfolio.js"></script>
+    <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

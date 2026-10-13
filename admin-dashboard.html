@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Dashboard | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="cp-dashboard-page">
+    <div class="cp-dashboard-layout" id="cp-dashboard-layout">
+        <!--- Dashboard Sidebar --->
+        <aside class="cp-dashboard-sidebar" id="cp-dashboard-sidebar" aria-label="Dashboard navigation">
+            <div class="cp-dashboard-sidebar-top">
+                <a href="index.html" class="cp-dashboard-brand">
+                    <span class="cp-dashboard-brand-icon"><i class="bi bi-code-slash"></i></span>
+                    <span class="cp-dashboard-brand-text">CREATIVE<span>.</span>PORTFOLIO</span>
+                </a>
+                <div class="cp-dashboard-sidebar-user">
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-sidebar">
+                        <img src="assets/images/profile-1.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                    <div class="cp-dashboard-sidebar-user-info">
+                        <strong data-user-name>Welcome back</strong>
+                        <span data-user-email>Loading email...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cp-dashboard-sidebar-label">WORKSPACE</div>
+            <nav class="cp-dashboard-nav">
+                <a href="admin-dashboard.html" class="cp-dashboard-nav-link" data-page="overview">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-grid-1x2"></i></span><span>Overview</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-analytics.html" class="cp-dashboard-nav-link" data-page="analytics">
+                    <span class="cp-dashboard-nav-icon"><i
+                            class="bi bi-graph-up-arrow"></i></span><span>Analytics</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-profile.html" class="cp-dashboard-nav-link" data-page="profile">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-person"></i></span><span>Profile</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-settings.html" class="cp-dashboard-nav-link" data-page="settings">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-sliders"></i></span><span>Settings</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="login.html" class="cp-dashboard-nav-link cp-dashboard-logout" id="cp-dashboard-logout">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-box-arrow-right"></i></span><span>Logout</span>
+                </a>
+            </nav>
+            <div class="cp-dashboard-sidebar-bottom">
+                <span class="cp-dashboard-status-dot"></span><span>Workspace active</span>
+                <span class="cp-dashboard-sidebar-version">v1.0</span>
+            </div>
+        </aside>
+        <!--- Dashboard Mobile Backdrop --->
+        <button type="button" class="cp-dashboard-backdrop" id="cp-dashboard-backdrop" aria-label="Close navigation"
+            tabindex="-1"></button>
+        <!--- Dashboard Main Area --->
+        <div class="cp-dashboard-main">
+            <!--- Dashboard Topbar --->
+            <header class="cp-dashboard-topbar">
+                <div class="cp-dashboard-topbar-left">
+                    <button type="button" class="cp-dashboard-menu-toggle" id="cp-dashboard-menu-toggle"
+                        aria-label="Open navigation" aria-controls="cp-dashboard-sidebar" aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="cp-dashboard-page-heading">
+                        <span class="cp-dashboard-page-eyebrow" data-dashboard-eyebrow>YOUR WORKSPACE</span>
+                        <h1 data-dashboard-title>Overview</h1>
+                    </div>
+                </div>
+                <div class="cp-dashboard-topbar-right">
+                    <div class="cp-dashboard-topbar-user">
+                        <span class="cp-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong data-user-email>Loading email...</strong>
+                    </div>
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-topbar">
+                        <img src="assets/images/profile-1.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Page Content --->
+
+            <!--- Admin Overview Content --->
+            <main class="cp-dashboard-content cp-admin-overview">
+                <!--- Overview Welcome Header --->
+                <section class="cp-admin-overview-welcome">
+                    <div class="cp-admin-overview-welcome-copy">
+                        <span class="cp-admin-overview-eyebrow"><span></span> ADMIN CONTROL CENTER</span>
+                        <h2>Good to see you, <span data-admin-first-name>Admin</span>.</h2>
+                        <p>Here's what's happening across your creative workspace today.</p>
+                    </div>
+                    <div class="cp-admin-overview-welcome-actions">
+                        <span class="cp-admin-overview-date"><i class="bi bi-calendar3"></i><span
+                                id="cp-admin-overview-date">Today</span></span>
+                        <button type="button" class="cp-admin-overview-refresh" id="cp-admin-overview-refresh"><i
+                                class="bi bi-arrow-clockwise"></i><span>Refresh</span></button>
+                    </div>
+                </section>
+                <!--- Overview Summary Cards --->
+                <section class="cp-admin-overview-metrics" aria-label="Workspace summary">
+                    <article class="cp-admin-overview-metric">
+                        <div class="cp-admin-overview-metric-top"><span
+                                class="cp-admin-overview-metric-icon cp-admin-overview-icon-lime"><i
+                                    class="bi bi-kanban"></i></span><span class="cp-admin-overview-metric-trend"><i
+                                    class="bi bi-arrow-up-right"></i> Active</span></div>
+                        <span class="cp-admin-overview-metric-label">Total Projects</span>
+                        <strong class="cp-admin-overview-metric-value" data-metric="projects">12</strong>
+                        <div class="cp-admin-overview-metric-foot"><span>Across your workspace</span><i
+                                class="bi bi-three-dots"></i></div>
+                    </article>
+                    <article class="cp-admin-overview-metric">
+                        <div class="cp-admin-overview-metric-top"><span
+                                class="cp-admin-overview-metric-icon cp-admin-overview-icon-violet"><i
+                                    class="bi bi-people"></i></span><span
+                                class="cp-admin-overview-metric-tag">COMMUNITY</span></div>
+                        <span class="cp-admin-overview-metric-label">Registered Users</span>
+                        <strong class="cp-admin-overview-metric-value" data-metric="users">48</strong>
+                        <div class="cp-admin-overview-metric-foot"><span>Admin and client accounts</span><i
+                                class="bi bi-three-dots"></i></div>
+                    </article>
+                    <article class="cp-admin-overview-metric">
+                        <div class="cp-admin-overview-metric-top"><span
+                                class="cp-admin-overview-metric-icon cp-admin-overview-icon-blue"><i
+                                    class="bi bi-envelope-paper"></i></span><span
+                                class="cp-admin-overview-metric-trend"><i class="bi bi-circle-fill"></i> Review</span>
+                        </div>
+                        <span class="cp-admin-overview-metric-label">New Enquiries</span>
+                        <strong class="cp-admin-overview-metric-value" data-metric="enquiries">07</strong>
+                        <div class="cp-admin-overview-metric-foot"><span>Awaiting your attention</span><i
+                                class="bi bi-three-dots"></i></div>
+                    </article>
+                    <article class="cp-admin-overview-metric">
+                        <div class="cp-admin-overview-metric-top"><span
+                                class="cp-admin-overview-metric-icon cp-admin-overview-icon-orange"><i
+                                    class="bi bi-check2-circle"></i></span><span
+                                class="cp-admin-overview-metric-tag">DELIVERED</span></div>
+                        <span class="cp-admin-overview-metric-label">Completed Projects</span>
+                        <strong class="cp-admin-overview-metric-value" data-metric="completed">32</strong>
+                        <div class="cp-admin-overview-metric-foot"><span>Successfully completed</span><i
+                                class="bi bi-three-dots"></i></div>
+                    </article>
+                </section>
+                <!--- Project Activity And Status --->
+                <section class="cp-admin-overview-main-grid">
+                    <article class="cp-admin-overview-panel cp-admin-overview-activity">
+                        <div class="cp-admin-overview-panel-heading">
+                            <div><span class="cp-admin-overview-panel-kicker">WORKSPACE PERFORMANCE</span>
+                                <h3>Project Activity</h3>
+                                <p>Project activity across the last six months</p>
+                            </div>
+                            <span class="cp-admin-overview-chart-badge"><i class="bi bi-activity"></i> Overview</span>
+                        </div>
+                        <div class="cp-admin-overview-chart-summary"><strong>Project progress</strong><span><i></i>
+                                Completed <i></i> In progress</span></div>
+                        <div class="cp-admin-overview-chart" role="img"
+                            aria-label="Illustrative project activity chart for six months">
+                            <div class="cp-admin-overview-chart-y">
+                                <span>40</span><span>30</span><span>20</span><span>10</span><span>0</span>
+                            </div>
+                            <div class="cp-admin-overview-chart-plot">
+                                <div class="cp-admin-overview-chart-grid">
+                                    <span></span><span></span><span></span><span></span><span></span></div>
+                                <div class="cp-admin-overview-chart-bars">
+                                    <div class="cp-admin-overview-chart-group">
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-completed"
+                                            style="--bar-height:42%"></div>
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-progress"
+                                            style="--bar-height:23%"></div><span>May</span>
+                                    </div>
+                                    <div class="cp-admin-overview-chart-group">
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-completed"
+                                            style="--bar-height:57%"></div>
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-progress"
+                                            style="--bar-height:31%"></div><span>Jun</span>
+                                    </div>
+                                    <div class="cp-admin-overview-chart-group">
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-completed"
+                                            style="--bar-height:49%"></div>
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-progress"
+                                            style="--bar-height:39%"></div><span>Jul</span>
+                                    </div>
+                                    <div class="cp-admin-overview-chart-group">
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-completed"
+                                            style="--bar-height:72%"></div>
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-progress"
+                                            style="--bar-height:43%"></div><span>Aug</span>
+                                    </div>
+                                    <div class="cp-admin-overview-chart-group">
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-completed"
+                                            style="--bar-height:65%"></div>
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-progress"
+                                            style="--bar-height:48%"></div><span>Sep</span>
+                                    </div>
+                                    <div class="cp-admin-overview-chart-group">
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-completed"
+                                            style="--bar-height:88%"></div>
+                                        <div class="cp-admin-overview-bar cp-admin-overview-bar-progress"
+                                            style="--bar-height:57%"></div><span>Oct</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cp-admin-overview-activity-footer"><span><i class="bi bi-info-circle"></i>
+                                Illustrative sample activity</span><a href="404.html">View analytics <i
+                                    class="bi bi-arrow-up-right"></i></a></div>
+                    </article>
+                    <article class="cp-admin-overview-panel cp-admin-overview-status">
+                        <div class="cp-admin-overview-panel-heading">
+                            <div><span class="cp-admin-overview-panel-kicker">PROJECT BREAKDOWN</span>
+                                <h3>Project Status</h3>
+                                <p>Current project distribution</p>
+                            </div><i class="bi bi-pie-chart cp-admin-overview-heading-icon"></i>
+                        </div>
+                        <div class="cp-admin-overview-status-visual">
+                            <div class="cp-admin-overview-donut">
+                                <div class="cp-admin-overview-donut-center"><strong>12</strong><span>PROJECTS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cp-admin-overview-status-list">
+                            <div><span class="cp-admin-overview-status-name"><i
+                                        class="cp-admin-overview-status-dot cp-admin-dot-completed"></i>Completed</span><strong>5
+                                    <small>42%</small></strong></div>
+                            <div><span class="cp-admin-overview-status-name"><i
+                                        class="cp-admin-overview-status-dot cp-admin-dot-progress"></i>In
+                                    Progress</span><strong>4 <small>33%</small></strong></div>
+                            <div><span class="cp-admin-overview-status-name"><i
+                                        class="cp-admin-overview-status-dot cp-admin-dot-review"></i>In
+                                    Review</span><strong>2 <small>17%</small></strong></div>
+                            <div><span class="cp-admin-overview-status-name"><i
+                                        class="cp-admin-overview-status-dot cp-admin-dot-pending"></i>Pending</span><strong>1
+                                    <small>8%</small></strong></div>
+                        </div>
+                    </article>
+                </section>
+                <!--- Recent Enquiries --->
+                <section class="cp-admin-overview-panel cp-admin-overview-enquiries">
+                    <div class="cp-admin-overview-panel-heading cp-admin-overview-enquiries-heading">
+                        <div><span class="cp-admin-overview-panel-kicker">STAY CONNECTED</span>
+                            <h3>Recent Enquiries</h3>
+                            <p>Keep track of incoming project requests</p>
+                        </div>
+                        <a href="404.html" class="cp-admin-overview-view-all">View all <i
+                                class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                    <div class="cp-admin-overview-table-wrap">
+                        <table class="cp-admin-overview-table">
+                            <thead>
+                                <tr>
+                                    <th>CONTACT</th>
+                                    <th>REQUEST</th>
+                                    <th>DATE</th>
+                                    <th>STATUS</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="cp-admin-overview-contact"><span
+                                                class="cp-admin-overview-contact-avatar cp-admin-contact-lime">AR</span><span><strong>Arun
+                                                    Raj</strong><small>arun@example.com</small></span></div>
+                                    </td>
+                                    <td>Website Development</td>
+                                    <td>Oct 12, 2026</td>
+                                    <td><span class="cp-admin-overview-status-pill cp-admin-pill-new">New</span></td>
+                                    <td><a href="404.html" class="cp-admin-overview-row-action"
+                                            aria-label="View Arun Raj enquiry"><i class="bi bi-arrow-up-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="cp-admin-overview-contact"><span
+                                                class="cp-admin-overview-contact-avatar cp-admin-contact-violet">SK</span><span><strong>Sara
+                                                    Khan</strong><small>sara@example.com</small></span></div>
+                                    </td>
+                                    <td>UI/UX Design</td>
+                                    <td>Oct 11, 2026</td>
+                                    <td><span class="cp-admin-overview-status-pill cp-admin-pill-progress">In
+                                            Review</span></td>
+                                    <td><a href="404.html" class="cp-admin-overview-row-action"
+                                            aria-label="View Sara Khan enquiry"><i class="bi bi-arrow-up-right"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="cp-admin-overview-contact"><span
+                                                class="cp-admin-overview-contact-avatar cp-admin-contact-blue">MK</span><span><strong>Mohamed
+                                                    Khan</strong><small>mohamed@example.com</small></span></div>
+                                    </td>
+                                    <td>WordPress Website</td>
+                                    <td>Oct 10, 2026</td>
+                                    <td><span class="cp-admin-overview-status-pill cp-admin-pill-done">Responded</span>
+                                    </td>
+                                    <td><a href="404.html" class="cp-admin-overview-row-action"
+                                            aria-label="View Mohamed Khan enquiry"><i
+                                                class="bi bi-arrow-up-right"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cp-admin-overview-mobile-enquiries">
+                        <article class="cp-admin-overview-enquiry-card">
+                            <div class="cp-admin-overview-enquiry-card-top">
+                                <div class="cp-admin-overview-contact"><span
+                                        class="cp-admin-overview-contact-avatar cp-admin-contact-lime">AR</span><span><strong>Arun
+                                            Raj</strong><small>arun@example.com</small></span></div><span
+                                    class="cp-admin-overview-status-pill cp-admin-pill-new">New</span>
+                            </div>
+                            <p>Website Development</p>
+                            <div><span>Oct 12, 2026</span><a href="404.html">View enquiry <i
+                                        class="bi bi-arrow-up-right"></i></a></div>
+                        </article>
+                        <article class="cp-admin-overview-enquiry-card">
+                            <div class="cp-admin-overview-enquiry-card-top">
+                                <div class="cp-admin-overview-contact"><span
+                                        class="cp-admin-overview-contact-avatar cp-admin-contact-violet">SK</span><span><strong>Sara
+                                            Khan</strong><small>sara@example.com</small></span></div><span
+                                    class="cp-admin-overview-status-pill cp-admin-pill-progress">In Review</span>
+                            </div>
+                            <p>UI/UX Design</p>
+                            <div><span>Oct 11, 2026</span><a href="404.html">View enquiry <i
+                                        class="bi bi-arrow-up-right"></i></a></div>
+                        </article>
+                        <article class="cp-admin-overview-enquiry-card">
+                            <div class="cp-admin-overview-enquiry-card-top">
+                                <div class="cp-admin-overview-contact"><span
+                                        class="cp-admin-overview-contact-avatar cp-admin-contact-blue">MK</span><span><strong>Mohamed
+                                            Khan</strong><small>mohamed@example.com</small></span></div><span
+                                    class="cp-admin-overview-status-pill cp-admin-pill-done">Responded</span>
+                            </div>
+                            <p>WordPress Website</p>
+                            <div><span>Oct 10, 2026</span><a href="404.html">View enquiry <i
+                                        class="bi bi-arrow-up-right"></i></a></div>
+                        </article>
+                    </div>
+                </section>
+                <!--- Admin Quick Actions --->
+                <section class="cp-admin-overview-quick-actions">
+                    <div><span class="cp-admin-overview-panel-kicker">QUICK ACCESS</span>
+                        <h3>Get things done</h3>
+                    </div>
+                    <div class="cp-admin-overview-action-grid">
+                        <a href="admin-analytics.html" class="cp-admin-overview-action"><span><i
+                                    class="bi bi-graph-up-arrow"></i></span>
+                            <div><strong>View Analytics</strong><small>Explore workspace performance</small></div><i
+                                class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <a href="404.html" class="cp-admin-overview-action"><span><i
+                                    class="bi bi-envelope-open"></i></span>
+                            <div><strong>Manage Enquiries</strong><small>Review incoming requests</small></div><i
+                                class="bi bi-arrow-up-right"></i>
+                        </a>
+                        <a href="admin-profile.html" class="cp-admin-overview-action"><span><i
+                                    class="bi bi-person-gear"></i></span>
+                            <div><strong>Update Profile</strong><small>Keep your details up to date</small></div><i
+                                class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </section>
+                <!--- Admin Overview Footer --->
+                <footer class="cp-admin-overview-footer"><span>© <span id="cp-admin-overview-year"></span> Creative
+                        Portfolio</span><span><i class="bi bi-circle-fill"></i> Workspace overview</span></footer>
+            </main>
+            <!--- Admin Overview Content End --->
+
+
+        </div>
+    </div>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-overview.js"></script>
+</body>
+
+</html>

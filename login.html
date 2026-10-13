@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Login | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body class="cp-auth-login-page">
+    <main class="cp-auth-login">
+        <div class="cp-auth-login-bg">
+            <span class="cp-auth-login-glow cp-auth-login-glow-one"></span>
+            <span class="cp-auth-login-glow cp-auth-login-glow-two"></span>
+            <div class="cp-auth-login-grid"></div>
+        </div>
+        <div class="cp-auth-login-shell">
+            <section class="cp-auth-login-visual">
+                <a href="index.html" class="cp-auth-login-brand"><span class="cp-auth-login-brand-icon"><i
+                            class="bi bi-code-slash"></i></span><span>CREATIVE<span
+                            class="cp-auth-login-brand-dot">.</span>PORTFOLIO</span></a>
+                <div class="cp-auth-login-visual-content">
+                    <span class="cp-auth-login-kicker"><span></span> YOUR CREATIVE SPACE</span>
+                    <h1>Ideas become<br><span>extraordinary.</span></h1>
+                    <p>Sign in to explore your workspace, manage projects, and keep your creative journey moving
+                        forward.</p>
+                    <div class="cp-auth-login-art" aria-hidden="true">
+                        <div class="cp-auth-login-art-ring cp-auth-login-art-ring-one"></div>
+                        <div class="cp-auth-login-art-ring cp-auth-login-art-ring-two"></div>
+                        <div class="cp-auth-login-art-orb"><i class="bi bi-braces"></i></div>
+                        <span class="cp-auth-login-art-tag cp-auth-login-art-tag-one"><i
+                                class="bi bi-lightning-charge"></i> CREATE</span>
+                        <span class="cp-auth-login-art-tag cp-auth-login-art-tag-two"><i class="bi bi-stars"></i>
+                            INNOVATE</span>
+                        <span class="cp-auth-login-art-plus cp-auth-login-art-plus-one">+</span>
+                        <span class="cp-auth-login-art-plus cp-auth-login-art-plus-two">+</span>
+                    </div>
+                </div>
+                <div class="cp-auth-login-visual-footer"><span>DESIGN. DEVELOP. CREATE.</span><span>© <span
+                            id="cp-auth-login-year"></span> Creative Portfolio</span></div>
+            </section>
+            <section class="cp-auth-login-panel">
+                <div class="cp-auth-login-panel-inner">
+                    <div class="cp-auth-login-mobile-brand"><span class="cp-auth-login-brand-icon"><i
+                                class="bi bi-code-slash"></i></span><span>CREATIVE<span
+                                class="cp-auth-login-brand-dot">.</span>PORTFOLIO</span></div>
+                    <div class="cp-auth-login-heading">
+                           <a href="index.html" class="cp-auth-login-home"><i class="bi bi-arrow-left"></i><span>Back to Home</span></a>
+                        <span class="cp-auth-login-eyebrow">WELCOME BACK</span>
+                        <h2>Sign in to your <span>account.</span></h2>
+                        <p>Enter your details to continue to your workspace.</p>
+                    </div>
+                    <form id="cp-auth-login-form" class="cp-auth-login-form">
+                        <fieldset class="cp-auth-login-role-field">
+                            <legend>Select your account type <span>*</span></legend>
+                            <div class="cp-auth-login-role-options">
+                                <label class="cp-auth-login-role-option">
+                                    <input type="radio" name="accountRole" value="admin" required>
+                                    <span class="cp-auth-login-role-card"><span class="cp-auth-login-role-icon"><i
+                                                class="bi bi-shield-lock"></i></span><span
+                                            class="cp-auth-login-role-copy"><strong>Admin</strong><small>Manage
+                                                workspace</small></span><i
+                                            class="bi bi-check-circle-fill cp-auth-login-role-check"></i></span>
+                                </label>
+                                <label class="cp-auth-login-role-option">
+                                    <input type="radio" name="accountRole" value="client" required>
+                                    <span class="cp-auth-login-role-card"><span class="cp-auth-login-role-icon"><i
+                                                class="bi bi-person-workspace"></i></span><span
+                                            class="cp-auth-login-role-copy"><strong>Client</strong><small>Access your
+                                                project</small></span><i
+                                            class="bi bi-check-circle-fill cp-auth-login-role-check"></i></span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="cp-auth-login-field">
+                            <label for="cp-auth-login-email">Email Address <span>*</span></label>
+                            <div class="cp-auth-login-input-wrap"><i class="bi bi-envelope"></i><input type="email"
+                                    id="cp-auth-login-email" name="email" placeholder="you@example.com"
+                                    autocomplete="email" maxlength="254" required></div>
+                        </div>
+                        <div class="cp-auth-login-field">
+                            <label for="cp-auth-login-password">Password <span>*</span></label>
+                            <div class="cp-auth-login-input-wrap"><i class="bi bi-lock"></i><input type="password"
+                                    id="cp-auth-login-password" name="password" placeholder="Enter your password"
+                                    autocomplete="current-password" required><button type="button"
+                                    class="cp-auth-login-password-toggle" id="cp-auth-login-password-toggle"
+                                    aria-label="Show password" aria-pressed="false"><i class="bi bi-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="cp-auth-login-options">
+                            <label class="cp-auth-login-remember"><input type="checkbox" id="cp-auth-login-remember"
+                                    name="remember"><span class="cp-auth-login-custom-check"><i
+                                        class="bi bi-check2"></i></span><span>Remember me</span></label>
+                            <a href="forgot-password.html" class="cp-auth-login-forgot">Forgot password?</a>
+                        </div>
+                        <p class="cp-auth-login-error" id="cp-auth-login-error" role="alert" aria-live="polite"></p>
+                        <button type="submit" class="cp-auth-login-submit"><span>Sign In</span><i
+                                class="bi bi-arrow-up-right"></i></button>
+                        <div class="cp-auth-login-divider"><span>SECURE ACCESS</span></div>
+                        <p class="cp-auth-login-signup">Don't have an account? <a href="register.html">Sign Up <i
+                                    class="bi bi-arrow-up-right"></i></a></p>
+                    </form>
+                    <div class="cp-auth-login-bottom"><i class="bi bi-shield-check"></i><span>Your workspace starts with
+                            a secure sign-in.</span></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>

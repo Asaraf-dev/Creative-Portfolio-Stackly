@@ -1,0 +1,589 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Creative Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Creative Portfolio Loader --->
+    <div class="cp-ldr" id="cp-ldr" aria-label="Loading Creative Portfolio" role="status">
+        <!--- Loader Background Effects --->
+        <div class="cp-ldr-grid"></div>
+        <div class="cp-ldr-glow cp-ldr-glow-one"></div>
+        <div class="cp-ldr-glow cp-ldr-glow-two"></div>
+        <div class="cp-ldr-particles" id="cp-ldr-particles"></div>
+        <!--- Loader Main Content --->
+        <div class="cp-ldr-content">
+            <div class="cp-ldr-emblem">
+                <div class="cp-ldr-orbit cp-ldr-orbit-one"></div>
+                <div class="cp-ldr-orbit cp-ldr-orbit-two"></div>
+                <div class="cp-ldr-orbit cp-ldr-orbit-three"></div>
+                <div class="cp-ldr-core"><span class="cp-ldr-core-inner"></span></div>
+                <span class="cp-ldr-satellite cp-ldr-satellite-one"></span>
+                <span class="cp-ldr-satellite cp-ldr-satellite-two"></span>
+            </div>
+            <!--- Loader Brand --->
+            <div class="cp-ldr-brand">CREATIVE<span>.</span>PORTFOLIO</div>
+            <div class="cp-ldr-caption"><span class="cp-ldr-caption-line"></span><span id="cp-ldr-message">Crafting
+                    something extraordinary</span><span class="cp-ldr-caption-line"></span></div>
+            <!--- Loader Bottom Details --->
+            <div class="cp-ldr-bottom"><span>DESIGN</span><span
+                    class="cp-ldr-bottom-dot"></span><span>DEVELOP</span><span
+                    class="cp-ldr-bottom-dot"></span><span>CREATE</span></div>
+        </div>
+        <!--- Loader Corner Details --->
+        <span class="cp-ldr-corner cp-ldr-corner-tl"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-tr"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-bl"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-br"></span>
+    </div>
+    <!--- Creative Portfolio Loader End --->
+
+    <!--- Navbar Component --->
+    <div id="cp-navbar-placeholder"></div>
+
+    <main>
+
+        <!--- All Hero Section Start --->
+        <section class="cp-sub-hero" id="cp-sub-hero" data-page="services" data-eyebrow="WHAT I CAN DO FOR YOU"
+            data-title="Creative ideas," data-highlight="built to work."
+            data-description="Explore web development and digital solutions designed around usability, performance, and your goals."
+            data-primary-text="Explore Services" data-primary-link="404.html" data-secondary-text="Discuss a Project"
+            data-secondary-link="404.html" data-breadcrumb="Services">
+            <div class="cp-sub-hero-bg-grid"></div>
+            <div class="cp-sub-hero-glow cp-sub-hero-glow-one"></div>
+            <div class="cp-sub-hero-glow cp-sub-hero-glow-two"></div>
+            <div class="container cp-sub-hero-container">
+                <div class="row align-items-center cp-sub-hero-row">
+                    <div class="col-lg-7">
+                        <div class="cp-sub-hero-content">
+                            <nav class="cp-sub-hero-breadcrumb" aria-label="Breadcrumb">
+                                <a href="index.html">Home</a><i class="bi bi-chevron-right"></i><span
+                                    class="cp-sub-hero-breadcrumb-current">Portfolio</span>
+                            </nav>
+                            <span class="cp-sub-hero-eyebrow"><span class="cp-sub-hero-eyebrow-line"></span><span
+                                    class="cp-sub-hero-eyebrow-text">A SELECTION OF MY WORK</span></span>
+                            <h1><span class="cp-sub-hero-title-main">Ideas brought</span><span
+                                    class="cp-sub-hero-title-highlight"> to life.<span
+                                        class="cp-sub-hero-title-dot">.</span></span></h1>
+                            <p class="cp-sub-hero-description">Explore selected projects combining thoughtful design,
+                                responsive development, and creative problem-solving.</p>
+                            <div class="cp-sub-hero-actions">
+                                <a href="404.html" class="cp-sub-hero-btn cp-sub-hero-btn-primary"><span>Explore
+                                        My Work</span><i class="bi bi-arrow-up-right"></i></a>
+                                <a href="404.html" class="cp-sub-hero-btn cp-sub-hero-btn-secondary"><span>Let's
+                                        Connect</span><i class="bi bi-arrow-right"></i></a>
+                            </div>
+                            <div class="cp-sub-hero-bottom-meta">
+                                <span><i class="bi bi-code-slash"></i> DESIGN. DEVELOP. CREATE.</span>
+                                <span class="cp-sub-hero-meta-divider"></span>
+                                <span>CRAFTED WITH PURPOSE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="cp-sub-hero-art" aria-hidden="true">
+                            <div class="cp-sub-hero-art-grid"></div>
+                            <div class="cp-sub-hero-ring cp-sub-hero-ring-one"></div>
+                            <div class="cp-sub-hero-ring cp-sub-hero-ring-two"></div>
+                            <div class="cp-sub-hero-ring cp-sub-hero-ring-three"></div>
+                            <div class="cp-sub-hero-orb">
+                                <div class="cp-sub-hero-orb-core"></div>
+                                <div class="cp-sub-hero-orb-shine"></div>
+                            </div>
+                            <div class="cp-sub-hero-art-cross cp-sub-hero-cross-one">+</div>
+                            <div class="cp-sub-hero-art-cross cp-sub-hero-cross-two">+</div>
+                            <div class="cp-sub-hero-art-dot cp-sub-hero-dot-one"></div>
+                            <div class="cp-sub-hero-art-dot cp-sub-hero-dot-two"></div>
+                            <div class="cp-sub-hero-float cp-sub-hero-float-code"><i
+                                    class="bi bi-braces"></i><span>CREATIVE
+                                    CODE</span><b>01</b></div>
+                            <div class="cp-sub-hero-float cp-sub-hero-float-design"><i
+                                    class="bi bi-bezier2"></i><span>VISUAL THINKING</span><b>02</b></div>
+                            <div class="cp-sub-hero-art-caption"><span>FIG. 001</span><span>IDEAS INTO REALITY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="cp-sub-hero-scroll"><span class="cp-sub-hero-scroll-mouse"><span></span></span><span>SCROLL TO
+                        EXPLORE</span><i class="bi bi-arrow-down"></i></a>
+            </div>
+        </section>
+        <!--- All Hero Section End --->
+
+        <!--- Services Overview Section Start --->
+        <section class="cp-serv-overview" id="cp-serv-overview">
+            <div class="container">
+                <div class="cp-serv-overview-header">
+                    <div class="cp-serv-overview-heading">
+                        <span class="cp-serv-overview-eyebrow"><span></span> WHAT I CAN DO</span>
+                        <h2>Services built for <span>your next big idea.</span></h2>
+                        <p>From the first concept to the final launch, I create digital experiences that look great,
+                            work smoothly, and help turn ideas into reality.</p>
+                    </div>
+                    <a href="404.html" class="cp-serv-overview-top-link">Have a project in mind? <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="cp-serv-overview-grid">
+                    <!--- Website Development Card --->
+                    <article class="cp-serv-overview-card cp-serv-overview-card-featured">
+                        <div class="cp-serv-overview-card-top">
+                            <span class="cp-serv-overview-number">01 / 06</span>
+                            <span class="cp-serv-overview-icon"><i class="bi bi-code-slash"></i></span>
+                        </div>
+                        <h3>Website Development</h3>
+                        <p>Modern, responsive websites designed to deliver a seamless experience across desktops,
+                            tablets, and mobile devices.</p>
+                        <div class="cp-serv-overview-tags"><span>Responsive
+                                UI</span><span>Frontend</span><span>Bootstrap</span></div>
+                        <a href="404.html" class="cp-serv-overview-link"
+                            aria-label="Discuss website development"><span>Let's build your website</span><i
+                                class="bi bi-arrow-up-right"></i></a>
+                        <span class="cp-serv-overview-card-glow"></span>
+                    </article>
+                    <!--- UI UX Design Card --->
+                    <article class="cp-serv-overview-card">
+                        <div class="cp-serv-overview-card-top">
+                            <span class="cp-serv-overview-number">02 / 06</span>
+                            <span class="cp-serv-overview-icon"><i class="bi bi-bezier2"></i></span>
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>Clean layouts, thoughtful visual hierarchy, and intuitive interfaces that make digital
+                            products easier to use.</p>
+                        <div class="cp-serv-overview-tags"><span>Wireframes</span><span>UI
+                                Design</span><span>Prototypes</span></div>
+                        <a href="404.html" class="cp-serv-overview-link"
+                            aria-label="Discuss UI and UX design"><span>Design an experience</span><i
+                                class="bi bi-arrow-up-right"></i></a>
+                        <span class="cp-serv-overview-card-glow"></span>
+                    </article>
+                    <!--- Web Applications Card --->
+                    <article class="cp-serv-overview-card">
+                        <div class="cp-serv-overview-card-top">
+                            <span class="cp-serv-overview-number">03 / 06</span>
+                            <span class="cp-serv-overview-icon"><i class="bi bi-window-stack"></i></span>
+                        </div>
+                        <h3>Web Applications</h3>
+                        <p>Interactive web applications with useful features, structured interfaces, and data-driven
+                            functionality.</p>
+                        <div class="cp-serv-overview-tags">
+                            <span>JavaScript</span><span>Python</span><span>Database</span>
+                        </div>
+                        <a href="404.html" class="cp-serv-overview-link"
+                            aria-label="Discuss a web application"><span>Build your application</span><i
+                                class="bi bi-arrow-up-right"></i></a>
+                        <span class="cp-serv-overview-card-glow"></span>
+                    </article>
+                    <!--- WordPress Development Card --->
+                    <article class="cp-serv-overview-card">
+                        <div class="cp-serv-overview-card-top">
+                            <span class="cp-serv-overview-number">04 / 06</span>
+                            <span class="cp-serv-overview-icon"><i class="bi bi-wordpress"></i></span>
+                        </div>
+                        <h3>WordPress Development</h3>
+                        <p>Flexible, easy-to-manage websites for businesses, personal brands, and online content using
+                            WordPress.</p>
+                        <div class="cp-serv-overview-tags"><span>WordPress</span><span>Elementor</span><span>CMS</span>
+                        </div>
+                        <a href="404.html" class="cp-serv-overview-link"
+                            aria-label="Discuss WordPress development"><span>Create your website</span><i
+                                class="bi bi-arrow-up-right"></i></a>
+                        <span class="cp-serv-overview-card-glow"></span>
+                    </article>
+                    <!--- Mobile App Development Card --->
+                    <article class="cp-serv-overview-card">
+                        <div class="cp-serv-overview-card-top">
+                            <span class="cp-serv-overview-number">05 / 06</span>
+                            <span class="cp-serv-overview-icon"><i class="bi bi-phone"></i></span>
+                        </div>
+                        <h3>Mobile App Development</h3>
+                        <p>Practical mobile application interfaces and features built around real user needs and
+                            everyday tasks.</p>
+                        <div class="cp-serv-overview-tags"><span>Android</span><span>Java</span><span>SQLite</span>
+                        </div>
+                        <a href="404.html" class="cp-serv-overview-link"
+                            aria-label="Discuss mobile app development"><span>Build a mobile app</span><i
+                                class="bi bi-arrow-up-right"></i></a>
+                        <span class="cp-serv-overview-card-glow"></span>
+                    </article>
+                    <!--- Website Maintenance Card --->
+                    <article class="cp-serv-overview-card">
+                        <div class="cp-serv-overview-card-top">
+                            <span class="cp-serv-overview-number">06 / 06</span>
+                            <span class="cp-serv-overview-icon"><i class="bi bi-shield-check"></i></span>
+                        </div>
+                        <h3>Website Maintenance</h3>
+                        <p>Ongoing website improvements, content updates, bug fixes, and performance checks to keep your
+                            site running smoothly.</p>
+                        <div class="cp-serv-overview-tags"><span>Bug
+                                Fixes</span><span>Updates</span><span>Optimization</span></div>
+                        <a href="404.html" class="cp-serv-overview-link"
+                            aria-label="Discuss website maintenance"><span>Improve your website</span><i
+                                class="bi bi-arrow-up-right"></i></a>
+                        <span class="cp-serv-overview-card-glow"></span>
+                    </article>
+                </div>
+                <div class="cp-serv-overview-bottom">
+                    <div class="cp-serv-overview-bottom-mark"><i class="bi bi-lightning-charge-fill"></i></div>
+                    <p>Have a unique idea? <span>Let's find the right digital solution for it.</span></p>
+                    <a href="404.html" class="cp-serv-overview-bottom-link">Explore my work <i
+                            class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--- Services Overview Section End --->
+
+        <!--- Detailed Services Section Start --->
+        <section class="cp-serv-details" id="cp-serv-details">
+            <div class="container">
+                <div class="cp-serv-details-heading">
+                    <span class="cp-serv-details-eyebrow"><span></span> WHAT'S INCLUDED</span>
+                    <h2>From concept to <span>digital reality.</span></h2>
+                    <p>Explore the details behind each service and discover how the right digital solution can move your
+                        idea forward.</p>
+                </div>
+                <div class="cp-serv-details-list">
+                    <!--- Website Development Details --->
+                    <article class="cp-serv-details-item" id="cp-serv-details-web">
+                        <div class="cp-serv-details-visual cp-serv-details-visual-web">
+                            <div class="cp-serv-details-window">
+                                <div class="cp-serv-details-window-bar">
+                                    <span></span><span></span><span></span><small>yourwebsite.dev</small></div>
+                                <div class="cp-serv-details-window-content">
+                                    <div class="cp-serv-details-mini-nav"><b>YOUR
+                                            BRAND</b><span></span><span></span><span></span></div>
+                                    <div class="cp-serv-details-web-layout">
+                                        <div><i>BUILT FOR WHAT'S NEXT</i><strong>Ideas
+                                                into<br><em>experiences.</em></strong><span></span><span></span><button
+                                                type="button" tabindex="-1">Explore <i
+                                                    class="bi bi-arrow-up-right"></i></button></div>
+                                        <div class="cp-serv-details-web-art"><span></span><span></span><i
+                                                class="bi bi-braces"></i></div>
+                                    </div>
+                                    <div class="cp-serv-details-web-footer"><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="cp-serv-details-visual-label"><i class="bi bi-display"></i> Responsive by
+                                design</span>
+                        </div>
+                        <div class="cp-serv-details-content">
+                            <span class="cp-serv-details-number">01 <span>/ WEBSITE DEVELOPMENT</span></span>
+                            <h3>Websites that make a <span>strong first impression.</span></h3>
+                            <p>Build a professional online presence with a fast, responsive website tailored to your
+                                brand, audience, and goals.</p>
+                            <ul class="cp-serv-details-features">
+                                <li><i class="bi bi-check2-circle"></i><span><b>Responsive layouts</b><small>Experiences
+                                            designed for mobile, tablet, and desktop.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Modern interface</b><small>Clear
+                                            navigation, thoughtful spacing, and consistent styling.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Performance-conscious
+                                            code</b><small>Structured, maintainable code and sensible asset
+                                            optimization.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Launch-ready pages</b><small>Essential
+                                            pages, contact links, and deployment support as agreed.</small></span></li>
+                            </ul>
+                            <div class="cp-serv-details-tech">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Bootstrap 5</span></div>
+                            <a href="404.html" class="cp-serv-details-link">Discuss your website <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                    <!--- UI UX Design Details --->
+                    <article class="cp-serv-details-item cp-serv-details-item-reverse" id="cp-serv-details-design">
+                        <div class="cp-serv-details-visual cp-serv-details-visual-design">
+                            <div class="cp-serv-details-design-board">
+                                <div class="cp-serv-details-design-side">
+                                    <span></span><span></span><span></span><span></span><span></span></div>
+                                <div class="cp-serv-details-design-main">
+                                    <div class="cp-serv-details-design-title"><span>Workspace</span><i
+                                            class="bi bi-three-dots"></i></div>
+                                    <div class="cp-serv-details-design-banner"><small>MAKE ROOM FOR
+                                            IDEAS</small><b>Design with<br>purpose.</b><span></span></div>
+                                    <div class="cp-serv-details-design-cards"><span><i
+                                                class="bi bi-grid-1x2"></i><b></b><small></small></span><span><i
+                                                class="bi bi-lightning-charge"></i><b></b><small></small></span><span><i
+                                                class="bi bi-stars"></i><b></b><small></small></span></div>
+                                </div>
+                            </div>
+                            <span class="cp-serv-details-visual-label"><i class="bi bi-bezier2"></i> Thoughtful user
+                                journeys</span>
+                        </div>
+                        <div class="cp-serv-details-content">
+                            <span class="cp-serv-details-number">02 <span>/ UI/UX DESIGN</span></span>
+                            <h3>Design that feels <span>clear and intuitive.</span></h3>
+                            <p>Turn complex ideas into accessible, visually consistent interfaces that help people
+                                understand what to do next.</p>
+                            <ul class="cp-serv-details-features">
+                                <li><i class="bi bi-check2-circle"></i><span><b>Page structure and
+                                            wireframes</b><small>Organize content before moving into visual
+                                            design.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Visual design
+                                            systems</b><small>Consistent colors, typography, components, and
+                                            spacing.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>User-friendly navigation</b><small>Make
+                                            key actions and information easy to discover.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Responsive design
+                                            planning</b><small>Consider usability across common screen
+                                            sizes.</small></span></li>
+                            </ul>
+                            <div class="cp-serv-details-tech"><span>Figma</span><span>UI
+                                    Design</span><span>Wireframes</span><span>Prototypes</span></div>
+                            <a href="404.html" class="cp-serv-details-link">Plan your interface <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                    <!--- Web Applications Details --->
+                    <article class="cp-serv-details-item" id="cp-serv-details-apps">
+                        <div class="cp-serv-details-visual cp-serv-details-visual-apps">
+                            <div class="cp-serv-details-app-window">
+                                <div class="cp-serv-details-app-sidebar"><span class="cp-serv-details-app-logo"><i
+                                            class="bi bi-hexagon-fill"></i></span><span class="active"><i
+                                            class="bi bi-grid"></i></span><span><i
+                                            class="bi bi-bar-chart"></i></span><span><i
+                                            class="bi bi-folder2"></i></span><span><i class="bi bi-gear"></i></span>
+                                </div>
+                                <div class="cp-serv-details-app-main">
+                                    <div class="cp-serv-details-app-top"><span>Overview</span><i
+                                            class="bi bi-person-circle"></i></div>
+                                    <div class="cp-serv-details-app-welcome"><small>YOUR WORKSPACE</small><b>Everything
+                                            in<br>one place.</b></div>
+                                    <div class="cp-serv-details-app-stats"><span><small>Projects</small><b>08</b><i
+                                                class="bi bi-folder2-open"></i></span><span><small>Progress</small><b>76%</b><i
+                                                class="bi bi-graph-up-arrow"></i></span></div>
+                                    <div class="cp-serv-details-app-chart">
+                                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="cp-serv-details-visual-label"><i class="bi bi-window-stack"></i> Built around
+                                your workflow</span>
+                        </div>
+                        <div class="cp-serv-details-content">
+                            <span class="cp-serv-details-number">03 <span>/ WEB APPLICATIONS</span></span>
+                            <h3>Useful tools for <span>real-world tasks.</span></h3>
+                            <p>Create interactive browser-based tools that help organize information, simplify
+                                workflows, and make everyday tasks easier.</p>
+                            <ul class="cp-serv-details-features">
+                                <li><i class="bi bi-check2-circle"></i><span><b>Interactive
+                                            functionality</b><small>Forms, filters, dashboards, and dynamic interface
+                                            elements.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Data handling</b><small>Connect
+                                            application workflows to suitable data storage.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Input validation</b><small>Clear
+                                            feedback and validation for common user actions.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Maintainable
+                                            structure</b><small>Organized components and a foundation for future
+                                            improvements.</small></span></li>
+                            </ul>
+                            <div class="cp-serv-details-tech">
+                                <span>JavaScript</span><span>Python</span><span>FastAPI</span><span>MySQL</span></div>
+                            <a href="404.html" class="cp-serv-details-link">Discuss your application <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                    <!--- WordPress Development Details --->
+                    <article class="cp-serv-details-item cp-serv-details-item-reverse" id="cp-serv-details-wordpress">
+                        <div class="cp-serv-details-visual cp-serv-details-visual-wordpress">
+                            <div class="cp-serv-details-wp-window">
+                                <div class="cp-serv-details-wp-top"><i class="bi bi-wordpress"></i><span>Site
+                                        Editor</span><i class="bi bi-three-dots"></i></div>
+                                <div class="cp-serv-details-wp-body">
+                                    <div class="cp-serv-details-wp-menu">
+                                        <b>Design</b><span>Pages</span><span>Templates</span><span>Settings</span></div>
+                                    <div class="cp-serv-details-wp-preview"><small>YOUR BRAND, YOUR
+                                            STORY</small><strong>Make your<br><em>mark
+                                                online.</em></strong><span></span>
+                                        <div><b></b><b></b><b></b></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="cp-serv-details-visual-label"><i class="bi bi-pencil-square"></i> Easy content
+                                management</span>
+                        </div>
+                        <div class="cp-serv-details-content">
+                            <span class="cp-serv-details-number">04 <span>/ WORDPRESS DEVELOPMENT</span></span>
+                            <h3>A website you can <span>manage with confidence.</span></h3>
+                            <p>Launch a flexible content-managed website that makes it easier to update pages, publish
+                                content, and grow your online presence.</p>
+                            <ul class="cp-serv-details-features">
+                                <li><i class="bi bi-check2-circle"></i><span><b>Custom page layouts</b><small>Pages
+                                            structured around your content and business needs.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Visual page
+                                            building</b><small>Elementor-based layouts where suitable for the
+                                            project.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Responsive styling</b><small>Layouts
+                                            adapted for phones, tablets, and larger screens.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Content management
+                                            setup</b><small>Editable sections and essential configuration as
+                                            agreed.</small></span></li>
+                            </ul>
+                            <div class="cp-serv-details-tech">
+                                <span>WordPress</span><span>Elementor</span><span>CSS</span><span>Responsive UI</span>
+                            </div>
+                            <a href="404.html" class="cp-serv-details-link">Create your WordPress site <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                    <!--- Mobile App Development Details --->
+                    <article class="cp-serv-details-item" id="cp-serv-details-mobile">
+                        <div class="cp-serv-details-visual cp-serv-details-visual-mobile">
+                            <div class="cp-serv-details-phone">
+                                <div class="cp-serv-details-phone-notch"></div>
+                                <div class="cp-serv-details-phone-head"><small>YOUR DAILY SPACE</small><b>Stay on
+                                        track.</b><span>Everything you need, at a glance.</span></div>
+                                <div class="cp-serv-details-phone-balance"><small>MONTHLY OVERVIEW</small><b>₹
+                                        12,450</b><span><i class="bi bi-arrow-down-right"></i> Track your
+                                        activity</span></div>
+                                <div class="cp-serv-details-phone-row"><span><i
+                                            class="bi bi-wallet2"></i><b>Expenses</b></span><strong><i
+                                            class="bi bi-chevron-right"></i></strong></div>
+                                <div class="cp-serv-details-phone-row"><span><i
+                                            class="bi bi-calendar-check"></i><b>Daily records</b></span><strong><i
+                                            class="bi bi-chevron-right"></i></strong></div>
+                                <div class="cp-serv-details-phone-nav"><i class="bi bi-house-fill"></i><i
+                                        class="bi bi-bar-chart"></i><i class="bi bi-plus-circle-fill"></i><i
+                                        class="bi bi-person"></i></div>
+                            </div>
+                            <span class="cp-serv-details-visual-label"><i class="bi bi-phone"></i> Designed for
+                                mobile</span>
+                        </div>
+                        <div class="cp-serv-details-content">
+                            <span class="cp-serv-details-number">05 <span>/ MOBILE APP DEVELOPMENT</span></span>
+                            <h3>Mobile experiences for <span>everyday life.</span></h3>
+                            <p>Develop practical Android applications with focused features, straightforward navigation,
+                                and interfaces designed for small screens.</p>
+                            <ul class="cp-serv-details-features">
+                                <li><i class="bi bi-check2-circle"></i><span><b>Android interfaces</b><small>Screen
+                                            layouts and navigation designed for mobile use.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>App functionality</b><small>Implement
+                                            features based on the agreed project scope.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Local data storage</b><small>Use
+                                            suitable local storage for supported application needs.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Testing and refinement</b><small>Check
+                                            core flows and improve usability across supported devices.</small></span>
+                                </li>
+                            </ul>
+                            <div class="cp-serv-details-tech"><span>Android
+                                    Studio</span><span>Java</span><span>XML</span><span>SQLite</span></div>
+                            <a href="404.html" class="cp-serv-details-link">Discuss your app idea <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                    <!--- Website Maintenance Details --->
+                    <article class="cp-serv-details-item cp-serv-details-item-reverse" id="cp-serv-details-maintenance">
+                        <div class="cp-serv-details-visual cp-serv-details-visual-maintenance">
+                            <div class="cp-serv-details-maintenance-panel">
+                                <div class="cp-serv-details-maintenance-head"><span><i
+                                            class="bi bi-shield-check"></i></span>
+                                    <div><b>Site health</b><small>Maintenance overview</small></div><i
+                                        class="bi bi-three-dots"></i>
+                                </div>
+                                <div class="cp-serv-details-health">
+                                    <div class="cp-serv-details-health-ring"><i class="bi bi-check-lg"></i></div>
+                                    <div><b>Looking good.</b><small>Keep your site up to date.</small></div>
+                                </div>
+                                <div class="cp-serv-details-maintenance-row"><span><i class="bi bi-check-circle"></i>
+                                        Content updates</span><b>Ready</b></div>
+                                <div class="cp-serv-details-maintenance-row"><span><i class="bi bi-check-circle"></i>
+                                        Bug fixes</span><b>Ready</b></div>
+                                <div class="cp-serv-details-maintenance-row"><span><i class="bi bi-check-circle"></i>
+                                        Performance review</span><b>Ready</b></div>
+                                <div class="cp-serv-details-maintenance-foot"><i class="bi bi-arrow-repeat"></i>
+                                    Consistent care, fewer surprises</div>
+                            </div>
+                            <span class="cp-serv-details-visual-label"><i class="bi bi-activity"></i> Keep improving
+                                over time</span>
+                        </div>
+                        <div class="cp-serv-details-content">
+                            <span class="cp-serv-details-number">06 <span>/ WEBSITE MAINTENANCE</span></span>
+                            <h3>Keep your website <span>working at its best.</span></h3>
+                            <p>Maintain a reliable online presence with planned updates, practical fixes, and ongoing
+                                improvements based on your needs.</p>
+                            <ul class="cp-serv-details-features">
+                                <li><i class="bi bi-check2-circle"></i><span><b>Content and layout
+                                            updates</b><small>Keep pages and information current when changes are
+                                            needed.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Bug fixing</b><small>Investigate and
+                                            resolve agreed display or functionality issues.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Performance checks</b><small>Review page
+                                            loading and identify practical improvements.</small></span></li>
+                                <li><i class="bi bi-check2-circle"></i><span><b>Routine upkeep</b><small>Updates and
+                                            backups where supported and included in the plan.</small></span></li>
+                            </ul>
+                            <div class="cp-serv-details-tech"><span>Updates</span><span>Bug
+                                    Fixes</span><span>Optimization</span><span>Content Care</span></div>
+                            <a href="404.html" class="cp-serv-details-link">Maintain your website <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="cp-serv-details-note"><i class="bi bi-info-circle"></i>
+                    <p>Every project is different. Features, timelines, technologies, and ongoing support are confirmed
+                        together before work begins.</p>
+                </div>
+            </div>
+        </section>
+        <!--- Detailed Services Section End --->
+
+    </main>
+
+    <!--- Footer Component --->
+    <div id="cp-footer-placeholder"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/services.js"></script>
+    <script src="assets/js/all-hero.js"></script>
+</body>
+
+</html>

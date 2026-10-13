@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Dashboard | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="cp-dashboard-page">
+    <div class="cp-dashboard-layout" id="cp-dashboard-layout">
+        <!--- Dashboard Sidebar --->
+        <aside class="cp-dashboard-sidebar" id="cp-dashboard-sidebar" aria-label="Dashboard navigation">
+            <div class="cp-dashboard-sidebar-top">
+                <a href="index.html" class="cp-dashboard-brand">
+                    <span class="cp-dashboard-brand-icon"><i class="bi bi-code-slash"></i></span>
+                    <span class="cp-dashboard-brand-text">CREATIVE<span>.</span>PORTFOLIO</span>
+                </a>
+                <div class="cp-dashboard-sidebar-user">
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-sidebar">
+                        <img src="assets/images/profile-1.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                    <div class="cp-dashboard-sidebar-user-info">
+                        <strong data-user-name>Welcome back</strong>
+                        <span data-user-email>Loading email...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cp-dashboard-sidebar-label">WORKSPACE</div>
+            <nav class="cp-dashboard-nav">
+                <a href="admin-dashboard.html" class="cp-dashboard-nav-link" data-page="overview">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-grid-1x2"></i></span><span>Overview</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-analytics.html" class="cp-dashboard-nav-link" data-page="analytics">
+                    <span class="cp-dashboard-nav-icon"><i
+                            class="bi bi-graph-up-arrow"></i></span><span>Analytics</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-profile.html" class="cp-dashboard-nav-link" data-page="profile">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-person"></i></span><span>Profile</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="admin-settings.html" class="cp-dashboard-nav-link" data-page="settings">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-sliders"></i></span><span>Settings</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="login.html" class="cp-dashboard-nav-link cp-dashboard-logout" id="cp-dashboard-logout">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-box-arrow-right"></i></span><span>Logout</span>
+                </a>
+            </nav>
+            <div class="cp-dashboard-sidebar-bottom">
+                <span class="cp-dashboard-status-dot"></span><span>Workspace active</span>
+                <span class="cp-dashboard-sidebar-version">v1.0</span>
+            </div>
+        </aside>
+        <!--- Dashboard Mobile Backdrop --->
+        <button type="button" class="cp-dashboard-backdrop" id="cp-dashboard-backdrop" aria-label="Close navigation"
+            tabindex="-1"></button>
+        <!--- Dashboard Main Area --->
+        <div class="cp-dashboard-main">
+            <!--- Dashboard Topbar --->
+            <header class="cp-dashboard-topbar">
+                <div class="cp-dashboard-topbar-left">
+                    <button type="button" class="cp-dashboard-menu-toggle" id="cp-dashboard-menu-toggle"
+                        aria-label="Open navigation" aria-controls="cp-dashboard-sidebar" aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="cp-dashboard-page-heading">
+                        <span class="cp-dashboard-page-eyebrow" data-dashboard-eyebrow>YOUR WORKSPACE</span>
+                        <h1 data-dashboard-title>Overview</h1>
+                    </div>
+                </div>
+                <div class="cp-dashboard-topbar-right">
+                    <div class="cp-dashboard-topbar-user">
+                        <span class="cp-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong data-user-email>Loading email...</strong>
+                    </div>
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-topbar">
+                        <img src="assets/images/profile-1.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Page Content --->
+
+            <!--- Admin Settings Content --->
+            <main class="cp-dashboard-content cp-admin-settings-content">
+                <!--- Settings Page Heading --->
+                <section class="cp-admin-settings-heading">
+                    <div>
+                        <span class="cp-admin-settings-kicker"><i class="bi bi-sliders"></i> WORKSPACE
+                            CONFIGURATION</span>
+                        <h2>Settings</h2>
+                        <p>Personalize your workspace, manage preferences, and configure your dashboard experience.</p>
+                    </div>
+                    <span class="cp-admin-settings-status"><span></span> Settings center</span>
+                </section>
+                <!--- Settings Feedback --->
+                <div class="cp-admin-settings-feedback" id="cp-admin-settings-feedback" role="status" aria-live="polite"
+                    hidden></div>
+                <!--- Settings Navigation --->
+                <nav class="cp-admin-settings-nav" aria-label="Settings sections">
+                    <a href="#cp-admin-settings-appearance" class="cp-admin-settings-nav-link is-active"><i
+                            class="bi bi-palette2"></i><span>Appearance</span></a>
+                    <a href="#cp-admin-settings-preferences" class="cp-admin-settings-nav-link"><i
+                            class="bi bi-sliders2"></i><span>Preferences</span></a>
+                    <a href="#cp-admin-settings-notifications" class="cp-admin-settings-nav-link"><i
+                            class="bi bi-bell"></i><span>Notifications</span></a>
+                    <a href="#cp-admin-settings-security" class="cp-admin-settings-nav-link"><i
+                            class="bi bi-shield-lock"></i><span>Security</span></a>
+                    <a href="#cp-admin-settings-workspace" class="cp-admin-settings-nav-link"><i
+                            class="bi bi-grid"></i><span>Workspace</span></a>
+                </nav>
+                <!--- Settings Form --->
+                <form id="cp-admin-settings-form">
+                    <!--- Appearance Settings --->
+                    <section class="cp-admin-settings-card" id="cp-admin-settings-appearance">
+                        <div class="cp-admin-settings-card-heading">
+                            <span class="cp-admin-settings-card-icon cp-admin-settings-icon-lime"><i
+                                    class="bi bi-palette2"></i></span>
+                            <div>
+                                <h3>Appearance</h3>
+                                <p>Customize how your dashboard looks and feels.</p>
+                            </div>
+                            <span class="cp-admin-settings-card-label">DISPLAY</span>
+                        </div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>Dashboard theme</strong>
+                                <p>Choose your preferred dashboard appearance.</p>
+                            </div>
+                            <div class="cp-admin-settings-theme-options" role="group" aria-label="Dashboard theme">
+                                <label class="cp-admin-settings-theme-option"><input type="radio" name="theme"
+                                        value="dark" checked><span><i class="bi bi-moon-stars"></i> Dark</span></label>
+                                <label class="cp-admin-settings-theme-option"><input type="radio" name="theme"
+                                        value="light"><span><i class="bi bi-sun"></i> Light</span></label>
+                                <label class="cp-admin-settings-theme-option"><input type="radio" name="theme"
+                                        value="system"><span><i class="bi bi-display"></i> System</span></label>
+                            </div>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>Accent color</strong>
+                                <p>Select the highlight color used for dashboard controls.</p>
+                            </div>
+                            <div class="cp-admin-settings-colors" role="group" aria-label="Accent color">
+                                <label class="cp-admin-settings-color-option"><input type="radio" name="accent"
+                                        value="lime" checked><span
+                                        class="cp-admin-settings-color-swatch cp-admin-settings-swatch-lime"></span><small>Lime</small></label>
+                                <label class="cp-admin-settings-color-option"><input type="radio" name="accent"
+                                        value="violet"><span
+                                        class="cp-admin-settings-color-swatch cp-admin-settings-swatch-violet"></span><small>Violet</small></label>
+                                <label class="cp-admin-settings-color-option"><input type="radio" name="accent"
+                                        value="blue"><span
+                                        class="cp-admin-settings-color-swatch cp-admin-settings-swatch-blue"></span><small>Blue</small></label>
+                                <label class="cp-admin-settings-color-option"><input type="radio" name="accent"
+                                        value="orange"><span
+                                        class="cp-admin-settings-color-swatch cp-admin-settings-swatch-orange"></span><small>Orange</small></label>
+                            </div>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>Compact dashboard</strong>
+                                <p>Reduce spacing to display more content at once.</p>
+                            </div>
+                            <label class="cp-admin-settings-switch"><input type="checkbox"
+                                    name="compact"><span></span><span class="cp-admin-settings-sr-only">Enable compact
+                                    dashboard</span></label>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>Reduce motion</strong>
+                                <p>Minimize decorative animations and transitions.</p>
+                            </div>
+                            <label class="cp-admin-settings-switch"><input type="checkbox"
+                                    name="reduceMotion"><span></span><span class="cp-admin-settings-sr-only">Reduce
+                                    motion</span></label>
+                        </div>
+                    </section>
+                    <!--- General Preferences --->
+                    <section class="cp-admin-settings-card" id="cp-admin-settings-preferences">
+                        <div class="cp-admin-settings-card-heading">
+                            <span class="cp-admin-settings-card-icon cp-admin-settings-icon-violet"><i
+                                    class="bi bi-sliders2"></i></span>
+                            <div>
+                                <h3>General preferences</h3>
+                                <p>Set your preferred regional and dashboard options.</p>
+                            </div>
+                            <span class="cp-admin-settings-card-label">PREFERENCES</span>
+                        </div>
+                        <div class="cp-admin-settings-fields-grid">
+                            <div class="cp-admin-settings-field"><label
+                                    for="cp-admin-settings-language">Language</label>
+                                <div class="cp-admin-settings-select-wrap"><i class="bi bi-translate"></i><select
+                                        id="cp-admin-settings-language" name="language">
+                                        <option value="en">English</option>
+                                        <option value="ta">Tamil</option>
+                                    </select><i class="bi bi-chevron-down cp-admin-settings-select-arrow"></i></div>
+                                <small>Controls the saved language preference; page translations are not
+                                    implemented.</small>
+                            </div>
+                            <div class="cp-admin-settings-field"><label for="cp-admin-settings-date-format">Date
+                                    format</label>
+                                <div class="cp-admin-settings-select-wrap"><i class="bi bi-calendar3"></i><select
+                                        id="cp-admin-settings-date-format" name="dateFormat">
+                                        <option value="DD MMM YYYY">13 Oct 2026</option>
+                                        <option value="DD/MM/YYYY">13/10/2026</option>
+                                        <option value="MM/DD/YYYY">10/13/2026</option>
+                                        <option value="YYYY-MM-DD">2026-10-13</option>
+                                    </select><i class="bi bi-chevron-down cp-admin-settings-select-arrow"></i></div>
+                                <small>Used by settings-aware date displays where supported.</small>
+                            </div>
+                            <div class="cp-admin-settings-field"><label
+                                    for="cp-admin-settings-timezone">Timezone</label>
+                                <div class="cp-admin-settings-select-wrap"><i class="bi bi-globe2"></i><select
+                                        id="cp-admin-settings-timezone" name="timezone">
+                                        <option value="Asia/Kolkata">India Standard Time (UTC+05:30)</option>
+                                        <option value="UTC">Coordinated Universal Time (UTC)</option>
+                                        <option value="Europe/London">London</option>
+                                        <option value="America/New_York">New York</option>
+                                        <option value="Asia/Dubai">Dubai</option>
+                                        <option value="Asia/Singapore">Singapore</option>
+                                    </select><i class="bi bi-chevron-down cp-admin-settings-select-arrow"></i></div>
+                                <small>Saved as your preferred timezone.</small>
+                            </div>
+                            <div class="cp-admin-settings-field"><label for="cp-admin-settings-start-page">Default
+                                    dashboard page</label>
+                                <div class="cp-admin-settings-select-wrap"><i class="bi bi-house-door"></i><select
+                                        id="cp-admin-settings-start-page" name="startPage">
+                                        <option value="admin-dashboard.html">Overview</option>
+                                        <option value="admin-analytics.html">Analytics</option>
+                                        <option value="admin-profile.html">Profile</option>
+                                        <option value="admin-settings.html">Settings</option>
+                                    </select><i class="bi bi-chevron-down cp-admin-settings-select-arrow"></i></div>
+                                <small>Choose which admin page you prefer to open.</small>
+                            </div>
+                        </div>
+                    </section>
+                    <!--- Notification Preferences --->
+                    <section class="cp-admin-settings-card" id="cp-admin-settings-notifications">
+                        <div class="cp-admin-settings-card-heading">
+                            <span class="cp-admin-settings-card-icon cp-admin-settings-icon-blue"><i
+                                    class="bi bi-bell"></i></span>
+                            <div>
+                                <h3>Notifications</h3>
+                                <p>Choose which notification preferences you want enabled.</p>
+                            </div>
+                            <span class="cp-admin-settings-card-label">ALERTS</span>
+                        </div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>Dashboard notifications</strong>
+                                <p>Allow notification indicators within your workspace.</p>
+                            </div>
+                            <label class="cp-admin-settings-switch"><input type="checkbox" name="dashboardNotifications"
+                                    checked><span></span><span class="cp-admin-settings-sr-only">Dashboard
+                                    notifications</span></label>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>Email notifications</strong>
+                                <p>Preference for future email alerts from your application.</p>
+                            </div>
+                            <label class="cp-admin-settings-switch"><input type="checkbox"
+                                    name="emailNotifications"><span></span><span class="cp-admin-settings-sr-only">Email
+                                    notifications</span></label>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>New enquiry alerts</strong>
+                                <p>Enable the preference for alerts when new enquiries arrive.</p>
+                            </div>
+                            <label class="cp-admin-settings-switch"><input type="checkbox" name="enquiryNotifications"
+                                    checked><span></span><span class="cp-admin-settings-sr-only">New enquiry
+                                    alerts</span></label>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-setting-row">
+                            <div class="cp-admin-settings-setting-copy"><strong>Weekly summary</strong>
+                                <p>Preference for a weekly website performance summary.</p>
+                            </div>
+                            <label class="cp-admin-settings-switch"><input type="checkbox"
+                                    name="weeklySummary"><span></span><span class="cp-admin-settings-sr-only">Weekly
+                                    summary</span></label>
+                        </div>
+                        <p class="cp-admin-settings-note"><i class="bi bi-info-circle"></i> These preferences are saved
+                            locally. Actual email delivery and notification events require backend integration.</p>
+                    </section>
+                    <!--- Security Settings --->
+                    <section class="cp-admin-settings-card" id="cp-admin-settings-security">
+                        <div class="cp-admin-settings-card-heading">
+                            <span class="cp-admin-settings-card-icon cp-admin-settings-icon-orange"><i
+                                    class="bi bi-shield-lock"></i></span>
+                            <div>
+                                <h3>Privacy & security</h3>
+                                <p>Review session details and available security actions.</p>
+                            </div>
+                            <span class="cp-admin-settings-card-label">SECURITY</span>
+                        </div>
+                        <div class="cp-admin-settings-security-item">
+                            <span class="cp-admin-settings-security-icon"><i class="bi bi-person-check"></i></span>
+                            <div class="cp-admin-settings-security-copy"><strong>Current session</strong>
+                                <p id="cp-admin-settings-session-email">Loading account details...</p><small
+                                    id="cp-admin-settings-session-role">Administrator account</small>
+                            </div>
+                            <span class="cp-admin-settings-security-badge"><span></span> Current</span>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-security-item">
+                            <span class="cp-admin-settings-security-icon"><i class="bi bi-key"></i></span>
+                            <div class="cp-admin-settings-security-copy"><strong>Password management</strong>
+                                <p>Open the password management placeholder page.</p>
+                            </div>
+                            <button type="button" class="cp-admin-settings-action-btn"
+                                id="cp-admin-settings-change-password">Change password <i
+                                    class="bi bi-arrow-up-right"></i></button>
+                        </div>
+                        <div class="cp-admin-settings-divider"></div>
+                        <div class="cp-admin-settings-security-item">
+                            <span class="cp-admin-settings-security-icon cp-admin-settings-security-icon-danger"><i
+                                    class="bi bi-box-arrow-right"></i></span>
+                            <div class="cp-admin-settings-security-copy"><strong>Sign out</strong>
+                                <p>End your current dashboard session.</p>
+                            </div>
+                            <button type="button" class="cp-admin-settings-action-btn cp-admin-settings-logout-btn"
+                                id="cp-admin-settings-logout">Log out <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                        <p class="cp-admin-settings-note"><i class="bi bi-shield-exclamation"></i> This demo uses
+                            browser storage. Real session protection requires server-side authentication.</p>
+                    </section>
+                    <!--- Workspace Settings --->
+                    <section class="cp-admin-settings-card" id="cp-admin-settings-workspace">
+                        <div class="cp-admin-settings-card-heading">
+                            <span class="cp-admin-settings-card-icon cp-admin-settings-icon-lime"><i
+                                    class="bi bi-grid"></i></span>
+                            <div>
+                                <h3>Workspace</h3>
+                                <p>Customize basic portfolio workspace details.</p>
+                            </div>
+                            <span class="cp-admin-settings-card-label">WORKSPACE</span>
+                        </div>
+                        <div class="cp-admin-settings-fields-grid">
+                            <div class="cp-admin-settings-field"><label for="cp-admin-settings-workspace-name">Workspace
+                                    name</label>
+                                <div class="cp-admin-settings-input-wrap"><i class="bi bi-building"></i><input
+                                        type="text" id="cp-admin-settings-workspace-name" name="workspaceName"
+                                        maxlength="60" required></div>
+                            </div>
+                            <div class="cp-admin-settings-field"><label
+                                    for="cp-admin-settings-workspace-tagline">Workspace tagline</label>
+                                <div class="cp-admin-settings-input-wrap"><i class="bi bi-type"></i><input type="text"
+                                        id="cp-admin-settings-workspace-tagline" name="workspaceTagline" maxlength="120"
+                                        placeholder="Your creative space"></div>
+                            </div>
+                        </div>
+                        <div class="cp-admin-settings-workspace-preview"><span class="cp-admin-settings-preview-icon"><i
+                                    class="bi bi-code-slash"></i></span>
+                            <div><small>WORKSPACE PREVIEW</small><strong id="cp-admin-settings-preview-name">Creative
+                                    Portfolio</strong><span id="cp-admin-settings-preview-tagline">Your creative
+                                    space</span></div><span class="cp-admin-settings-preview-dot"></span>
+                        </div>
+                    </section>
+                    <!--- Settings Form Actions --->
+                    <div class="cp-admin-settings-actions">
+                        <div class="cp-admin-settings-unsaved" id="cp-admin-settings-unsaved"><i
+                                class="bi bi-pencil"></i> You have unsaved changes</div>
+                        <div class="cp-admin-settings-action-buttons">
+                            <button type="button" class="cp-admin-settings-reset-btn" id="cp-admin-settings-reset"><i
+                                    class="bi bi-arrow-counterclockwise"></i> Reset defaults</button>
+                            <button type="submit" class="cp-admin-settings-save-btn" id="cp-admin-settings-save"><i
+                                    class="bi bi-check2-circle"></i> Save settings</button>
+                        </div>
+                    </div>
+                </form>
+                <!--- Settings Footer --->
+                <footer class="cp-admin-settings-footer"><span>© <span id="cp-admin-settings-year"></span> Creative
+                        Portfolio</span><span><i class="bi bi-shield-check"></i> Workspace preferences</span></footer>
+            </main>
+            <!--- Admin Settings Content End --->
+
+
+        </div>
+    </div>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/admin-settings.js"></script>
+</body>
+
+</html>

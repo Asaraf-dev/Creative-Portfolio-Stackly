@@ -1,0 +1,667 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Creative Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main favicon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- webp favicons -->
+    <link rel="icon" type="image/webp" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/images/favicon-32x32.png" />
+
+    <!-- Apple -->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+    <!-- Android -->
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/webp" sizes="512x512" href="assets/images/android-chrome-512x512.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="assets/images/site.webmanifest" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--- Bootstrap Icon --->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/loader.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!--- Creative Portfolio Loader --->
+    <div class="cp-ldr" id="cp-ldr" aria-label="Loading Creative Portfolio" role="status">
+        <!--- Loader Background Effects --->
+        <div class="cp-ldr-grid"></div>
+        <div class="cp-ldr-glow cp-ldr-glow-one"></div>
+        <div class="cp-ldr-glow cp-ldr-glow-two"></div>
+        <div class="cp-ldr-particles" id="cp-ldr-particles"></div>
+        <!--- Loader Main Content --->
+        <div class="cp-ldr-content">
+            <div class="cp-ldr-emblem">
+                <div class="cp-ldr-orbit cp-ldr-orbit-one"></div>
+                <div class="cp-ldr-orbit cp-ldr-orbit-two"></div>
+                <div class="cp-ldr-orbit cp-ldr-orbit-three"></div>
+                <div class="cp-ldr-core"><span class="cp-ldr-core-inner"></span></div>
+                <span class="cp-ldr-satellite cp-ldr-satellite-one"></span>
+                <span class="cp-ldr-satellite cp-ldr-satellite-two"></span>
+            </div>
+            <!--- Loader Brand --->
+            <div class="cp-ldr-brand">CREATIVE<span>.</span>PORTFOLIO</div>
+            <div class="cp-ldr-caption"><span class="cp-ldr-caption-line"></span><span id="cp-ldr-message">Crafting
+                    something extraordinary</span><span class="cp-ldr-caption-line"></span></div>
+            <!--- Loader Bottom Details --->
+            <div class="cp-ldr-bottom"><span>DESIGN</span><span
+                    class="cp-ldr-bottom-dot"></span><span>DEVELOP</span><span
+                    class="cp-ldr-bottom-dot"></span><span>CREATE</span></div>
+        </div>
+        <!--- Loader Corner Details --->
+        <span class="cp-ldr-corner cp-ldr-corner-tl"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-tr"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-bl"></span>
+        <span class="cp-ldr-corner cp-ldr-corner-br"></span>
+    </div>
+    <!--- Creative Portfolio Loader End --->
+
+    <!--- Navbar Component --->
+    <div id="cp-navbar-placeholder"></div>
+
+    <main>
+
+        <!--- Hero Section Start --->
+        <section class="cp-ind-hero" id="cp-ind-hero">
+            <!--- Hero Background --->
+            <div class="cp-ind-hero-bg" aria-hidden="true">
+                <div class="cp-ind-hero-grid"></div>
+                <div class="cp-ind-hero-glow cp-ind-hero-glow-one"></div>
+                <div class="cp-ind-hero-glow cp-ind-hero-glow-two"></div>
+                <div class="cp-ind-hero-particles" id="cp-ind-hero-particles"></div>
+            </div>
+            <!--- Hero Container --->
+            <div class="container cp-ind-hero-container">
+                <div class="row align-items-center cp-ind-hero-row">
+                    <!--- Hero Content --->
+                    <div class="col-lg-7 cp-ind-hero-left">
+                        <div class="cp-ind-hero-status">
+                            <span class="cp-ind-hero-status-dot"></span>
+                            <span>INDEPENDENT CREATIVE DEVELOPER</span>
+                            <span class="cp-ind-hero-status-line"></span>
+                            <span class="cp-ind-hero-status-available">AVAILABLE FOR WORK</span>
+                        </div>
+                        <!--- Hero Heading --->
+                        <h1 class="cp-ind-hero-title">
+                            DIGITAL<br>
+                            <span class="cp-ind-hero-title-outline">DREAMS.</span><br>
+                            <span class="cp-ind-hero-title-last">REAL <span class="cp-ind-hero-title-accent">IMPACT<span
+                                        class="cp-ind-hero-title-period">.</span></span></span>
+                        </h1>
+                        <!--- Hero Description --->
+                        <p class="cp-ind-hero-description">I transform bold ideas into meaningful digital experiences
+                            through thoughtful design, creative development, and technology that makes a difference.</p>
+                        <!--- Hero Actions --->
+                        <div class="cp-ind-hero-actions">
+                            <a href="404.html" class="cp-ind-hero-btn cp-ind-hero-btn-primary">
+                                <span>Explore My Work</span>
+                                <span class="cp-ind-hero-btn-icon"><i class="bi bi-arrow-up-right"
+                                        aria-hidden="true"></i></span>
+                            </a>
+                            <a href="404.html" class="cp-ind-hero-btn cp-ind-hero-btn-secondary">
+                                <span class="cp-ind-hero-play"><i class="bi bi-arrow-right"
+                                        aria-hidden="true"></i></span>
+                                <span>Let's Talk</span>
+                            </a>
+                        </div>
+                        <!--- Hero Skills --->
+                        <div class="cp-ind-hero-skills">
+                            <span class="cp-ind-hero-skills-label">MY CREATIVE TOOLKIT</span>
+                            <div class="cp-ind-hero-skill-list">
+                                <span class="cp-ind-hero-skill"><i class="bi bi-brush" aria-hidden="true"></i> UI /
+                                    UX</span>
+                                <span class="cp-ind-hero-skill"><i class="bi bi-code-slash" aria-hidden="true"></i>
+                                    DEVELOPMENT</span>
+                                <span class="cp-ind-hero-skill"><i class="bi bi-lightning-charge"
+                                        aria-hidden="true"></i> CREATIVE TECH</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--- Hero Visual --->
+                    <div class="col-lg-5 cp-ind-hero-right">
+                        <div class="cp-ind-hero-visual" id="cp-ind-hero-visual">
+                            <!--- Visual Top Labels --->
+                            <div class="cp-ind-hero-visual-top">
+                                <span><span class="cp-ind-hero-live-dot"></span> CREATIVE MODE: ON</span>
+                                <span>FIG. 001 / FUTURE</span>
+                            </div>
+                            <!--- Main Creative Orb --->
+                            <div class="cp-ind-hero-orb-stage" aria-label="Animated abstract digital art">
+                                <div class="cp-ind-hero-orb-grid"></div>
+                                <div class="cp-ind-hero-orb-ring cp-ind-hero-orb-ring-one"></div>
+                                <div class="cp-ind-hero-orb-ring cp-ind-hero-orb-ring-two"></div>
+                                <div class="cp-ind-hero-orb-ring cp-ind-hero-orb-ring-three"></div>
+                                <div class="cp-ind-hero-orb">
+
+                                    <div class="cp-ind-hero-orb-shape">
+                                        <img src="assets/images/creative-hero.webp" alt="Creative futuristic design"
+                                            class="cp-ind-hero-orb-image">
+                                    </div>
+
+                                    <div class="cp-ind-hero-orb-highlight"></div>
+                                </div>
+                                <span class="cp-ind-hero-orb-point cp-ind-hero-orb-point-one"></span>
+                                <span class="cp-ind-hero-orb-point cp-ind-hero-orb-point-two"></span>
+                                <span class="cp-ind-hero-orb-point cp-ind-hero-orb-point-three"></span>
+                                <!--- Floating Skill Cards --->
+                                <div class="cp-ind-hero-float-card cp-ind-hero-float-card-one">
+                                    <span class="cp-ind-hero-float-icon cp-ind-hero-float-icon-lime"><i
+                                            class="bi bi-braces" aria-hidden="true"></i></span>
+                                    <span><strong>Creative Code</strong><small>Ideas into reality</small></span>
+                                </div>
+                                <div class="cp-ind-hero-float-card cp-ind-hero-float-card-two">
+                                    <span class="cp-ind-hero-float-icon cp-ind-hero-float-icon-violet"><i
+                                            class="bi bi-stars" aria-hidden="true"></i></span>
+                                    <span><strong>Visual Thinking</strong><small>Designed to inspire</small></span>
+                                </div>
+                                <div class="cp-ind-hero-coordinate cp-ind-hero-coordinate-one">24° / 48°</div>
+                                <div class="cp-ind-hero-coordinate cp-ind-hero-coordinate-two">MAKE IT MATTER.</div>
+                            </div>
+                            <!--- Visual Bottom --->
+                            <div class="cp-ind-hero-visual-bottom">
+                                <span>IMAGINATION HAS NO LIMITS</span>
+                                <span class="cp-ind-hero-visual-index">01 <i class="bi bi-arrow-down-right"
+                                        aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                        <!--- Hero Scroll Hint --->
+                        <a href="#cp-ind-hero-next" class="cp-ind-hero-scroll">
+                            <span class="cp-ind-hero-scroll-icon"><i class="bi bi-arrow-down"
+                                    aria-hidden="true"></i></span>
+                            <span>SCROLL TO EXPLORE</span>
+                        </a>
+                    </div>
+                </div>
+                <!--- Hero Bottom Marquee --->
+                <div class="cp-ind-hero-marquee">
+                    <div class="cp-ind-hero-marquee-track" aria-hidden="true">
+                        <span>DESIGN WITH PURPOSE <i class="bi bi-asterisk"></i> BUILD WITH PASSION <i
+                                class="bi bi-asterisk"></i> CREATE THE UNEXPECTED <i class="bi bi-asterisk"></i> DESIGN
+                            WITH PURPOSE <i class="bi bi-asterisk"></i> BUILD WITH PASSION <i
+                                class="bi bi-asterisk"></i> CREATE THE UNEXPECTED <i class="bi bi-asterisk"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--- Hero Section End --->
+        <!--- Next Section Anchor --->
+        <div id="cp-ind-hero-next"></div>
+
+        <!--- About Me Section Start --->
+        <section class="cp-ind-about" id="cp-ind-about">
+            <div class="container">
+                <div class="cp-ind-about-heading">
+                    <span class="cp-ind-about-eyebrow"><span></span> A LITTLE ABOUT ME</span>
+                    <h2>Building digital<br><span>things that matter.</span></h2>
+                    <p class="cp-ind-about-intro">A developer driven by curiosity, creative thinking, and the desire to
+                        turn complex ideas into meaningful digital experiences.</p>
+                </div>
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-lg-5">
+                        <div class="cp-ind-about-visual">
+                            <div class="cp-ind-about-grid"></div>
+                            <div class="cp-ind-about-orbit cp-ind-about-orbit-one"></div>
+                            <div class="cp-ind-about-orbit cp-ind-about-orbit-two"></div>
+                            <div class="cp-ind-about-core">
+                                <div class="cp-ind-about-code-icon"><i class="bi bi-code-slash"></i></div>
+                                <span>CREATIVE MIND</span>
+                                <strong>DEVELOPER<span>.</span></strong>
+                                <small>Turning ideas into reality</small>
+                            </div>
+                            <div class="cp-ind-about-float cp-ind-about-float-top"><i
+                                    class="bi bi-braces"></i><span>Clean Code</span></div>
+                            <div class="cp-ind-about-float cp-ind-about-float-bottom"><i
+                                    class="bi bi-lightbulb"></i><span>Creative Ideas</span></div>
+                            <span class="cp-ind-about-coordinate">FIG. 002 / ABOUT</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="cp-ind-about-content">
+                            <span class="cp-ind-about-kicker">WHO I AM</span>
+                            <h3>Curious by nature.<br>Creative by design.</h3>
+                            <p class="cp-ind-about-description">I'm a passionate developer who enjoys creating
+                                responsive websites and exploring the technology behind great digital products. I
+                                combine logical thinking with visual creativity to build experiences that are useful,
+                                intuitive, and memorable.</p>
+                            <p class="cp-ind-about-description">From shaping a user interface to bringing it to life
+                                with code, I enjoy every stage of the development process. I'm always learning,
+                                experimenting, and looking for better ways to solve problems.</p>
+                            <div class="cp-ind-about-highlights">
+                                <div class="cp-ind-about-highlight"><span class="cp-ind-about-highlight-icon"><i
+                                            class="bi bi-window-stack"></i></span>
+                                    <div><strong>Web Development</strong><small>Responsive, user-focused
+                                            websites</small></div>
+                                </div>
+                                <div class="cp-ind-about-highlight"><span class="cp-ind-about-highlight-icon"><i
+                                            class="bi bi-palette2"></i></span>
+                                    <div><strong>Creative Thinking</strong><small>Distinctive and thoughtful
+                                            interfaces</small></div>
+                                </div>
+                                <div class="cp-ind-about-highlight"><span class="cp-ind-about-highlight-icon"><i
+                                            class="bi bi-graph-up-arrow"></i></span>
+                                    <div><strong>Always Learning</strong><small>Growing through every project</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="404.html" class="cp-ind-about-link">MORE ABOUT ME <i
+                                    class="bi bi-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cp-ind-about-bottom">
+                    <span>DESIGNED WITH PURPOSE</span>
+                    <span class="cp-ind-about-bottom-line"></span>
+                    <span>BUILT WITH CURIOSITY</span>
+                </div>
+            </div>
+        </section>
+        <!--- About Section End --->
+
+        <!--- Skills & Technologies Section Start --->
+        <section class="cp-ind-skills" id="cp-ind-skills">
+            <div class="container">
+                <div class="cp-ind-skills-heading">
+                    <span class="cp-ind-skills-eyebrow"><span></span> MY TECH STACK</span>
+                    <h2>Tools I use to<br><span>turn ideas into reality.</span></h2>
+                    <p>Technologies and tools I use to build responsive interfaces, develop applications, and bring
+                        digital ideas to life.</p>
+                </div>
+                <div class="cp-ind-skills-toolbar">
+                    <div class="cp-ind-skills-categories" role="group" aria-label="Filter skills">
+                        <button class="cp-ind-skills-filter active" type="button" data-filter="all"
+                            aria-pressed="true">All Skills</button>
+                        <button class="cp-ind-skills-filter" type="button" data-filter="frontend"
+                            aria-pressed="false">Frontend</button>
+                        <button class="cp-ind-skills-filter" type="button" data-filter="programming"
+                            aria-pressed="false">Programming</button>
+                        <button class="cp-ind-skills-filter" type="button" data-filter="tools"
+                            aria-pressed="false">Tools</button>
+                    </div>
+                    <span class="cp-ind-skills-count"><span>08</span> CORE TECHNOLOGIES</span>
+                </div>
+                <div class="row g-3 cp-ind-skills-grid">
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="frontend">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">01</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-html"><i class="bi bi-filetype-html"></i></div>
+                            <h3>HTML5</h3>
+                            <p>Semantic structure</p>
+                            <div class="cp-ind-skills-tags"><span>Markup</span><span>Web</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="frontend">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">02</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-css"><i class="bi bi-filetype-css"></i></div>
+                            <h3>CSS3</h3>
+                            <p>Creative styling</p>
+                            <div class="cp-ind-skills-tags"><span>Responsive</span><span>UI</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="frontend">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">03</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-js"><i class="bi bi-filetype-js"></i></div>
+                            <h3>JavaScript</h3>
+                            <p>Interactive experiences</p>
+                            <div class="cp-ind-skills-tags"><span>DOM</span><span>Logic</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="frontend">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">04</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-bootstrap"><i class="bi bi-bootstrap"></i>
+                            </div>
+                            <h3>Bootstrap 5</h3>
+                            <p>Responsive layouts</p>
+                            <div class="cp-ind-skills-tags"><span>Grid</span><span>Components</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="programming">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">05</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-java"><i class="bi bi-cup-hot"></i></div>
+                            <h3>Java</h3>
+                            <p>Application development</p>
+                            <div class="cp-ind-skills-tags"><span>OOP</span><span>Logic</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="programming">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">06</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-python"><i class="bi bi-filetype-py"></i></div>
+                            <h3>Python</h3>
+                            <p>Problem solving</p>
+                            <div class="cp-ind-skills-tags"><span>Scripting</span><span>Logic</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="tools">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">07</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-git"><i class="bi bi-git"></i></div>
+                            <h3>Git</h3>
+                            <p>Version control</p>
+                            <div class="cp-ind-skills-tags"><span>Tracking</span><span>Workflow</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                    <div class="col-6 col-lg-3 cp-ind-skills-item" data-category="tools">
+                        <article class="cp-ind-skills-card">
+                            <div class="cp-ind-skills-card-top"><span class="cp-ind-skills-number">08</span><i
+                                    class="bi bi-arrow-up-right"></i></div>
+                            <div class="cp-ind-skills-icon cp-ind-skills-vscode"><i class="bi bi-code-square"></i></div>
+                            <h3>VS Code</h3>
+                            <p>Development workflow</p>
+                            <div class="cp-ind-skills-tags"><span>Editor</span><span>Productivity</span></div>
+                            <div class="cp-ind-skills-card-line"><span></span></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="cp-ind-skills-footer">
+                    <div class="cp-ind-skills-footer-status"><span></span> ALWAYS LEARNING · ALWAYS BUILDING</div>
+                    <a href="404.html" class="cp-ind-skills-link">EXPLORE MY SKILLS <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--- Skills & Technologies Section End --->
+
+        <!--- Featured Projects Section Start --->
+        <section class="cp-ind-projects" id="cp-ind-projects">
+            <div class="container">
+                <div class="cp-ind-projects-heading">
+                    <div>
+                        <span class="cp-ind-projects-eyebrow"><span></span> SELECTED WORKS / 2026</span>
+                        <h2>Ideas turned into<br><span>digital experiences.</span></h2>
+                    </div>
+                    <p>A selection of projects built through creative thinking, thoughtful design, and development.</p>
+                </div>
+                <div class="cp-ind-projects-toolbar">
+                    <span class="cp-ind-projects-label">FEATURED PROJECTS <span>— 03</span></span>
+                    <a href="404.html" class="cp-ind-projects-all">VIEW ALL PROJECTS <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="row g-4 cp-ind-projects-grid">
+                    <div class="col-md-6 col-lg-4 cp-ind-projects-item">
+                        <article class="cp-ind-projects-card">
+                            <a class="cp-ind-projects-preview" aria-label="View SaaS platform project">
+                                <img src="assets/images/Featured-Projects-01.webp"
+                                    alt="Analytics dashboard displayed on a screen" loading="lazy">
+                                <span class="cp-ind-projects-preview-tag">01 / WEB PLATFORM</span>
+                            </a>
+                            <div class="cp-ind-projects-info">
+                                <div class="cp-ind-projects-meta"><span>WEB DEVELOPMENT</span><span>01</span></div>
+                                <h3>SaaS & AI Platform</h3>
+                                <p>A modern digital platform concept with a clean interface, responsive layouts, and an
+                                    engaging product experience.</p>
+                                <div class="cp-ind-projects-tech">
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+                                </div>
+                                <a href="404.html" class="cp-ind-projects-details">EXPLORE PROJECT <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 cp-ind-projects-item">
+                        <article class="cp-ind-projects-card">
+                            <a class="cp-ind-projects-preview" aria-label="View creative business website project">
+                                <img src="assets/images/Featured-Projects-02.webp"
+                                    alt="Contemporary workspace representing a business website" loading="lazy">
+                                <span class="cp-ind-projects-preview-tag">02 / BUSINESS WEBSITE</span>
+                            </a>
+                            <div class="cp-ind-projects-info">
+                                <div class="cp-ind-projects-meta"><span>BUSINESS SOLUTIONS</span><span>02</span></div>
+                                <h3>Business Solutions</h3>
+                                <p>A professional website concept designed to communicate services clearly and create a
+                                    strong digital presence.</p>
+                                <div class="cp-ind-projects-tech">
+                                    <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+                                </div>
+                                <a href="404.html" class="cp-ind-projects-details">EXPLORE PROJECT <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 cp-ind-projects-item">
+                        <article class="cp-ind-projects-card">
+                            <a class="cp-ind-projects-preview" aria-label="View digital product project">
+                                <img src="assets/images/Featured-Projects-03.webp"
+                                    alt="Colorful digital design and creative interface concepts" loading="lazy">
+                                <span class="cp-ind-projects-preview-tag">03 / DIGITAL EXPERIENCE</span>
+                            </a>
+                            <div class="cp-ind-projects-info">
+                                <div class="cp-ind-projects-meta"><span>UI & WEB DESIGN</span><span>03</span></div>
+                                <h3>Creative Digital Experience</h3>
+                                <p>A visually engaging design concept focused on clear content, distinctive visual
+                                    details, and responsive presentation.</p>
+                                <div class="cp-ind-projects-tech"><span>UI
+                                        Design</span><span>CSS</span><span>JavaScript</span></div>
+                                <a href="404.html" class="cp-ind-projects-details">EXPLORE PROJECT <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="cp-ind-projects-bottom">
+                    <span>DESIGN WITH INTENTION</span>
+                    <span class="cp-ind-projects-bottom-line"></span>
+                    <span>DEVELOP WITH PURPOSE</span>
+                </div>
+            </div>
+        </section>
+        <!--- Featured Projects Section End --->
+
+        <!--- My Workflow Section Start --->
+        <section class="cp-ind-workflow" id="cp-ind-workflow">
+            <div class="container">
+                <div class="cp-ind-workflow-heading">
+                    <span class="cp-ind-workflow-eyebrow"><span></span> HOW I WORK</span>
+                    <h2>From the first idea<br>to <span>the final experience.</span></h2>
+                    <p>Every great digital product starts with a clear idea. Here's how I turn that idea into a
+                        meaningful, functional, and polished experience.</p>
+                </div>
+                <div class="cp-ind-workflow-track">
+                    <div class="cp-ind-workflow-progress"><span></span></div>
+                    <div class="row g-3 cp-ind-workflow-grid">
+                        <div class="col-sm-6 col-lg-3">
+                            <article class="cp-ind-workflow-card">
+                                <div class="cp-ind-workflow-card-top"><span
+                                        class="cp-ind-workflow-number">01</span><span class="cp-ind-workflow-status">THE
+                                        START</span></div>
+                                <div class="cp-ind-workflow-icon cp-ind-workflow-icon-one"><i
+                                        class="bi bi-lightbulb"></i></div>
+                                <h3>Discover</h3>
+                                <p>I understand the goals, audience, requirements, and problems before deciding what to
+                                    build.</p>
+                                <div class="cp-ind-workflow-tags"><span>Research</span><span>Planning</span></div>
+
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <article class="cp-ind-workflow-card">
+                                <div class="cp-ind-workflow-card-top"><span
+                                        class="cp-ind-workflow-number">02</span><span class="cp-ind-workflow-status">THE
+                                        VISION</span></div>
+                                <div class="cp-ind-workflow-icon cp-ind-workflow-icon-two"><i class="bi bi-bezier2"></i>
+                                </div>
+                                <h3>Design</h3>
+                                <p>I shape the visual direction, layout, and user journey into a clear and engaging
+                                    interface.</p>
+                                <div class="cp-ind-workflow-tags"><span>UI/UX</span><span>Prototyping</span></div>
+
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <article class="cp-ind-workflow-card">
+                                <div class="cp-ind-workflow-card-top"><span
+                                        class="cp-ind-workflow-number">03</span><span class="cp-ind-workflow-status">THE
+                                        BUILD</span></div>
+                                <div class="cp-ind-workflow-icon cp-ind-workflow-icon-three"><i
+                                        class="bi bi-code-slash"></i></div>
+                                <h3>Develop</h3>
+                                <p>I transform the design into responsive, accessible, and interactive experiences using
+                                    clean code.</p>
+                                <div class="cp-ind-workflow-tags"><span>Frontend</span><span>Integration</span></div>
+
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <article class="cp-ind-workflow-card">
+                                <div class="cp-ind-workflow-card-top"><span
+                                        class="cp-ind-workflow-number">04</span><span class="cp-ind-workflow-status">THE
+                                        LAUNCH</span></div>
+                                <div class="cp-ind-workflow-icon cp-ind-workflow-icon-four"><i
+                                        class="bi bi-rocket-takeoff"></i></div>
+                                <h3>Deliver</h3>
+                                <p>I test across devices, refine the details, and prepare the product for a smooth
+                                    launch.</p>
+                                <div class="cp-ind-workflow-tags"><span>Testing</span><span>Deployment</span></div>
+
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="cp-ind-workflow-bottom">
+                    <div class="cp-ind-workflow-bottom-icon"><i class="bi bi-arrow-repeat"></i></div>
+                    <div class="cp-ind-workflow-bottom-copy"><strong>Built to improve. Designed to
+                            evolve.</strong><span>Feedback and continuous learning are part of every step.</span></div>
+                    <a href="404.html" class="cp-ind-workflow-cta">LET'S BUILD SOMETHING <i
+                            class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--- My Workflow Section End --->
+
+        <!--- Achievements & Statistics Section Start --->
+        <section class="cp-ind-stats" id="cp-ind-stats">
+            <div class="container">
+                <div class="cp-ind-stats-heading">
+                    <span class="cp-ind-stats-eyebrow"><span></span> THE JOURNEY SO FAR</span>
+                    <h2>Progress measured<br>in <span>what I create.</span></h2>
+                    <p>Every project is an opportunity to learn, experiment, solve problems, and build something better.
+                    </p>
+                </div>
+                <div class="cp-ind-stats-panel">
+                    <div class="cp-ind-stats-panel-top">
+                        <div class="cp-ind-stats-panel-title"><span></span> DEVELOPMENT OVERVIEW</div>
+                        <span class="cp-ind-stats-panel-code">SYS.001 / PROFILE</span>
+                    </div>
+                    <div class="row g-3 cp-ind-stats-grid">
+                        <div class="col-6 col-lg-3">
+                            <article class="cp-ind-stats-card">
+                                <div class="cp-ind-stats-card-top"><span class="cp-ind-stats-icon"><i
+                                            class="bi bi-window-stack"></i></span><span
+                                        class="cp-ind-stats-index">01</span></div>
+                                <div class="cp-ind-stats-value"><span class="cp-ind-stats-counter"
+                                        data-target="12">0</span><span class="cp-ind-stats-suffix">+</span></div>
+                                <h3>Projects Built</h3>
+                                <p>Ideas brought to life through code.</p>
+                                <div class="cp-ind-stats-line"><span></span></div>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <article class="cp-ind-stats-card">
+                                <div class="cp-ind-stats-card-top"><span
+                                        class="cp-ind-stats-icon cp-ind-stats-icon-violet"><i
+                                            class="bi bi-code-slash"></i></span><span
+                                        class="cp-ind-stats-index">02</span></div>
+                                <div class="cp-ind-stats-value"><span class="cp-ind-stats-counter"
+                                        data-target="8">0</span><span class="cp-ind-stats-suffix">+</span></div>
+                                <h3>Technologies</h3>
+                                <p>Tools used to create digital solutions.</p>
+                                <div class="cp-ind-stats-line"><span></span></div>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <article class="cp-ind-stats-card">
+                                <div class="cp-ind-stats-card-top"><span
+                                        class="cp-ind-stats-icon cp-ind-stats-icon-blue"><i
+                                            class="bi bi-calendar2-check"></i></span><span
+                                        class="cp-ind-stats-index">03</span></div>
+                                <div class="cp-ind-stats-value"><span class="cp-ind-stats-counter"
+                                        data-target="1">0</span><span class="cp-ind-stats-suffix">+</span></div>
+                                <h3>Years Learning</h3>
+                                <p>Growing through consistent practice.</p>
+                                <div class="cp-ind-stats-line"><span></span></div>
+                            </article>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <article class="cp-ind-stats-card">
+                                <div class="cp-ind-stats-card-top"><span
+                                        class="cp-ind-stats-icon cp-ind-stats-icon-orange"><i
+                                            class="bi bi-lightbulb"></i></span><span
+                                        class="cp-ind-stats-index">04</span></div>
+                                <div class="cp-ind-stats-value"><span class="cp-ind-stats-counter"
+                                        data-target="100">0</span><span class="cp-ind-stats-suffix">%</span></div>
+                                <h3>Learning Mindset</h3>
+                                <p>Always curious. Always improving.</p>
+                                <div class="cp-ind-stats-line"><span></span></div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="cp-ind-stats-panel-bottom"><span><i class="bi bi-activity"></i> CONTINUOUS
+                            IMPROVEMENT</span><span>MORE TO BUILD</span></div>
+                </div>
+                <div class="cp-ind-stats-note"><i class="bi bi-info-circle"></i><span>These are editable sample values.
+                        Update them to reflect your actual project count, technologies, and experience.</span></div>
+            </div>
+        </section>
+        <!--- Achievements & Statistics Section End --->
+
+
+    </main>
+
+    <!--- Footer Component --->
+    <div id="cp-footer-placeholder"></div>
+
+    <!--- Js Files --->
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Create Account | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body class="cp-auth-login-page cp-auth-register-page">
+    <main class="cp-auth-login cp-auth-register">
+        <div class="cp-auth-login-bg">
+            <span class="cp-auth-login-glow cp-auth-login-glow-one"></span>
+            <span class="cp-auth-login-glow cp-auth-login-glow-two"></span>
+            <div class="cp-auth-login-grid"></div>
+        </div>
+        <div class="cp-auth-login-shell cp-auth-register-shell">
+            <section class="cp-auth-login-visual cp-auth-register-visual">
+                <a href="index.html" class="cp-auth-login-brand"><span class="cp-auth-login-brand-icon"><i
+                            class="bi bi-code-slash"></i></span><span>CREATIVE<span
+                            class="cp-auth-login-brand-dot">.</span>PORTFOLIO</span></a>
+                <div class="cp-auth-login-visual-content">
+                    <span class="cp-auth-login-kicker"><span></span> YOUR NEXT CHAPTER STARTS HERE</span>
+                    <h1>Build something<br><span>remarkable.</span></h1>
+                    <p>Create your account and step into a workspace designed to bring ideas, projects, and creative
+                        collaboration together.</p>
+                    <div class="cp-auth-login-art" aria-hidden="true">
+                        <div class="cp-auth-login-art-ring cp-auth-login-art-ring-one"></div>
+                        <div class="cp-auth-login-art-ring cp-auth-login-art-ring-two"></div>
+                        <div class="cp-auth-login-art-ring cp-auth-login-art-ring-three"></div>
+                        <div class="cp-auth-login-art-orb"><i class="bi bi-person-plus"></i></div>
+                        <span class="cp-auth-login-art-tag cp-auth-login-art-tag-one"><i class="bi bi-stars"></i> YOUR
+                            IDEAS</span>
+                        <span class="cp-auth-login-art-tag cp-auth-login-art-tag-two"><i
+                                class="bi bi-lightning-charge"></i> YOUR FUTURE</span>
+                        <span class="cp-auth-login-art-plus cp-auth-login-art-plus-one">+</span>
+                        <span class="cp-auth-login-art-plus cp-auth-login-art-plus-two">+</span>
+                    </div>
+                </div>
+                <div class="cp-auth-login-visual-footer"><span>DESIGN. DEVELOP. CREATE.</span><span>© <span
+                            id="cp-auth-register-year"></span> Creative Portfolio</span></div>
+            </section>
+            <section class="cp-auth-login-panel cp-auth-register-panel">
+                <div class="cp-auth-login-panel-inner cp-auth-register-panel-inner">
+                    <div class="cp-auth-login-mobile-brand"><span class="cp-auth-login-brand-icon"><i
+                                class="bi bi-code-slash"></i></span><span>CREATIVE<span
+                                class="cp-auth-login-brand-dot">.</span>PORTFOLIO</span></div>
+                    <div class="cp-auth-login-heading">
+                         <a href="index.html" class="cp-auth-login-home"><i class="bi bi-arrow-left"></i><span>Back to Home</span></a>
+                        <span class="cp-auth-login-eyebrow">GET STARTED</span>
+                        <h2>Create your <span>account.</span></h2>
+                        <p>Enter your details to set up your workspace.</p>
+                    </div>
+                    <form id="cp-auth-register-form" class="cp-auth-login-form" novalidate>
+                        <fieldset class="cp-auth-login-role-field">
+                            <legend>Select your account type <span>*</span></legend>
+                            <div class="cp-auth-login-role-options">
+                                <label class="cp-auth-login-role-option">
+                                    <input type="radio" name="accountRole" value="admin" required>
+                                    <span class="cp-auth-login-role-card"><span class="cp-auth-login-role-icon"><i
+                                                class="bi bi-shield-lock"></i></span><span
+                                            class="cp-auth-login-role-copy"><strong>Admin</strong><small>Manage
+                                                workspace</small></span><i
+                                            class="bi bi-check-circle-fill cp-auth-login-role-check"></i></span>
+                                </label>
+                                <label class="cp-auth-login-role-option">
+                                    <input type="radio" name="accountRole" value="client" required>
+                                    <span class="cp-auth-login-role-card"><span class="cp-auth-login-role-icon"><i
+                                                class="bi bi-person-workspace"></i></span><span
+                                            class="cp-auth-login-role-copy"><strong>Client</strong><small>Access
+                                                projects</small></span><i
+                                            class="bi bi-check-circle-fill cp-auth-login-role-check"></i></span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="cp-auth-login-field">
+                            <label for="cp-auth-register-name">Full Name <span>*</span></label>
+                            <div class="cp-auth-login-input-wrap"><i class="bi bi-person"></i><input type="text"
+                                    id="cp-auth-register-name" name="fullName" placeholder="Enter your full name"
+                                    autocomplete="name" minlength="2" maxlength="60" pattern="[A-Za-z ]+"
+                                    title="Use letters and spaces only." required></div>
+                            <small class="cp-auth-register-hint">Use letters and spaces only.</small>
+                        </div>
+                        <div class="cp-auth-login-field">
+                            <label for="cp-auth-register-phone">Phone Number <span>*</span></label>
+                            <div class="cp-auth-login-input-wrap"><i class="bi bi-telephone"></i><input type="tel"
+                                    id="cp-auth-register-phone" name="phone" placeholder="Enter 10-digit mobile number"
+                                    autocomplete="tel-national" inputmode="numeric" pattern="[0-9]{10}" minlength="10"
+                                    maxlength="10" title="Enter exactly 10 digits." required></div>
+                        </div>
+                        <div class="cp-auth-login-field">
+                            <label for="cp-auth-register-email">Email Address <span>*</span></label>
+                            <div class="cp-auth-login-input-wrap"><i class="bi bi-envelope"></i><input type="email"
+                                    id="cp-auth-register-email" name="email" placeholder="you@example.com"
+                                    autocomplete="email" maxlength="254" required></div>
+                        </div>
+                        <div class="cp-auth-login-field">
+                            <label for="cp-auth-register-password">Password <span>*</span></label>
+                            <div class="cp-auth-login-input-wrap"><i class="bi bi-lock"></i><input type="password"
+                                    id="cp-auth-register-password" name="password"
+                                    placeholder="Create a strong password" autocomplete="new-password" minlength="8"
+                                    pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
+                                    title="At least 8 characters with uppercase, lowercase, number, and special character."
+                                    required><button type="button" class="cp-auth-login-password-toggle"
+                                    data-password-toggle="cp-auth-register-password" aria-label="Show password"
+                                    aria-pressed="false"><i class="bi bi-eye"></i></button></div>
+                            <div class="cp-auth-register-password-rules" id="cp-auth-register-password-rules">
+                                <span data-rule="length"><i class="bi bi-circle"></i> 8+ characters</span>
+                                <span data-rule="uppercase"><i class="bi bi-circle"></i> Uppercase</span>
+                                <span data-rule="lowercase"><i class="bi bi-circle"></i> Lowercase</span>
+                                <span data-rule="number"><i class="bi bi-circle"></i> Number</span>
+                                <span data-rule="special"><i class="bi bi-circle"></i> Special character</span>
+                            </div>
+                        </div>
+                        <div class="cp-auth-login-field">
+                            <label for="cp-auth-register-confirm">Confirm Password <span>*</span></label>
+                            <div class="cp-auth-login-input-wrap"><i class="bi bi-shield-lock"></i><input
+                                    type="password" id="cp-auth-register-confirm" name="confirmPassword"
+                                    placeholder="Re-enter your password" autocomplete="new-password" required><button
+                                    type="button" class="cp-auth-login-password-toggle"
+                                    data-password-toggle="cp-auth-register-confirm" aria-label="Show confirm password"
+                                    aria-pressed="false"><i class="bi bi-eye"></i></button></div>
+                        </div>
+                        <p class="cp-auth-login-error" id="cp-auth-register-error" role="alert" aria-live="polite"></p>
+                        <button type="submit" class="cp-auth-login-submit"><span>Create Account</span><i
+                                class="bi bi-arrow-up-right"></i></button>
+                        <div class="cp-auth-login-divider"><span>YOUR CREATIVE JOURNEY</span></div>
+                        <p class="cp-auth-login-signup">Already have an account? <a href="login.html">Sign In <i
+                                    class="bi bi-arrow-up-right"></i></a></p>
+                    </form>
+                    <div class="cp-auth-login-bottom"><i class="bi bi-shield-check"></i><span>Enter accurate details to
+                            set up your profile.</span></div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>

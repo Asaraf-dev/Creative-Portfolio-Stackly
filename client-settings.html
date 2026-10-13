@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>Dashboard | Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+
+<body class="cp-dashboard-page">
+    <div class="cp-dashboard-layout" id="cp-dashboard-layout">
+        <!--- Dashboard Sidebar --->
+        <aside class="cp-dashboard-sidebar" id="cp-dashboard-sidebar" aria-label="Dashboard navigation">
+            <div class="cp-dashboard-sidebar-top">
+                <a href="index.html" class="cp-dashboard-brand">
+                    <span class="cp-dashboard-brand-icon"><i class="bi bi-code-slash"></i></span>
+                    <span class="cp-dashboard-brand-text">CREATIVE<span>.</span>PORTFOLIO</span>
+                </a>
+                <div class="cp-dashboard-sidebar-user">
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-sidebar">
+                        <img src="assets/images/profile-2.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                    <div class="cp-dashboard-sidebar-user-info">
+                        <strong data-user-name>Welcome back</strong>
+                        <span data-user-email>Loading email...</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cp-dashboard-sidebar-label">WORKSPACE</div>
+            <nav class="cp-dashboard-nav">
+                <a href="client-dashboard.html" class="cp-dashboard-nav-link" data-page="overview">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-grid-1x2"></i></span><span>Overview</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-analytics.html" class="cp-dashboard-nav-link" data-page="analytics">
+                    <span class="cp-dashboard-nav-icon"><i
+                            class="bi bi-graph-up-arrow"></i></span><span>Analytics</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-profile.html" class="cp-dashboard-nav-link" data-page="profile">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-person"></i></span><span>Profile</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="client-settings.html" class="cp-dashboard-nav-link" data-page="settings">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-sliders"></i></span><span>Settings</span><i
+                        class="bi bi-chevron-right cp-dashboard-nav-arrow"></i>
+                </a>
+                <a href="login.html" class="cp-dashboard-nav-link cp-dashboard-logout" id="cp-dashboard-logout">
+                    <span class="cp-dashboard-nav-icon"><i class="bi bi-box-arrow-right"></i></span><span>Logout</span>
+                </a>
+            </nav>
+            <div class="cp-dashboard-sidebar-bottom">
+                <span class="cp-dashboard-status-dot"></span><span>Workspace active</span>
+                <span class="cp-dashboard-sidebar-version">v1.0</span>
+            </div>
+        </aside>
+        <!--- Dashboard Mobile Backdrop --->
+        <button type="button" class="cp-dashboard-backdrop" id="cp-dashboard-backdrop" aria-label="Close navigation"
+            tabindex="-1"></button>
+        <!--- Dashboard Main Area --->
+        <div class="cp-dashboard-main">
+            <!--- Dashboard Topbar --->
+            <header class="cp-dashboard-topbar">
+                <div class="cp-dashboard-topbar-left">
+                    <button type="button" class="cp-dashboard-menu-toggle" id="cp-dashboard-menu-toggle"
+                        aria-label="Open navigation" aria-controls="cp-dashboard-sidebar" aria-expanded="false">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <div class="cp-dashboard-page-heading">
+                        <span class="cp-dashboard-page-eyebrow" data-dashboard-eyebrow>YOUR WORKSPACE</span>
+                        <h1 data-dashboard-title>Overview</h1>
+                    </div>
+                </div>
+                <div class="cp-dashboard-topbar-right">
+                    <div class="cp-dashboard-topbar-user">
+                        <span class="cp-dashboard-topbar-user-label">SIGNED IN AS</span>
+                        <strong data-user-email>Loading email...</strong>
+                    </div>
+                    <div class="cp-dashboard-avatar cp-dashboard-avatar-topbar">
+                        <img src="assets/images/profile-2.webp" alt="Profile" class="cp-dashboard-profile-image"
+                            data-profile-image>
+                        <i class="bi bi-person-fill cp-dashboard-avatar-fallback"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!--- Dashboard Page Content --->
+
+            <!--- Client Settings Content --->
+            <main class="cp-dashboard-content cp-client-settings">
+                <!--- Settings Introduction --->
+                <section class="cp-client-settings-hero">
+                    <div class="cp-client-settings-hero-copy">
+                        <span class="cp-client-settings-eyebrow"><i class="bi bi-sliders"></i> PERSONAL WORKSPACE</span>
+                        <h2>Make it <span>yours.</span></h2>
+                        <p>Customize your workspace, manage notifications, and choose the experience that works best for
+                            you.</p>
+                    </div>
+                    <div class="cp-client-settings-hero-icon" aria-hidden="true"><i
+                            class="bi bi-gear-wide-connected"></i><span></span></div>
+                </section>
+                <!--- Settings Page Heading --->
+                <section class="cp-client-settings-heading">
+                    <div><span class="cp-client-settings-section-label">PREFERENCES</span>
+                        <h2>Workspace settings</h2>
+                        <p>Manage how your client dashboard looks and behaves.</p>
+                    </div>
+                    <span class="cp-client-settings-save-status" id="cp-client-settings-save-status" role="status"
+                        aria-live="polite"><i class="bi bi-check-circle"></i> All changes saved</span>
+                </section>
+                <!--- Settings Layout --->
+                <form id="cp-client-settings-form" class="cp-client-settings-layout">
+                    <div class="cp-client-settings-main-column">
+                        <!--- Appearance Settings --->
+                        <section class="cp-client-settings-card">
+                            <div class="cp-client-settings-card-heading"><span
+                                    class="cp-client-settings-card-icon cp-client-settings-icon-lime"><i
+                                        class="bi bi-palette2"></i></span>
+                                <div>
+                                    <h3>Appearance</h3>
+                                    <p>Personalize the look and feel of your workspace.</p>
+                                </div>
+                            </div>
+                            <div class="cp-client-settings-field">
+                                <div class="cp-client-settings-field-copy"><strong>Color theme</strong><span>Choose your
+                                        preferred interface appearance.</span></div>
+                                <div class="cp-client-settings-theme-options">
+                                    <label class="cp-client-settings-theme-option"><input type="radio" name="theme"
+                                            value="dark" checked><span
+                                            class="cp-client-settings-theme-preview cp-client-settings-theme-dark"><i
+                                                class="bi bi-moon-stars-fill"></i></span><span>Dark</span></label>
+                                    <label class="cp-client-settings-theme-option"><input type="radio" name="theme"
+                                            value="light"><span
+                                            class="cp-client-settings-theme-preview cp-client-settings-theme-light"><i
+                                                class="bi bi-sun-fill"></i></span><span>Light</span></label>
+                                    <label class="cp-client-settings-theme-option"><input type="radio" name="theme"
+                                            value="system"><span
+                                            class="cp-client-settings-theme-preview cp-client-settings-theme-system"><i
+                                                class="bi bi-circle-half"></i></span><span>System</span></label>
+                                </div>
+                            </div>
+                            <div class="cp-client-settings-divider"></div>
+                            <div class="cp-client-settings-field">
+                                <div class="cp-client-settings-field-copy"><strong>Accent color</strong><span>Choose a
+                                        highlight color for your interface.</span></div>
+                                <div class="cp-client-settings-accent-options">
+                                    <label class="cp-client-settings-accent-option"><input type="radio" name="accent"
+                                            value="lime" checked><span
+                                            class="cp-client-settings-accent-dot cp-client-settings-accent-lime"></span><span>Lime</span></label>
+                                    <label class="cp-client-settings-accent-option"><input type="radio" name="accent"
+                                            value="violet"><span
+                                            class="cp-client-settings-accent-dot cp-client-settings-accent-violet"></span><span>Violet</span></label>
+                                    <label class="cp-client-settings-accent-option"><input type="radio" name="accent"
+                                            value="blue"><span
+                                            class="cp-client-settings-accent-dot cp-client-settings-accent-blue"></span><span>Blue</span></label>
+                                    <label class="cp-client-settings-accent-option"><input type="radio" name="accent"
+                                            value="orange"><span
+                                            class="cp-client-settings-accent-dot cp-client-settings-accent-orange"></span><span>Orange</span></label>
+                                </div>
+                            </div>
+                            <div class="cp-client-settings-divider"></div>
+                            <label class="cp-client-settings-toggle-row"><span
+                                    class="cp-client-settings-toggle-copy"><strong>Compact layout</strong><span>Reduce
+                                        spacing to fit more content on screen.</span></span><input type="checkbox"
+                                    name="compact" class="cp-client-settings-switch"><span
+                                    class="cp-client-settings-switch-ui"></span></label>
+                            <div class="cp-client-settings-divider"></div>
+                            <label class="cp-client-settings-toggle-row"><span
+                                    class="cp-client-settings-toggle-copy"><strong>Reduce motion</strong><span>Minimize
+                                        interface animations and transitions.</span></span><input type="checkbox"
+                                    name="reduceMotion" class="cp-client-settings-switch"><span
+                                    class="cp-client-settings-switch-ui"></span></label>
+                        </section>
+                        <!--- General Preferences --->
+                        <section class="cp-client-settings-card">
+                            <div class="cp-client-settings-card-heading"><span
+                                    class="cp-client-settings-card-icon cp-client-settings-icon-violet"><i
+                                        class="bi bi-globe2"></i></span>
+                                <div>
+                                    <h3>Regional preferences</h3>
+                                    <p>Set your language, date format, and time zone.</p>
+                                </div>
+                            </div>
+                            <div class="cp-client-settings-form-grid">
+                                <div class="cp-client-settings-input-group"><label
+                                        for="cp-client-settings-language">Language</label><select
+                                        id="cp-client-settings-language" name="language">
+                                        <option value="en">English</option>
+                                        <option value="ta">Tamil</option>
+                                    </select><small>Interface language preference.</small></div>
+                                <div class="cp-client-settings-input-group"><label
+                                        for="cp-client-settings-date-format">Date format</label><select
+                                        id="cp-client-settings-date-format" name="dateFormat">
+                                        <option value="DD MMM YYYY">13 Oct 2026</option>
+                                        <option value="DD/MM/YYYY">13/10/2026</option>
+                                        <option value="MM/DD/YYYY">10/13/2026</option>
+                                        <option value="YYYY-MM-DD">2026-10-13</option>
+                                    </select><small>How dates are displayed.</small></div>
+                                <div class="cp-client-settings-input-group cp-client-settings-full-width"><label
+                                        for="cp-client-settings-timezone">Time zone</label><select
+                                        id="cp-client-settings-timezone" name="timezone">
+                                        <option value="Asia/Kolkata">India Standard Time (UTC+05:30)</option>
+                                        <option value="UTC">Coordinated Universal Time (UTC)</option>
+                                        <option value="Asia/Dubai">Gulf Standard Time (UTC+04:00)</option>
+                                        <option value="Europe/London">United Kingdom (London)</option>
+                                        <option value="America/New_York">Eastern Time (New York)</option>
+                                    </select><small>Used for displaying dates and times in your workspace.</small></div>
+                            </div>
+                        </section>
+                        <!--- Notification Preferences --->
+                        <section class="cp-client-settings-card">
+                            <div class="cp-client-settings-card-heading"><span
+                                    class="cp-client-settings-card-icon cp-client-settings-icon-blue"><i
+                                        class="bi bi-bell"></i></span>
+                                <div>
+                                    <h3>Notifications</h3>
+                                    <p>Choose the updates you want to see.</p>
+                                </div>
+                            </div>
+                            <label class="cp-client-settings-toggle-row"><span
+                                    class="cp-client-settings-toggle-copy"><strong>Project updates</strong><span>Receive
+                                        updates when project status or progress changes.</span></span><input
+                                    type="checkbox" name="projectUpdates" class="cp-client-settings-switch"
+                                    checked><span class="cp-client-settings-switch-ui"></span></label>
+                            <div class="cp-client-settings-divider"></div>
+                            <label class="cp-client-settings-toggle-row"><span
+                                    class="cp-client-settings-toggle-copy"><strong>Milestone
+                                        reminders</strong><span>Keep track of upcoming project
+                                        deadlines.</span></span><input type="checkbox" name="milestoneReminders"
+                                    class="cp-client-settings-switch" checked><span
+                                    class="cp-client-settings-switch-ui"></span></label>
+                            <div class="cp-client-settings-divider"></div>
+                            <label class="cp-client-settings-toggle-row"><span
+                                    class="cp-client-settings-toggle-copy"><strong>Feedback requests</strong><span>Know
+                                        when a project needs your review or approval.</span></span><input
+                                    type="checkbox" name="feedbackRequests" class="cp-client-settings-switch"
+                                    checked><span class="cp-client-settings-switch-ui"></span></label>
+                            <div class="cp-client-settings-divider"></div>
+                            <label class="cp-client-settings-toggle-row"><span
+                                    class="cp-client-settings-toggle-copy"><strong>Product
+                                        announcements</strong><span>Receive updates about new features and
+                                        improvements.</span></span><input type="checkbox" name="announcements"
+                                    class="cp-client-settings-switch"><span
+                                    class="cp-client-settings-switch-ui"></span></label>
+                        </section>
+                        <!--- Privacy And Security --->
+                        <section class="cp-client-settings-card">
+                            <div class="cp-client-settings-card-heading"><span
+                                    class="cp-client-settings-card-icon cp-client-settings-icon-orange"><i
+                                        class="bi bi-shield-lock"></i></span>
+                                <div>
+                                    <h3>Privacy & security</h3>
+                                    <p>Manage your account preferences and access.</p>
+                                </div>
+                            </div>
+                            <div class="cp-client-settings-security-row"><span
+                                    class="cp-client-settings-security-icon"><i class="bi bi-person-vcard"></i></span>
+                                <div><strong>Personal information</strong>
+                                    <p>Review and update your account details.</p>
+                                </div><a href="404.html">Manage <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="cp-client-settings-divider"></div>
+                            <div class="cp-client-settings-security-row"><span
+                                    class="cp-client-settings-security-icon"><i class="bi bi-key"></i></span>
+                                <div><strong>Password & access</strong>
+                                    <p>Manage your account credentials.</p>
+                                </div><a href="404.html">View options <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                            <div class="cp-client-settings-divider"></div>
+                            <label class="cp-client-settings-toggle-row"><span
+                                    class="cp-client-settings-toggle-copy"><strong>Remember this
+                                        device</strong><span>Keep your sign-in preference on this
+                                        browser.</span></span><input type="checkbox" name="rememberDevice"
+                                    class="cp-client-settings-switch"><span
+                                    class="cp-client-settings-switch-ui"></span></label>
+                            <p class="cp-client-settings-security-note"><i class="bi bi-info-circle"></i> These
+                                preferences are stored in this browser. They do not replace server-side account
+                                security.</p>
+                        </section>
+                        <!--- Workspace Actions --->
+                        <section class="cp-client-settings-actions">
+                            <button type="button" class="cp-client-settings-reset" id="cp-client-settings-reset"><i
+                                    class="bi bi-arrow-counterclockwise"></i> Reset defaults</button>
+                            <div><span id="cp-client-settings-unsaved" aria-live="polite">Your preferences are up to
+                                    date.</span><button type="submit" class="cp-client-settings-save"
+                                    id="cp-client-settings-save"><i class="bi bi-check2-circle"></i> Save
+                                    changes</button></div>
+                        </section>
+                    </div>
+                    <!--- Settings Preview Sidebar --->
+                    <aside class="cp-client-settings-side-column">
+                        <section class="cp-client-settings-card cp-client-settings-preview-card">
+                            <div class="cp-client-settings-card-heading"><span
+                                    class="cp-client-settings-card-icon cp-client-settings-icon-lime"><i
+                                        class="bi bi-eye"></i></span>
+                                <div>
+                                    <h3>Live preview</h3>
+                                    <p>Preview your appearance settings.</p>
+                                </div>
+                            </div>
+                            <div class="cp-client-settings-preview" id="cp-client-settings-preview">
+                                <div class="cp-client-settings-preview-top"><span
+                                        class="cp-client-settings-preview-logo"><i
+                                            class="bi bi-code-slash"></i></span><span
+                                        class="cp-client-settings-preview-dots"><i></i><i></i><i></i></span></div>
+                                <div class="cp-client-settings-preview-body"><span
+                                        class="cp-client-settings-preview-label">YOUR WORKSPACE</span><strong>Welcome
+                                        back</strong><span class="cp-client-settings-preview-line"></span><span
+                                        class="cp-client-settings-preview-line cp-client-settings-preview-line-short"></span>
+                                    <div class="cp-client-settings-preview-stat"><i
+                                            class="bi bi-kanban"></i><span><small>Active projects</small><b>02
+                                                projects</b></span></div><span
+                                        class="cp-client-settings-preview-progress"><i></i></span>
+                                </div>
+                            </div>
+                            <div class="cp-client-settings-preview-meta"><span>Theme</span><strong
+                                    id="cp-client-settings-preview-theme">Dark</strong></div>
+                            <div class="cp-client-settings-preview-meta"><span>Accent</span><strong
+                                    id="cp-client-settings-preview-accent">Lime</strong></div>
+                            <div class="cp-client-settings-preview-meta"><span>Layout</span><strong
+                                    id="cp-client-settings-preview-layout">Comfortable</strong></div>
+                        </section>
+                        <section class="cp-client-settings-card cp-client-settings-summary-card">
+                            <span class="cp-client-settings-section-label">YOUR PREFERENCES</span>
+                            <h3>Workspace summary</h3>
+                            <p>Review your current configuration at a glance.</p>
+                            <div class="cp-client-settings-summary-item"><span><i class="bi bi-palette"></i>
+                                    Appearance</span><strong id="cp-client-settings-summary-theme">Dark / Lime</strong>
+                            </div>
+                            <div class="cp-client-settings-summary-item"><span><i class="bi bi-bell"></i>
+                                    Notifications</span><strong id="cp-client-settings-summary-notifications">3
+                                    enabled</strong></div>
+                            <div class="cp-client-settings-summary-item"><span><i class="bi bi-globe"></i>
+                                    Language</span><strong id="cp-client-settings-summary-language">English</strong>
+                            </div>
+                            <div class="cp-client-settings-summary-item"><span><i class="bi bi-clock"></i> Time
+                                    zone</span><strong id="cp-client-settings-summary-timezone">Asia/Kolkata</strong>
+                            </div>
+                        </section>
+                        <section class="cp-client-settings-tip"><span class="cp-client-settings-tip-icon"><i
+                                    class="bi bi-lightbulb"></i></span>
+                            <div><strong>Make it comfortable</strong>
+                                <p>Choose settings that help you focus on your projects. You can update these
+                                    preferences whenever you need.</p>
+                            </div>
+                        </section>
+                    </aside>
+                </form>
+                <!--- Client Settings Footer --->
+                <footer class="cp-client-settings-footer"><span>© <span id="cp-client-settings-year"></span> Creative
+                        Portfolio. All rights reserved.</span><span><i class="bi bi-shield-check"></i> Your workspace,
+                        your preferences.</span></footer>
+            </main>
+
+        </div>
+    </div>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/client-settings.js"></script>
+</body>
+
+</html>
