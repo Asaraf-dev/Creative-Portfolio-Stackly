@@ -22,7 +22,7 @@
 /*--- Footer Divider ---*/
 .cp-footer-divider {width:100%;height:1px;background:linear-gradient(90deg,rgba(182,255,74,.4),rgba(255,255,255,.12) 45%,rgba(167,139,250,.25));}
 /*--- Footer Information Grid ---*/
-.cp-footer-grid {display:grid;grid-template-columns:1.5fr .8fr 1fr;gap:80px;padding:58px 0 65px;}
+.cp-footer-grid {display:grid;grid-template-columns:1.5fr .8fr 1fr 1fr;gap:80px;padding:58px 0 65px;}
 .cp-footer-brand-column {max-width:370px;}
 .cp-footer-brand {display:inline-flex;align-items:center;margin-bottom:23px;}
 .cp-footer-logo {width:auto;max-width:190px;height:40px;object-fit:contain;}
@@ -34,7 +34,7 @@
 .cp-footer-social:hover {color:var(--cp-color-dark);background:var(--cp-color-primary);border-color:var(--cp-color-primary);transform:translateY(-5px);}
 .cp-footer-social:hover i {transform:scale(1.12);}
 /*--- Footer Navigation Links ---*/
-.cp-footer-heading {margin-bottom:25px;color:var(--cp-color-text-muted);font-family:var(--cp-font-body);font-size:.72rem;font-weight:700;letter-spacing:.13em;}
+.cp-footer-heading {text-transform: uppercase;margin-bottom:25px;color:var(--cp-color-text-muted);font-family:var(--cp-font-body);font-size:.72rem;font-weight:700;letter-spacing:.13em;}
 .cp-footer-links {display:flex;flex-direction:column;gap:5px;margin:0;padding:0;list-style:none;}
 .cp-footer-link {display:flex;align-items:center;gap:15px;width:100%;padding:7px 0;color:rgba(255,255,255,.76);font-size:.92rem;transition:var(--cp-transition);}
 .cp-footer-link span {position:relative;}
@@ -77,7 +77,7 @@
 .cp-footer-main {padding-top:75px;}
 .cp-footer-top {padding-bottom:55px;}
 .cp-footer-cta-wrap {align-items:flex-start;}
-.cp-footer-grid {grid-template-columns:1fr 1fr;gap:45px 35px;padding:45px 0 50px;}
+.cp-footer-grid {grid-template-columns:1fr;gap:45px 35px;padding:45px 0 50px;}
 .cp-footer-brand-column {max-width:100%;grid-column:1/-1;}
 .cp-footer-brand-text {max-width:420px;}
 .cp-footer-contact-column {grid-column:2;grid-row:2;}
@@ -112,7 +112,7 @@
 .cp-footer-title {font-size:clamp(2.55rem,11vw,4rem);line-height:1.02;letter-spacing:-.07em;}
 .cp-footer-cta-wrap {margin-top:25px;}
 .cp-footer-cta-text {font-size:.9rem;}
-.cp-footer-grid {grid-template-columns:1fr 1fr;gap:32px 18px;padding:36px 0 40px;}
+.cp-footer-grid {display: flex;flex-direction:column;gap:32px 18px;padding:36px 0 40px;}
 .cp-footer-brand-column {grid-column:1/-1;}
 .cp-footer-logo {max-width:165px;height:34px;}
 .cp-footer-brand-text {font-size:.85rem;}
